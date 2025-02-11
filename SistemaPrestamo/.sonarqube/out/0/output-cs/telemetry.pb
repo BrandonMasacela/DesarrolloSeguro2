@@ -1,0 +1,1 @@
+yRcC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Prestamo.Entidades.csproj¢net8.0òCSharp12

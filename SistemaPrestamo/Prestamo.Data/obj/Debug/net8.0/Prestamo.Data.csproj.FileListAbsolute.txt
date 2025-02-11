@@ -1,0 +1,46 @@
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.deps.json
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.dll
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.pdb
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Entidades.dll
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Entidades.pdb
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.csproj.AssemblyReference.cache
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.AssemblyInfoInputs.cache
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.AssemblyInfo.cs
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.csproj.CoreCompileInputs.cache
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.B65E97AF.Up2Date
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.dll
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\refint\Prestamo.Data.dll
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.pdb
+E:\WorkSpaceAD\YOUTUBE\118 Sistema de Prestamos NET 8\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\ref\Prestamo.Data.dll
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.deps.json
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.dll
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.pdb
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Entidades.dll
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Entidades.pdb
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.csproj.AssemblyReference.cache
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.AssemblyInfoInputs.cache
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.AssemblyInfo.cs
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.csproj.CoreCompileInputs.cache
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.B65E97AF.Up2Date
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.dll
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\refint\Prestamo.Data.dll
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.pdb
+C:\Users\pspgo\Desktop\118_SistemaPrestamo_Net8_ADO.NET_NCapas-main\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\ref\Prestamo.Data.dll
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.deps.json
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.dll
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Data.pdb
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Entidades.dll
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\bin\Debug\net8.0\Prestamo.Entidades.pdb
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.csproj.AssemblyReference.cache
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.AssemblyInfoInputs.cache
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.AssemblyInfo.cs
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.csproj.CoreCompileInputs.cache
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.sourcelink.json
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.B65E97AF.Up2Date
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.dll
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\refint\Prestamo.Data.dll
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.pdb
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\ref\Prestamo.Data.dll

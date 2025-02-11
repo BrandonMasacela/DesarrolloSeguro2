@@ -1,0 +1,13 @@
+Å
+vC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\obj\Debug\net8.0\Prestamo.Web.RazorAssemblyInfo.csutf-8|
+qC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\obj\Debug\net8.0\Prestamo.Web.AssemblyInfo.csutf-8è
+ÉC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8~
+sC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\obj\Debug\net8.0\Prestamo.Web.GlobalUsings.g.csutf-8W
+NC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Program.csutf-8e
+\C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Models\ErrorViewModel.csutf-8n
+eC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Controllers\PrestamoController.csutf-8l
+cC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Controllers\MonedaController.csutf-8k
+bC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Controllers\LoginController.csutf-8j
+aC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Controllers\HomeController.csutf-8l
+cC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Controllers\CobrarController.csutf-8m
+dC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Controllers\ClienteController.csutf-8

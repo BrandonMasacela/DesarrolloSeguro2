@@ -1,0 +1,6 @@
+﻿C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ClienteData.cs
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ConnectionStrings.cs
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\MonedaData.cs
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\PrestamoData.cs
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ResumenData.cs
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\UsuarioData.cs

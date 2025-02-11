@@ -1,0 +1,10 @@
+ˆ
+}C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.AssemblyInfo.csutf-8•
+‰C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8^
+UC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Prestamo.csutf-8\
+SC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Moneda.csutf-8e
+\C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\PrestamoDetalle.csutf-8]
+TC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Resumen.csutf-8]
+TC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Cliente.csutf-8]
+TC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Usuario.csutf-8Š
+C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.GlobalUsings.g.csutf-8
