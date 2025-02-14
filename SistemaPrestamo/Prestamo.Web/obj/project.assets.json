@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "BCrypt.Net-Next/4.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "HarfBuzzSharp/7.3.0.1": {
         "type": "package",
         "dependencies": {
@@ -819,6 +832,39 @@
     }
   },
   "libraries": {
+    "BCrypt.Net-Next/4.0.2": {
+      "sha512": "LyNKpIpr4GraRD9+xlTviyxxbZpF6J4xJf7DvraC1mR8PSN/KonGc4rt8C/fjkD3vaEvgA7BcvsbHFCOjgczyQ==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.0.2.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net40/BCrypt.Net-Next.dll",
+        "lib/net40/BCrypt.Net-Next.xml",
+        "lib/net452/BCrypt.Net-Next.dll",
+        "lib/net452/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/net5.0/BCrypt.Net-Next.dll",
+        "lib/net5.0/BCrypt.Net-Next.xml",
+        "lib/netcoreapp3.1/BCrypt.Net-Next.dll",
+        "lib/netcoreapp3.1/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml"
+      ]
+    },
     "HarfBuzzSharp/7.3.0.1": {
       "sha512": "/6z6TQBqWWbVpLUw7E/82HZKLT3OAzg/w6z8I6JFNFcYa3nM9RnZ8XGos9nD4buAzThLHpqPw/rb8FdZXEORAQ==",
       "type": "package",
@@ -2000,6 +2046,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BCrypt.Net-Next >= 4.0.2",
       "Microsoft.AspNetCore.Authentication.Cookies >= 2.1.34",
       "Prestamo.Data >= 1.0.0",
       "Prestamo.Entidades >= 1.0.0",
@@ -2007,23 +2054,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pspgo\\.nuget\\packages\\": {},
+    "C:\\Users\\yorge\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
+      "projectUniqueName": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
       "projectName": "Prestamo.Web",
-      "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
-      "packagesPath": "C:\\Users\\pspgo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Web\\obj\\",
+      "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
+      "packagesPath": "C:\\Users\\yorge\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pspgo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2038,11 +2085,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj": {
-              "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj"
+            "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj": {
+              "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj"
             },
-            "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
-              "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj"
+            "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
+              "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj"
             }
           }
         }
@@ -2063,6 +2110,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[4.0.2, )"
+          },
           "Microsoft.AspNetCore.Authentication.Cookies": {
             "target": "Package",
             "version": "[2.1.34, )"

@@ -9,65 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Prestamo.Web
 build_property.RootNamespace = Prestamo.Web
-build_property.ProjectDir = C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\
+build_property.ProjectDir = C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web
+build_property.MSBuildProjectDirectory = C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Cliente/Index.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Cobrar/Index.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Cobrar/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29icmFyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Home/Index.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Home/Privacy.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Login/Index.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Moneda/Index.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Moneda/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uZWRhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Prestamo/Index.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Prestamo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Prestamo/Nuevo.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Prestamo/Nuevo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cTnVldm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Shared/Error.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/_ViewImports.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/_ViewStart.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pspgo/Desktop/SistemaPrestamo/SistemaPrestamo/Prestamo.Web/Views/Shared/_Layout.cshtml]
+[C:/Git/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ft3e4qjkji

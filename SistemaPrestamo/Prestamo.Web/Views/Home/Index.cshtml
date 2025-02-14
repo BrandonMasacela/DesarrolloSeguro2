@@ -2,70 +2,110 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1 class="mt-4">Resumen</h1>
+@if (User.IsInRole("Administrador"))
+{
+    <h1 class="mt-4">Resumen Administrativo</h1>
 
-<div class="row">
-    <div class="col-xl-3 col-md-6">
-        <div class="card bg-primary text-white mb-4">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col me-2">
-                        <div class="">Total Clientes</div>
-                        <div class="fw-bold"><span id="spTotalClientes"></span></div>
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col me-2">
+                            <div class="">Total Clientes</div>
+                            <div class="fw-bold"><span id="spTotalClientes"></span></div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fa-solid fa-user-group fa-2xl"></i>
+                        </div>
                     </div>
-                    <div class="col-auto">
-                        <i class="fa-solid fa-user-group fa-2xl"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-danger text-white mb-4">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col me-2">
+                            <div class="">Préstamos Pendientes</div>
+                            <div class="fw-bold"><span id="spPrestamosPendientes"></span></div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fa-solid fa-hourglass-half fa-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-success text-white mb-4">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col me-2">
+                            <div class="">Préstamos Cancelados</div>
+                            <div class="fw-bold"><span id="spPrestamosCancelados"></span></div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fa-solid fa-money-check-dollar fa-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-warning text-white mb-4">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col me-2">
+                            <div class="">Interés Acumulado</div>
+                            <div class="fw-bold"><span id="spInteresAcumulado"></span></div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fa-solid fa-money-bill-trend-up fa-2xl"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-md-6">
-        <div class="card bg-danger text-white mb-4">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col me-2">
-                        <div class="">Prestamos Pendientes</div>
-                        <div class="fw-bold"><span id="spPrestamosPendientes"></span></div>
+}
+else
+{
+    <h1 class="mt-4">Bienvenido</h1>
+    <p>Bienvenido a la página de inicio. Aquí puedes ver tus préstamos y gestionar tus pagos.</p>
+    <div class="row">
+        <div class="col-xl-6 col-md-12">
+            <div class="card bg-info text-white mb-4">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col me-2">
+                            <div class="">Tus Préstamos</div>
+                            <div class="fw-bold"><span id="spTusPrestamos"></span></div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fa-solid fa-money-bill fa-2xl"></i>
+                        </div>
                     </div>
-                    <div class="col-auto">
-                        <i class="fa-solid fa-hourglass-half fa-2xl"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-12">
+            <div class="card bg-secondary text-white mb-4">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col me-2">
+                            <div class="">Pagos Pendientes</div>
+                            <div class="fw-bold"><span id="spPagosPendientes"></span></div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-md-6">
-        <div class="card bg-success text-white mb-4">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col me-2">
-                        <div class="">Prestamos Cancelados</div>
-                        <div class="fw-bold"><span id="spPrestamosCancelados"></span></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fa-solid fa-money-check-dollar fa-2xl"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-md-6">
-        <div class="card bg-warning text-white mb-4">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col me-2">
-                        <div class="">Interes acumulado</div>
-                        <div class="fw-bold"><span id="spInteresAcumulado"></span></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fa-solid fa-money-bill-trend-up fa-2xl"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+}
 
 @section Scripts {
     <script src="~/views/home.js"></script>

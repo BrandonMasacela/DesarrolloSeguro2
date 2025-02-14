@@ -32,3 +32,15 @@ C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\obj\De
 C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\refint\Prestamo.Entidades.dll
 C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.pdb
 C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\ref\Prestamo.Entidades.dll
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\bin\Debug\net8.0\Prestamo.Entidades.deps.json
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\bin\Debug\net8.0\Prestamo.Entidades.dll
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\bin\Debug\net8.0\Prestamo.Entidades.pdb
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.AssemblyInfoInputs.cache
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.AssemblyInfo.cs
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.csproj.CoreCompileInputs.cache
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.sourcelink.json
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.dll
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\refint\Prestamo.Entidades.dll
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\Prestamo.Entidades.pdb
+C:\Git\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\obj\Debug\net8.0\ref\Prestamo.Entidades.dll

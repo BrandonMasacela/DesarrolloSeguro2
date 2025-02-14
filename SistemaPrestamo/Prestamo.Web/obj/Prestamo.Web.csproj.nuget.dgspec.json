@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj": {}
+    "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj": {
+    "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj",
+        "projectUniqueName": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj",
         "projectName": "Prestamo.Data",
-        "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj",
-        "packagesPath": "C:\\Users\\pspgo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Data\\obj\\",
+        "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj",
+        "packagesPath": "C:\\Users\\yorge\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pspgo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
-                "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj"
+              "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
+                "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj"
               }
             }
           }
@@ -83,20 +83,20 @@
         }
       }
     },
-    "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
+    "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj",
+        "projectUniqueName": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj",
         "projectName": "Prestamo.Entidades",
-        "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj",
-        "packagesPath": "C:\\Users\\pspgo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\obj\\",
+        "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj",
+        "packagesPath": "C:\\Users\\yorge\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pspgo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -148,20 +148,20 @@
         }
       }
     },
-    "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj": {
+    "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
+        "projectUniqueName": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
         "projectName": "Prestamo.Web",
-        "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
-        "packagesPath": "C:\\Users\\pspgo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Web\\obj\\",
+        "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
+        "packagesPath": "C:\\Users\\yorge\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pspgo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -176,11 +176,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj": {
-                "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj"
+              "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj": {
+                "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj"
               },
-              "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
-                "projectPath": "C:\\Users\\pspgo\\Desktop\\SistemaPrestamo\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj"
+              "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
+                "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj"
               }
             }
           }
@@ -201,6 +201,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
             "Microsoft.AspNetCore.Authentication.Cookies": {
               "target": "Package",
               "version": "[2.1.34, )"
