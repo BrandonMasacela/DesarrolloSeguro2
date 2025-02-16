@@ -120,9 +120,8 @@ namespace Prestamo.Data
             return lista;
         }
 
-        public async Task<string> PagarCuotas(int IdPrestamo, string NroCuotasPagadas)
+        public async Task<string> PagarCuotas(int IdPrestamo, string NroCuotasPagadas, string NumeroTarjeta)
         {
-
             string respuesta = "";
             using (var conexion = new SqlConnection(con.CadenaSQL))
             {
@@ -130,6 +129,7 @@ namespace Prestamo.Data
                 SqlCommand cmd = new SqlCommand("sp_pagarCuotas", conexion);
                 cmd.Parameters.AddWithValue("@IdPrestamo", IdPrestamo);
                 cmd.Parameters.AddWithValue("@NroCuotasPagadas", NroCuotasPagadas);
+                cmd.Parameters.AddWithValue("@NumeroTarjeta", NumeroTarjeta);
                 cmd.Parameters.Add("@msgError", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -138,9 +138,9 @@ namespace Prestamo.Data
                     await cmd.ExecuteNonQueryAsync();
                     respuesta = Convert.ToString(cmd.Parameters["@msgError"].Value)!;
                 }
-                catch
+                catch (Exception ex)
                 {
-                    respuesta = "Error al procesar";
+                    respuesta = "Error al procesar: " + ex.Message;
                 }
             }
             return respuesta;

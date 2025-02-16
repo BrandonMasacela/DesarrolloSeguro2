@@ -14,5 +14,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Prestamo.Entidades\Prestamo.Entidades.csproj" />
   </ItemGroup>
-
+	
+    <ItemGroup>
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
+	</ItemGroup>
 </Project>

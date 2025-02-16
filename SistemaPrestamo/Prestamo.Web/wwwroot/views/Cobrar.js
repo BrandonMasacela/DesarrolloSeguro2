@@ -1,15 +1,16 @@
-﻿
-let idPrestamo = 0;
+﻿let idPrestamo = 0;
 let totalPagar = 0;
 let prestamosEncontrados = [];
 
-document.addEventListener("DOMContentLoaded", function (event) {
-
+document.addEventListener("DOMContentLoaded", function () {
+    // Validar que solo se ingresen números en el campo de número de tarjeta
+    document.getElementById("txtNumeroTarjeta").addEventListener("input", function (e) {
+        this.value = this.value.replace(/\D/g, '');
+    });
 });
 
 
 $("#btnBuscar").on("click", function () {
-    
     if ($("#txtNroDocumento").val() == "") {
         Swal.fire({
             title: "Ups!",
@@ -41,7 +42,6 @@ $("#btnBuscar").on("click", function () {
         }
 
         if (responseJson.data.length == 1) {
-
             let dataFiltro = []
             dataFiltro = responseJson.data.filter((e) => e.estado == "Pendiente");
 
@@ -66,7 +66,6 @@ $("#btnBuscar").on("click", function () {
                     </tr>`);
             })
             $(`#mdData`).modal('show');
-          
         }
     }).catch((error) => {
         $.LoadingOverlay("hide");
@@ -76,11 +75,24 @@ $("#btnBuscar").on("click", function () {
             icon: "warning"
         });
     })
-  
 })
 
+function obtenerTarjeta() {
+    const idCliente = $("#txtNroDocumento").val();
+    if (idCliente) {
+        fetch(`/Cobrar/ObtenerTarjeta?idCliente=${idCliente}`, {
+            method: "GET",
+            headers: { 'Content-Type': 'application/json;charset=utf-8' }
+        }).then(response => {
+            return response.ok ? response.json() : Promise.reject(response);
+        }).then(responseJson => {
+            $("#txtNumeroTarjeta").val(responseJson.tarjeta);
+        }).catch((error) => {
+            console.error("Error al obtener la tarjeta:", error);
+        });
+    }
+}
 function Limpiar(limpiarNroDocumento) {
-    
     if (limpiarNroDocumento)
         $("#txtNroDocumento").val("");
 
@@ -126,7 +138,6 @@ function mostrarPrestamo(prestamo) {
     })
 }
 
-
 $(document).on('click', '.checkPagado', function (e) {
     const seleccionados = $(".checkPagado").serializeArray();
     const nroCuota = $(this).attr("name").toString();
@@ -138,7 +149,6 @@ $(document).on('click', '.checkPagado', function (e) {
         totalPagar = totalPagar - parseFloat($(this).data("monto"));
     }
     $("#txtTotalaPagar").val(totalPagar.toFixed(2));
-
 });
 
 $(document).on('click', '.btn-prestamo-encontrado', function (e) {
@@ -146,19 +156,16 @@ $(document).on('click', '.btn-prestamo-encontrado', function (e) {
     const prestamo = prestamosEncontrados.find((e) => e.idPrestamo == idPrestamo);
     mostrarPrestamo(prestamo);
     $(`#mdData`).modal('hide');
-
 });
 
-
 $("#btnRegistrarPago").on("click", function () {
-    
     if (idPrestamo == 0) {
         Swal.fire({
             title: "Error!",
             text: `No hay prestamo encontrado`,
             icon: "warning"
         });
-        return
+        return;
     }
 
     if (totalPagar == 0) {
@@ -167,42 +174,76 @@ $("#btnRegistrarPago").on("click", function () {
             text: `No hay cuotas seleccionadas`,
             icon: "warning"
         });
-        return
+        return;
     }
-    const cuotasSeleccionadas = $(".checkPagado").serializeArray().map((e) => e.name).join(",")
 
-    fetch(`/Cobrar/PagarCuotas?idPrestamo=${idPrestamo}&nroCuotasPagadas=${cuotasSeleccionadas}`, {
-        method: "POST",
-        headers: { 'Content-Type': 'application/json;charset=utf-8' }
-    }).then(response => {
-        return response.ok ? response.json() : Promise.reject(response);
-    }).then(responseJson => {
-        if (responseJson.data == "") {
-            Limpiar();
-            prestamosEncontrados = [];
+    Swal.fire({
+        title: 'Ingrese el número de tarjeta',
+        input: 'text',
+        inputAttributes: {
+            autocapitalize: 'off'
+        },
+        showCancelButton: true,
+        confirmButtonText: 'Pagar',
+        showLoaderOnConfirm: true,
+        preConfirm: (tarjeta) => {
+            if (!tarjeta) {
+                Swal.showValidationMessage('Por favor ingrese el número de tarjeta');
+                return false;
+            }
+            if (!/^\d{16}$/.test(tarjeta)) {
+                Swal.showValidationMessage('El número de tarjeta debe contener exactamente 16 dígitos');
+                return false;
+            }
+
+            const cuotasSeleccionadas = $(".checkPagado:checked").map(function () {
+                return $(this).attr("name");
+            }).get().join(",");
+
+            if (!cuotasSeleccionadas) {
+                Swal.showValidationMessage('Debe seleccionar al menos una cuota');
+                return false;
+            }
+
+            const requestData = {
+                idPrestamo: idPrestamo,
+                nroCuotasPagadas: cuotasSeleccionadas,
+                numeroTarjeta: tarjeta
+            };
+
+            console.log('Enviando datos:', requestData); // Para debugging
+
+            return fetch('/Cobrar/PagarCuotas', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(requestData)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => Promise.reject(err));
+                    }
+                    return response.json();
+                });
+        },
+        allowOutsideClick: () => !Swal.isLoading()
+    }).then((result) => {
+        if (result.isConfirmed) {
             Swal.fire({
-                title: "Listo!",
-                text: "Se registraron los pagos",
-                icon: "success"
-            });
-        } else {
-            Swal.fire({
-                title: "Error!",
-                text: responseJson.data,
-                icon: "warning"
+                title: 'Éxito!',
+                text: result.value.data,
+                icon: 'success'
+            }).then(() => {
+                window.location.reload();
             });
         }
-    }).catch((error) => {
+    }).catch(error => {
         Swal.fire({
-            title: "Error!",
-            text: "No se pudo registrar.",
-            icon: "warning"
+            title: 'Error!',
+            text: error.data || 'Error al procesar el pago',
+            icon: 'error'
         });
-    })
-
-
-})
-
-
-
-
+    });
+});

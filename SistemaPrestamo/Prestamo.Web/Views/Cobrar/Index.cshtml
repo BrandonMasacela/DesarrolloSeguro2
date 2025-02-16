@@ -1,15 +1,17 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@{
+    ViewData["Title"] = "Cobrar";
+}
+
 @section Estilos {
     <style>
-        input[type=checkbox]{
-            width:22px;
-            height:22px;
-            cursor:pointer;
+        input[type=checkbox] {
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
         }
     </style>
 }
+
 <div class="row mt-4">
     <div class="col-sm-6">
         <div class="card mb-4 cardInfo">
@@ -84,12 +86,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
-
 
     <div class="col-sm-6">
         <div class="card cardInfo">
@@ -115,13 +114,34 @@
                                 <tbody></tbody>
                             </table>
                         </div>
-                       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label for="cboMetodoPago" class="form-label">Método de Pago:</label>
+                            <select class="form-select" id="cboMetodoPago">
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Tarjeta">Tarjeta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="divTarjeta" style="display: none;">
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <label for="txtNumeroTarjeta" class="form-label">Número de Tarjeta:</label>
+                            <input type="text" class="form-control" id="txtNumeroTarjeta" autocomplete="off" pattern="\d*" title="Por favor ingrese solo números">
+                            <div class="invalid-feedback">
+                                Por favor ingrese un número de tarjeta válido.
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row align-items-end">
                     <div class="col-sm-6">
                         <div class="mb-3">
-                            <label for="txtFormadePago" class="form-label">Total a pagar:</label>
+                            <label for="txtTotalaPagar" class="form-label">Total a pagar:</label>
                             <input type="text" class="form-control data-in" id="txtTotalaPagar" autocomplete="off" disabled>
                         </div>
                     </div>
@@ -136,39 +156,7 @@
     </div>
 </div>
 
-
-<div class="modal fade" id="mdData" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Prestamos encontrados</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <table class="table table-striped table-bordered" id="tbPrestamosEncontrados">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Nro Prestamo</th>
-                                    <th>Monto Prestamo</th>
-                                    <th>Estado</th>
-                                    <th>Fecha Registro</th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
-            </div>
-        </div>
-    </div>
-</div>
 @section Scripts {
     <script src="~/views/cobrar.js"></script>
+
 }

@@ -808,6 +808,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.2",
           "Microsoft.Extensions.Options": "8.0.2",
           "Prestamo.Entidades": "1.0.0",
           "System.Data.SqlClient": "4.8.6"
@@ -2054,23 +2055,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yorge\\.nuget\\packages\\": {},
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
       "projectName": "Prestamo.Web",
-      "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
-      "packagesPath": "C:\\Users\\yorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Prestamo.Web.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\yorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2085,11 +2086,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj": {
-              "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj"
+            "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\Prestamo.Data.csproj"
             },
-            "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
-              "projectPath": "C:\\Git\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj"
+            "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj"
             }
           }
         }
@@ -2104,7 +2105,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -2142,7 +2143,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

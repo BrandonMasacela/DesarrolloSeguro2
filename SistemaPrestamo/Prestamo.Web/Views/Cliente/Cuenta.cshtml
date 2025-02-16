@@ -1,0 +1,67 @@
+﻿@if (!User.IsInRole("Cliente"))
+{
+    ViewData["Title"] = "Cuenta";
+    <script>
+        window.location.href = '@Url.Action("Index", "Home")';
+    </script>
+}
+else
+{
+    <input type="hidden" id="idCliente" value="@Model.IdCliente" />
+
+    <h2>Cuenta</h2>
+
+    <div class="row mt-4">
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Datos de la Cuenta
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <th>Tarjeta</th>
+                            <td id="txtTarjeta"></td>
+                        </tr>
+                        <tr>
+                            <th>Monto</th>
+                            <td id="txtMonto"></td>
+                        </tr>
+                    </table>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" id="btnDepositar">
+                            <i class="fa-solid fa-money-bill-wave"></i> Depositar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para depósito -->
+    <div class="modal fade" id="modalDeposito" tabindex="-1" aria-labelledby="modalDepositoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDepositoLabel">Depositar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="txtMontoDeposito" class="form-label">Monto a depositar:</label>
+                        <input type="number" class="form-control" id="txtMontoDeposito" min="1">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="btnConfirmarDeposito">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script src="~/views/Cuenta.js"></script>
+    }
+}

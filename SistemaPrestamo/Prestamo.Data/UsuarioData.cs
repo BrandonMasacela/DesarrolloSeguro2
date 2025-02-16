@@ -4,6 +4,7 @@ using System;
 using System.Data.SqlClient;
 using System.Data;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
 
 namespace Prestamo.Data
 {
@@ -14,7 +15,22 @@ namespace Prestamo.Data
         {
             con = options.Value;
         }
-
+        public string GenerarClaveAleatoria(int longitud)
+        {
+            const string caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var clave = new char[longitud];
+            using (var rng = new RNGCryptoServiceProvider())
+            {
+                var bytes = new byte[longitud];
+                rng.GetBytes(bytes);
+                for (int i = 0; i < clave.Length; i++)
+                {
+                    clave[i] = caracteres[bytes[i] % caracteres.Length];
+                }
+            }
+            Console.WriteLine(new string(clave));
+            return new string(clave);
+        }
         public async Task<Usuario> ObtenerPorCorreo(string correo)
         {
             Usuario objeto = null!;
@@ -60,5 +76,6 @@ namespace Prestamo.Data
                 return rowsAffected > 0;
             }
         }
+
     }
 }

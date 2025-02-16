@@ -29,6 +29,16 @@ FechaCreacion datetime default getdate()
 
 go
 
+create table Cuenta (
+    IdCuenta int primary key identity,
+    IdCliente int references Cliente(IdCliente),
+    Tarjeta varchar(16),
+    FechaCreacion datetime default getdate(),
+    Monto decimal(18, 2)
+)
+
+go
+
 create table Prestamo(
 IdPrestamo int primary key identity,
 IdCliente int,
@@ -64,18 +74,10 @@ create table Usuario(
 IdUsuario int primary key identity,
 NombreCompleto varchar(50),
 Correo varchar(50),
-Clave varchar(50),
+Clave varchar(60),
+Rol varchar(50),
 FechaCreacion datetime default getdate()
 )
 
 go
-
-insert into Moneda(Nombre,Simbolo) values
-('Soles','S/.'),
-('Dolares','$')
-
-go
-
-insert into Usuario(NombreCompleto,Correo,Clave) values
-('Administrador','Admin@gmail.com','12345')
 

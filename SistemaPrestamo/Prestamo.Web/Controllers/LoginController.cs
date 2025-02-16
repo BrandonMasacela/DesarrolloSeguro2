@@ -11,17 +11,17 @@ using System.Diagnostics;
 
 
 namespace Prestamo.Web.Controllers
-{
-    [Authorize]
+{ 
     public class LoginController : Controller
     {
         private readonly UsuarioData _usuarioData;
+        private readonly EmailService _emailService;
 
-        public LoginController(UsuarioData usuarioData)
+        public LoginController(UsuarioData usuarioData, EmailService emailService)
         {
             _usuarioData = usuarioData;
+            _emailService = emailService;
         }
-
         public IActionResult Index()
         {
             return View();
@@ -52,30 +52,64 @@ namespace Prestamo.Web.Controllers
             }
 
             bool isPasswordValid = BCrypt.Net.BCrypt.Verify(clave, usuario.Clave);
+            Console.WriteLine(isPasswordValid);
             if (!isPasswordValid)
             {
                 ViewData["Mensaje"] = "Contraseña incorrecta";
                 return View();
             }
 
-            ViewData["Mensaje"] = null;
+            // Generar código de verificación
+            var codigoVerificacion = new Random().Next(100000, 999999).ToString();
+            HttpContext.Session.SetString("CodigoVerificacion", codigoVerificacion);
+            HttpContext.Session.SetString("CorreoVerificacion", correo);
 
-            // Aquí guardamos la información de nuestro usuario
-            List<Claim> claims = new List<Claim>
+            // Enviar código de verificación por correo
+            string asunto = "Código de verificación";
+            string mensaje = $"Tu código de verificación es: {codigoVerificacion}";
+            await _emailService.EnviarCorreoAsync(correo, asunto, mensaje);
+
+            return RedirectToAction("VerificarCodigo");
+        }
+
+        public IActionResult VerificarCodigo()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> VerificarCodigo(string codigo)
+        {
+            var codigoVerificacion = HttpContext.Session.GetString("CodigoVerificacion");
+            var correo = HttpContext.Session.GetString("CorreoVerificacion");
+
+            if (codigo == codigoVerificacion)
             {
-                new Claim(ClaimTypes.Name, usuario.NombreCompleto),
-                new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
-                new Claim(ClaimTypes.Role, usuario.Rol)
-            };
+                // Obtener el usuario por correo
+                var usuario = await _usuarioData.ObtenerPorCorreo(correo);
 
-            ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            AuthenticationProperties properties = new AuthenticationProperties
+                // Aquí guardamos la información de nuestro usuario
+                List<Claim> claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, usuario.NombreCompleto),
+                    new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
+                    new Claim(ClaimTypes.Role, usuario.Rol)
+                };
+
+                ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                AuthenticationProperties properties = new AuthenticationProperties
+                {
+                    AllowRefresh = true
+                };
+
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), properties);
+                return RedirectToAction("Index", "Home");
+            }
+            else
             {
-                AllowRefresh = true
-            };
-
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), properties);
-            return RedirectToAction("Index", "Home");
+                ViewData["Mensaje"] = "Código de verificación incorrecto";
+                return View();
+            }
         }
 
         public async Task<IActionResult> Salir()

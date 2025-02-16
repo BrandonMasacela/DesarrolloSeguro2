@@ -1,5 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var idCliente = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+    Console.WriteLine("Id inicio" + idCliente);
 }
 
 @if (User.IsInRole("Administrador"))
@@ -99,6 +101,23 @@ else
                         </div>
                         <div class="col-auto">
                             <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-md-12">
+                <div class="card bg-primary text-white mb-4">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col me-2">
+                                <div class="" href="@Url.Action("Cuenta", "Cliente", new { idCliente = idCliente })>Tu Cuenta</div>
+                            <div class="fw-bold"><span id="spTuCuenta">Cuenta</span></div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fa-solid fa-credit-card fa-2xl"></i>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -27,6 +27,18 @@ END
 
 go
 
+CREATE PROCEDURE [dbo].[sp_crearUsuario]
+    @NombreCompleto NVARCHAR(100),
+    @Correo NVARCHAR(100),
+    @Clave NVARCHAR(60),
+    @Rol NVARCHAR(50)
+AS
+BEGIN
+    INSERT INTO Usuario (NombreCompleto, Correo, Clave, FechaCreacion, Rol)
+    VALUES (@NombreCompleto, @Correo, @Clave, GETDATE(), @Rol)
+END
+GO
+
 create procedure sp_obtenerUsuario(
 @Correo varchar(50),
 @Clave varchar(50)
@@ -321,39 +333,125 @@ end
 
 go
   
-create procedure sp_pagarCuotas(  
-@IdPrestamo int,  
-@NroCuotasPagadas varchar(100),  
-@msgError varchar(100) OUTPUT  
-)  
-as  
-begin  
-  
- set dateformat dmy  
- set @msgError = ''  
-  
- begin try  
-  
-  begin transaction  
-  
-   update pd set pd.Estado = 'Cancelado', FechaPagado = getdate() from PrestamoDetalle pd  
-   inner join dbo.SplitString(@NroCuotasPagadas,',') ss on ss.valor = pd.NroCuota  
-   where IdPrestamo = @IdPrestamo  
-  
-   if((select count(IdPrestamoDetalle) from PrestamoDetalle where IdPrestamo = @IdPrestamo and Estado='Pendiente') = 0)  
-   begin  
-    update Prestamo set Estado = 'Cancelado' where IdPrestamo = @IdPrestamo  
-   end  
-  
-  
-  commit transaction  
- end try  
- begin catch  
-  rollback transaction  
-  set @msgError = ERROR_MESSAGE()  
- end catch  
-  
-end  
+
+create procedure [dbo].[sp_obtenerUsuario](
+@Correo varchar(50),
+@Clave varchar(50)
+)
+as
+begin
+	select IdUsuario,NombreCompleto,Correo from Usuario where 
+	Correo = @Correo COLLATE SQL_Latin1_General_CP1_CS_AS and
+	Clave = @Clave COLLATE SQL_Latin1_General_CP1_CS_AS
+end
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[sp_obtenerUsuarioPorCorreo]    Script Date: 13/02/2025 23:11:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- Crear el procedimiento almacenado con los parámetros correctos
+CREATE PROCEDURE [dbo].[sp_obtenerUsuarioPorCorreo]
+    @Correo NVARCHAR(100)
+AS
+BEGIN
+    SELECT IdUsuario, NombreCompleto, Correo, Clave, Rol
+    FROM Usuario
+    WHERE Correo = @Correo
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_pagarCuotas]    Script Date: 13/02/2025 23:11:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'sp_pagarCuotas')
+    DROP PROCEDURE sp_pagarCuotas;
+GO
+
+CREATE PROCEDURE sp_pagarCuotas
+(
+    @IdPrestamo INT,
+    @NroCuotasPagadas VARCHAR(100),
+    @NumeroTarjeta VARCHAR(16),
+    @msgError VARCHAR(100) OUTPUT
+)
+AS
+BEGIN
+    SET DATEFORMAT dmy;
+    SET @msgError = '';
+
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        DECLARE @IdCliente INT;
+        DECLARE @TotalPagar DECIMAL(18, 2);
+
+        -- Obtener el IdCliente y el total a pagar
+        SELECT @IdCliente = p.IdCliente,
+               @TotalPagar = SUM(pd.MontoCuota)
+        FROM Prestamo p
+        INNER JOIN PrestamoDetalle pd ON p.IdPrestamo = pd.IdPrestamo
+        INNER JOIN dbo.SplitString(@NroCuotasPagadas, ',') ss ON ss.valor = pd.NroCuota
+        WHERE p.IdPrestamo = @IdPrestamo
+        GROUP BY p.IdCliente;
+
+        -- Verificar el saldo de la cuenta
+        DECLARE @SaldoCuenta DECIMAL(18, 2);
+        DECLARE @Tarjeta NVARCHAR(16);
+
+        SELECT @SaldoCuenta = c.Monto, @Tarjeta = c.Tarjeta
+        FROM Cuenta c
+        WHERE c.IdCliente = @IdCliente;
+
+        IF @Tarjeta != @NumeroTarjeta
+        BEGIN
+            SET @msgError = 'Número de tarjeta incorrecto';
+            ROLLBACK TRANSACTION;
+            RETURN;
+        END
+
+        IF @SaldoCuenta < @TotalPagar
+        BEGIN
+            SET @msgError = 'Fondos insuficientes';
+            ROLLBACK TRANSACTION;
+            RETURN;
+        END
+
+        -- Actualizar el saldo de la cuenta
+        UPDATE Cuenta
+        SET Monto = Monto - @TotalPagar
+        WHERE IdCliente = @IdCliente;
+
+        -- Actualizar el estado de las cuotas
+        UPDATE pd
+        SET pd.Estado = 'Cancelado', FechaPagado = GETDATE()
+        FROM PrestamoDetalle pd
+        INNER JOIN dbo.SplitString(@NroCuotasPagadas, ',') ss ON ss.valor = pd.NroCuota
+        WHERE IdPrestamo = @IdPrestamo;
+
+        -- Actualizar el estado del préstamo si todas las cuotas están pagadas
+        IF (SELECT COUNT(IdPrestamoDetalle) FROM PrestamoDetalle WHERE IdPrestamo = @IdPrestamo AND Estado = 'Pendiente') = 0
+        BEGIN
+            UPDATE Prestamo
+            SET Estado = 'Cancelado'
+            WHERE IdPrestamo = @IdPrestamo;
+        END
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+		SET @msgError = 'Error en sp_pagarCuotas: ' + ERROR_MESSAGE() + ' | IdPrestamo: ' + CAST(@IdPrestamo AS VARCHAR) + ' | NroCuotasPagadas: ' + @NroCuotasPagadas + ' | NumeroTarjeta: ' + @NumeroTarjeta;
+    END CATCH;
+END;
+
+
+
 -- PROCEDIMIENTO PARA RESUMEN
 
 GO
@@ -369,3 +467,52 @@ select
 end
 
 GO
+
+-- Procedimiento para obtener cuenta
+CREATE PROCEDURE sp_obtenerCuenta
+    @IdCliente INT
+AS
+BEGIN
+    SELECT IdCuenta, IdCliente, Tarjeta, Monto
+    FROM Cuenta
+    WHERE IdCliente = @IdCliente
+END
+GO
+
+-- Procedimiento para depositar
+CREATE PROCEDURE sp_depositarCuenta
+    @IdCliente INT,
+    @Monto DECIMAL(18,2),
+    @msgError VARCHAR(100) OUTPUT
+AS
+BEGIN
+    SET @msgError = ''
+    
+    BEGIN TRY
+        BEGIN TRANSACTION
+            
+            IF NOT EXISTS (SELECT 1 FROM Cuenta WHERE IdCliente = @IdCliente)
+            BEGIN
+                SET @msgError = 'No se encontró la cuenta del cliente'
+                ROLLBACK
+                RETURN
+            END
+            
+            IF @Monto <= 0
+            BEGIN
+                SET @msgError = 'El monto debe ser mayor a 0'
+                ROLLBACK
+                RETURN
+            END
+            
+            UPDATE Cuenta
+            SET Monto = Monto + @Monto
+            WHERE IdCliente = @IdCliente
+            
+        COMMIT TRANSACTION
+    END TRY
+    BEGIN CATCH
+        SET @msgError = ERROR_MESSAGE()
+        ROLLBACK TRANSACTION
+    END CATCH
+END

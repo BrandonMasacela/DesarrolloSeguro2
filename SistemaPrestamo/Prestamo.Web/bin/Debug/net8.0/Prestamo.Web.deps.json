@@ -371,13 +371,14 @@
       "System.Text.Encodings.Web/4.5.0": {},
       "Prestamo.Data/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.2",
           "Microsoft.Extensions.Options": "8.0.2",
           "Prestamo.Entidades": "1.0.0",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
           "Prestamo.Data.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -385,7 +386,7 @@
       "Prestamo.Entidades/1.0.0": {
         "runtime": {
           "Prestamo.Entidades.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

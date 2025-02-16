@@ -70,6 +70,7 @@ wwwroot\lib\select2\js\select2.min.js
 wwwroot\lib\sweetAlert2\js\sweetalert2.js
 wwwroot\views\Cliente.js
 wwwroot\views\Cobrar.js
+wwwroot\views\Cuenta.js
 wwwroot\views\Home.js
 wwwroot\views\Moneda.js
 wwwroot\views\NuevoPrestamo.js

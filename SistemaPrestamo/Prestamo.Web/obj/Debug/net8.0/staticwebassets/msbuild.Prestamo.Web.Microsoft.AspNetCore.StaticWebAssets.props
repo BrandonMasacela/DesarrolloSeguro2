@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1og25pym0p</Fingerprint>
-      <Integrity>4YkZXKpufl0NmzmWG9dr0QHm2bwGZuhZVN9IIQpRBP4=</Integrity>
+      <Fingerprint>uvt12v7tqr</Fingerprint>
+      <Integrity>duS08A9B3zPPuw45udG36wzfGHO3eqjqeTTUhWtQ8eg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scripts.js'))</OriginalItemSpec>
@@ -1308,11 +1308,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>sxav3ho5ee</Fingerprint>
-      <Integrity>4C+Br1Kc7TnhPxG+FcSUWOrJAutx6usIgZ0oLCQNTBU=</Integrity>
+      <Fingerprint>et3dl25yqz</Fingerprint>
+      <Integrity>kqGezvKz5MBT9eVopwJ01t+S+mnraXEEq4/6ECgpk0M=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Cobrar.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Cuenta.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Prestamo.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Prestamo.Web</BasePath>
+      <RelativePath>views/Cuenta.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ls0f2syzcj</Fingerprint>
+      <Integrity>xcPCgDEtd0xWXn0mNzHoqOt9LjR/4WAlCWI2u3HreOE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Cuenta.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Home.js'))">
       <SourceType>Package</SourceType>
