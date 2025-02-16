@@ -183,6 +183,7 @@ $("#btnRegistrarPago").on("click", function () {
         inputAttributes: {
             autocapitalize: 'off'
         },
+        cancleButtonText: 'Cancelar',
         showCancelButton: true,
         confirmButtonText: 'Pagar',
         showLoaderOnConfirm: true,

@@ -1,5 +1,6 @@
 using System.Data;
 using System.Data.SqlClient;
+using Microsoft.Extensions.Options;
 using Prestamo.Entidades;
 
 
@@ -7,67 +8,69 @@ namespace Prestamo.Data
 {
     public class CuentaData
     {
-        private readonly string _connectionString;
+        private readonly ConnectionStrings con;
 
-        public CuentaData(string connectionString)
+        public CuentaData(IOptions<ConnectionStrings> options)
         {
-            _connectionString = connectionString;
+            con = options.Value;
         }
 
         public async Task<Cuenta> ObtenerCuenta(int idCliente)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            Cuenta cuenta = null;
+
+            using (var conexion = new SqlConnection(con.CadenaSQL))
             {
-                await connection.OpenAsync();
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_obtenerCuenta", conexion);
+                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                using (SqlCommand cmd = new SqlCommand("sp_obtenerCuenta", connection))
+                using (var dr = await cmd.ExecuteReaderAsync())
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@IdCliente", idCliente);
-
-                    using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
+                    if (await dr.ReadAsync())
                     {
-                        if (await reader.ReadAsync())
+                        //Console.WriteLine($"Valor de FechaCreacion en BD: {dr["FechaCreacion"]}");
+                        cuenta = new Cuenta()
                         {
-                            return new Cuenta
-                            {
-                                IdCuenta = reader.GetInt32(reader.GetOrdinal("IdCuenta")),
-                                IdCliente = reader.GetInt32(reader.GetOrdinal("IdCliente")),
-                                Tarjeta = reader.GetString(reader.GetOrdinal("Tarjeta")),
-                                FechaCreacion = reader.GetDateTime(reader.GetOrdinal("FechaCreacion")),
-                                Monto = reader.GetDecimal(reader.GetOrdinal("Monto"))
-                            };
-                        }
-                        return null;
+                            IdCuenta = Convert.ToInt32(dr["IdCuenta"]),
+                            IdCliente = Convert.ToInt32(dr["IdCliente"]),
+                            Tarjeta = dr["Tarjeta"].ToString()!,
+                            // Manejo más seguro de la fecha
+                            //FechaCreacion = dr["FechaCreacion"] != DBNull.Value
+                            //    ? Convert.ToDateTime(dr["FechaCreacion"])
+                            //    : DateTime.Now,
+                            Monto = Convert.ToDecimal(dr["Monto"])
+                        };
                     }
                 }
             }
+            return cuenta;
         }
 
-        public async Task Depositar(int idCliente, decimal monto)
+        public async Task<string> Depositar(int idCliente, decimal monto)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            string respuesta = "";
+            using (var conexion = new SqlConnection(con.CadenaSQL))
             {
-                await connection.OpenAsync();
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_depositarCuenta", conexion);
+                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+                cmd.Parameters.AddWithValue("@Monto", monto);
+                cmd.Parameters.Add("@msgError", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                using (SqlCommand cmd = new SqlCommand("sp_depositarCuenta", connection))
+                try
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@IdCliente", idCliente);
-                    cmd.Parameters.AddWithValue("@Monto", monto);
-
-                    var msgError = new SqlParameter("@msgError", SqlDbType.VarChar, 100);
-                    msgError.Direction = ParameterDirection.Output;
-                    cmd.Parameters.Add(msgError);
-
                     await cmd.ExecuteNonQueryAsync();
-
-                    if (!string.IsNullOrEmpty(msgError.Value?.ToString()))
-                    {
-                        throw new Exception(msgError.Value.ToString());
-                    }
+                    respuesta = Convert.ToString(cmd.Parameters["@msgError"].Value)!;
+                }
+                catch
+                {
+                    respuesta = "Error al procesar";
                 }
             }
+            return respuesta;
         }
     }
 }

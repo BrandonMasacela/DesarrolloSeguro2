@@ -69,7 +69,13 @@ namespace Prestamo.Web.Controllers
             string mensaje = $"Tu código de verificación es: {codigoVerificacion}";
             await _emailService.EnviarCorreoAsync(correo, asunto, mensaje);
 
+            foreach (var claim in User.Claims)
+            {
+                Console.WriteLine($"Claim Type: {claim.Type}, Value: {claim.Value}");
+            }
+
             return RedirectToAction("VerificarCodigo");
+
         }
 
         public IActionResult VerificarCodigo()
@@ -93,6 +99,7 @@ namespace Prestamo.Web.Controllers
                 {
                     new Claim(ClaimTypes.Name, usuario.NombreCompleto),
                     new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
+                    new Claim(ClaimTypes.Email, usuario.Correo),
                     new Claim(ClaimTypes.Role, usuario.Rol)
                 };
 

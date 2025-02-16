@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5btbNC3Oo1FhTP3TDzeQe8i/xg0tAIbFe2TFAp38nZc=",
+  "Hash": "9dBeV/BYo14+JRDOJdPkzR/vXoP90YSOwNQQwHMW/Z8=",
   "Source": "Prestamo.Web",
   "BasePath": "_content/Prestamo.Web",
   "Mode": "Default",
@@ -1564,8 +1564,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "et3dl25yqz",
-      "Integrity": "kqGezvKz5MBT9eVopwJ01t+S+mnraXEEq4/6ECgpk0M=",
+      "Fingerprint": "gab5xia7sg",
+      "Integrity": "mI6oIIshs7vVkx+2R9YYiJvWbkN1u1R7nZfGkw5JSS0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Cobrar.js"
@@ -1585,8 +1585,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ls0f2syzcj",
-      "Integrity": "xcPCgDEtd0xWXn0mNzHoqOt9LjR/4WAlCWI2u3HreOE=",
+      "Fingerprint": "tr4xuatpfu",
+      "Integrity": "lxMtT+E/IiLq6TQ7Uw4OY+BDkJ0dvNbEflQdqn85o/s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Cuenta.js"
@@ -7664,7 +7664,7 @@
       ]
     },
     {
-      "Route": "views/Cobrar.et3dl25yqz.js",
+      "Route": "views/Cobrar.gab5xia7sg.js",
       "AssetFile": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cobrar.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7674,7 +7674,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8764"
+          "Value": "8802"
         },
         {
           "Name": "Content-Type",
@@ -7682,11 +7682,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kqGezvKz5MBT9eVopwJ01t+S+mnraXEEq4/6ECgpk0M=\""
+          "Value": "\"mI6oIIshs7vVkx+2R9YYiJvWbkN1u1R7nZfGkw5JSS0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 05:51:06 GMT"
+          "Value": "Sun, 16 Feb 2025 18:08:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7696,7 +7696,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "et3dl25yqz"
+          "Value": "gab5xia7sg"
         },
         {
           "Name": "label",
@@ -7704,7 +7704,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kqGezvKz5MBT9eVopwJ01t+S+mnraXEEq4/6ECgpk0M="
+          "Value": "sha256-mI6oIIshs7vVkx+2R9YYiJvWbkN1u1R7nZfGkw5JSS0="
         }
       ]
     },
@@ -7719,7 +7719,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8764"
+          "Value": "8802"
         },
         {
           "Name": "Content-Type",
@@ -7727,11 +7727,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kqGezvKz5MBT9eVopwJ01t+S+mnraXEEq4/6ECgpk0M=\""
+          "Value": "\"mI6oIIshs7vVkx+2R9YYiJvWbkN1u1R7nZfGkw5JSS0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 05:51:06 GMT"
+          "Value": "Sun, 16 Feb 2025 18:08:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7741,7 +7741,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kqGezvKz5MBT9eVopwJ01t+S+mnraXEEq4/6ECgpk0M="
+          "Value": "sha256-mI6oIIshs7vVkx+2R9YYiJvWbkN1u1R7nZfGkw5JSS0="
         }
       ]
     },
@@ -7756,7 +7756,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2621"
+          "Value": "3882"
         },
         {
           "Name": "Content-Type",
@@ -7764,11 +7764,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xcPCgDEtd0xWXn0mNzHoqOt9LjR/4WAlCWI2u3HreOE=\""
+          "Value": "\"lxMtT+E/IiLq6TQ7Uw4OY+BDkJ0dvNbEflQdqn85o/s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 05:29:13 GMT"
+          "Value": "Sun, 16 Feb 2025 18:04:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7778,12 +7778,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xcPCgDEtd0xWXn0mNzHoqOt9LjR/4WAlCWI2u3HreOE="
+          "Value": "sha256-lxMtT+E/IiLq6TQ7Uw4OY+BDkJ0dvNbEflQdqn85o/s="
         }
       ]
     },
     {
-      "Route": "views/Cuenta.ls0f2syzcj.js",
+      "Route": "views/Cuenta.tr4xuatpfu.js",
       "AssetFile": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7793,7 +7793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2621"
+          "Value": "3882"
         },
         {
           "Name": "Content-Type",
@@ -7801,11 +7801,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xcPCgDEtd0xWXn0mNzHoqOt9LjR/4WAlCWI2u3HreOE=\""
+          "Value": "\"lxMtT+E/IiLq6TQ7Uw4OY+BDkJ0dvNbEflQdqn85o/s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 05:29:13 GMT"
+          "Value": "Sun, 16 Feb 2025 18:04:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7815,7 +7815,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ls0f2syzcj"
+          "Value": "tr4xuatpfu"
         },
         {
           "Name": "label",
@@ -7823,7 +7823,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xcPCgDEtd0xWXn0mNzHoqOt9LjR/4WAlCWI2u3HreOE="
+          "Value": "sha256-lxMtT+E/IiLq6TQ7Uw4OY+BDkJ0dvNbEflQdqn85o/s="
         }
       ]
     },

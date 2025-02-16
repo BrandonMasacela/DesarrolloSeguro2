@@ -14,12 +14,8 @@ builder.Services.AddSingleton<ClienteData>();
 builder.Services.AddSingleton<PrestamoData>();
 builder.Services.AddSingleton<ResumenData>();
 builder.Services.AddSingleton<UsuarioData>();
-// Registrar CuentaData con la cadena de conexión
-builder.Services.AddSingleton<CuentaData>(provider =>
-{
-    var connectionStrings = provider.GetRequiredService<IOptions<ConnectionStrings>>().Value;
-    return new CuentaData(connectionStrings.CadenaSQL);
-});
+// Registrar CuentaData con la cadena de conexiÃ³n
+builder.Services.AddSingleton<CuentaData>();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(option =>
@@ -29,7 +25,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 builder.Services.AddAuthorization();
 
-// Configurar sesión
+// Configurar sesiÃ³n
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -55,7 +51,9 @@ app.UseAuthorization();
 app.UseSession();
 
 app.MapControllerRoute(
+    //name: "default",
+    //pattern: "{controller=Login}/{action=Index}/{id?}");
     name: "default",
-    pattern: "{controller=Login}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

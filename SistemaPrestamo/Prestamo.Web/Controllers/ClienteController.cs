@@ -52,36 +52,24 @@ namespace Prestamo.Web.Controllers
         }
 
         [Authorize(Roles = "Cliente")]
-        public IActionResult Cuenta()
+        public async Task<IActionResult> Cuenta()
         {
-            var idCliente = User.FindFirst("IdCliente")?.Value;
-            if (string.IsNullOrEmpty(idCliente))
+            var correo = User.FindFirst(ClaimTypes.Email)?.Value;
+            Console.WriteLine(correo);
+            if (string.IsNullOrEmpty(correo))
             {
                 return RedirectToAction("Index", "Home");
             }
 
-            var modelo = new CuentaViewModel
+            var cliente = await _clienteData.ObtenerPorCorreo(correo);
+            if (cliente == null)
             {
-                IdCliente = int.Parse(idCliente)
-            };
+                return RedirectToAction("Index", "Home");
+            }
 
-            return View(modelo);
+            return RedirectToAction("Index", "Cuenta", new { idCliente = cliente.IdCliente });
         }
 
-        [HttpGet]
-        [Authorize(Roles = "Cliente")]
-        public async Task<IActionResult> ObtenerCuenta(int idCliente)
-        {
-            try
-            {
-                var cuenta = await _cuentaData.ObtenerCuenta(idCliente);
-                return Json(new { data = cuenta });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { data = "Error al obtener los datos de la cuenta: " + ex.Message });
-            }
-        }
 
         [HttpPost]
         [Authorize(Roles = "Cliente")]
@@ -89,19 +77,21 @@ namespace Prestamo.Web.Controllers
         {
             try
             {
-                await _cuentaData.Depositar(request.IdCliente, request.Monto);
-                return Json(new { data = "" });
+                var resultado = await _cuentaData.Depositar(request.IdCliente, request.Monto);
+                if (string.IsNullOrEmpty(resultado))
+                {
+                    return Json(new { success = true });
+                }
+                else
+                {
+                    return Json(new { success = false, error = resultado });
+                }
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { data = "Error al realizar el depósito: " + ex.Message });
+                return StatusCode(500, new { success = false, error = ex.Message });
             }
         }
-    }
-
-    public class CuentaViewModel
-    {
-        public int IdCliente { get; set; }
     }
 
     public class DepositoRequest

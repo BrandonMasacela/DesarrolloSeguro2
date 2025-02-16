@@ -1308,8 +1308,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>et3dl25yqz</Fingerprint>
-      <Integrity>kqGezvKz5MBT9eVopwJ01t+S+mnraXEEq4/6ECgpk0M=</Integrity>
+      <Fingerprint>gab5xia7sg</Fingerprint>
+      <Integrity>mI6oIIshs7vVkx+2R9YYiJvWbkN1u1R7nZfGkw5JSS0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Cobrar.js'))</OriginalItemSpec>
@@ -1326,8 +1326,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ls0f2syzcj</Fingerprint>
-      <Integrity>xcPCgDEtd0xWXn0mNzHoqOt9LjR/4WAlCWI2u3HreOE=</Integrity>
+      <Fingerprint>tr4xuatpfu</Fingerprint>
+      <Integrity>lxMtT+E/IiLq6TQ7Uw4OY+BDkJ0dvNbEflQdqn85o/s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Cuenta.js'))</OriginalItemSpec>

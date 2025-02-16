@@ -242,29 +242,39 @@ namespace Prestamo.Data
         public async Task<Cliente> ObtenerPorCorreo(string correo)
         {
             Cliente cliente = null;
-            Console.WriteLine(correo);
+
+            // Validación del parámetro
+            if (string.IsNullOrEmpty(correo))
+            {
+                throw new ArgumentException("El correo no puede estar vacío");
+            }
 
             using (var conexion = new SqlConnection(con.CadenaSQL))
             {
                 await conexion.OpenAsync();
-                SqlCommand cmd = new SqlCommand("sp_obtenerClientePorCorreo", conexion);
-                cmd.Parameters.AddWithValue("@Correo", correo);
-                cmd.CommandType = CommandType.StoredProcedure;
 
-                using (var dr = await cmd.ExecuteReaderAsync())
+                using (SqlCommand cmd = new SqlCommand("sp_obtenerClientePorCorreo", conexion))
                 {
-                    if (await dr.ReadAsync())
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Asegurarse de que el parámetro no sea null
+                    cmd.Parameters.AddWithValue("@Correo", correo ?? string.Empty);
+
+                    using (var dr = await cmd.ExecuteReaderAsync())
                     {
-                        cliente = new Cliente()
+                        if (await dr.ReadAsync())
                         {
-                            IdCliente = Convert.ToInt32(dr["IdCliente"]),
-                            NroDocumento = dr["NroDocumento"].ToString()!,
-                            Nombre = dr["Nombre"].ToString()!,
-                            Apellido = dr["Apellido"].ToString()!,
-                            Correo = dr["Correo"].ToString()!,
-                            Telefono = dr["Telefono"].ToString()!,
-                            FechaCreacion = dr["FechaCreacion"].ToString()!
-                        };
+                            cliente = new Cliente()
+                            {
+                                IdCliente = Convert.ToInt32(dr["IdCliente"]),
+                                NroDocumento = dr["NroDocumento"].ToString(),
+                                Nombre = dr["Nombre"].ToString(),
+                                Apellido = dr["Apellido"].ToString(),
+                                Correo = dr["Correo"].ToString(),
+                                Telefono = dr["Telefono"].ToString(),
+                                FechaCreacion = dr["FechaCreacion"].ToString()
+                            };
+                        }
                     }
                 }
             }
