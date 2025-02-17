@@ -55,7 +55,7 @@ namespace Prestamo.Web.Controllers
                 NombreCompleto = nombreCompleto,
                 Correo = correo,
                 Clave = hashedClave,
-                Rol = "Usuario" // Asignar rol automáticamente
+                Rol = "Administrador" // Asignar rol automáticamente
             };
 
             bool usuarioCreado = await _usuarioData.Crear(nuevoUsuario);

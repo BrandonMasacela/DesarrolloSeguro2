@@ -1,32 +1,26 @@
-use DBPrestamo
+USE DBPrestamo
+GO
 
-go
---- CONFIGURACION ---
-
-create FUNCTION [dbo].[SplitString]  ( 
-	@string NVARCHAR(MAX), 
-	@delimiter CHAR(1)  
+--- FUNCIÃ“N SPLITSTRING ---
+CREATE FUNCTION [dbo].[SplitString] ( 
+    @string NVARCHAR(MAX), 
+    @delimiter CHAR(1)  
 )
-RETURNS
-@output TABLE(valor NVARCHAR(MAX)  ) 
+RETURNS @output TABLE(valor NVARCHAR(MAX))
 BEGIN 
-	DECLARE @start INT, @end INT 
-	SELECT @start = 1, @end = CHARINDEX(@delimiter, @string) 
-	WHILE @start < LEN(@string) + 1
-	BEGIN 
-		IF @end = 0  
-        SET @end = LEN(@string) + 1 
-
-		INSERT INTO @output (valor)  
-		VALUES(SUBSTRING(@string, @start, @end - @start)) 
-		SET @start = @end + 1 
-		SET @end = CHARINDEX(@delimiter, @string, @start) 
-	END 
-	RETURN
+    DECLARE @start INT, @end INT 
+    SELECT @start = 1, @end = CHARINDEX(@delimiter, @string) 
+    WHILE @start < LEN(@string) + 1 BEGIN 
+        IF @end = 0 SET @end = LEN(@string) + 1 
+        INSERT INTO @output VALUES(SUBSTRING(@string, @start, @end - @start)) 
+        SET @start = @end + 1 
+        SET @end = CHARINDEX(@delimiter, @string, @start) 
+    END 
+    RETURN
 END
+GO
 
-go
-
+--- PROCEDIMIENTOS DE USUARIO ---
 CREATE PROCEDURE [dbo].[sp_crearUsuario]
     @NombreCompleto NVARCHAR(100),
     @Correo NVARCHAR(100),
@@ -39,107 +33,130 @@ BEGIN
 END
 GO
 
-create procedure sp_obtenerUsuario(
-@Correo varchar(50),
-@Clave varchar(50)
-)
-as
-begin
-	select IdUsuario,NombreCompleto,Correo from Usuario where 
-	Correo = @Correo COLLATE SQL_Latin1_General_CP1_CS_AS and
-	Clave = @Clave COLLATE SQL_Latin1_General_CP1_CS_AS
-end
+CREATE PROCEDURE [dbo].[sp_obtenerUsuario]
+    @Correo VARCHAR(50),
+    @Clave VARCHAR(50)
+AS
+BEGIN
+    SELECT 
+        IdUsuario,
+        NombreCompleto,
+        Correo 
+    FROM Usuario 
+    WHERE 
+        Correo = @Correo COLLATE SQL_Latin1_General_CP1_CS_AS AND
+        Clave = @Clave COLLATE SQL_Latin1_General_CP1_CS_AS
+END
+GO
 
-go
+CREATE PROCEDURE [dbo].[sp_obtenerUsuarioPorCorreo]
+    @Correo NVARCHAR(100)
+AS
+BEGIN
+    SELECT 
+        IdUsuario, 
+        NombreCompleto, 
+        Correo, 
+        Clave, 
+        Rol
+    FROM Usuario
+    WHERE Correo = @Correo
+END
+GO
 
--- PROCEDMIENTOS PARA MONEDA 
+--- PROCEDIMIENTOS DE MONEDA ---
+CREATE PROCEDURE [dbo].[sp_listaMoneda]
+AS
+BEGIN
+    SELECT 
+        IdMoneda,
+        Nombre,
+        Simbolo,
+        CONVERT(CHAR(10), FechaCreacion, 103) [FechaCreacion] 
+    FROM Moneda
+END
+GO
 
-create procedure sp_listaMoneda
-as
-begin
-	select IdMoneda,Nombre,Simbolo,convert(char(10),FechaCreacion,103)[FechaCreacion] from Moneda
-end
+CREATE PROCEDURE [dbo].[sp_crearMoneda]
+    @Nombre VARCHAR(50),
+    @Simbolo VARCHAR(50),
+    @msgError VARCHAR(100) OUTPUT
+AS
+BEGIN
+    SET @msgError = ''
+    IF NOT EXISTS(SELECT * FROM Moneda WHERE Nombre = @Nombre COLLATE SQL_Latin1_General_CP1_CS_AS)
+        INSERT INTO Moneda(Nombre, Simbolo) 
+        VALUES(@Nombre, @Simbolo)
+    ELSE
+        SET @msgError = 'La moneda ya existe'
+END
+GO
 
-go
+CREATE PROCEDURE [dbo].[sp_editarMoneda]
+    @IdMoneda INT,
+    @Nombre VARCHAR(50),
+    @Simbolo VARCHAR(50),
+    @msgError VARCHAR(100) OUTPUT
+AS
+BEGIN
+    SET @msgError = ''
+    IF NOT EXISTS(SELECT * FROM Moneda WHERE Nombre = @Nombre COLLATE SQL_Latin1_General_CP1_CS_AS AND IdMoneda != @IdMoneda)
+        UPDATE Moneda 
+        SET Nombre = @Nombre, Simbolo = @Simbolo 
+        WHERE IdMoneda = @IdMoneda
+    ELSE
+        SET @msgError = 'La moneda ya existe'
+END
+GO
 
-create procedure sp_crearMoneda(
-@Nombre varchar(50),
-@Simbolo varchar(50),
-@msgError varchar(100) OUTPUT
-)
-as
-begin
+CREATE PROCEDURE [dbo].[sp_eliminarMoneda]
+    @IdMoneda INT,
+    @msgError VARCHAR(100) OUTPUT
+AS
+BEGIN
+    SET @msgError = ''
+    IF NOT EXISTS(SELECT IdPrestamo FROM Prestamo WHERE IdMoneda = @IdMoneda)
+        DELETE FROM Moneda 
+        WHERE IdMoneda = @IdMoneda
+    ELSE
+        SET @msgError = 'La moneda estÃ¡ utilizada en un prÃ©stamo'
+END
+GO
 
-	set @msgError = ''
-	if(not exists(select * from Moneda where 
-		Nombre = @Nombre COLLATE SQL_Latin1_General_CP1_CS_AS
-	))
-		insert into Moneda(Nombre,Simbolo) values(@Nombre,@Simbolo)
-	else
-		set @msgError = 'La moneda ya existe'
-end
+--- PROCEDIMIENTOS DE CLIENTE ---
+CREATE PROCEDURE [dbo].[sp_listaCliente]
+AS
+BEGIN
+    SELECT 
+        IdCliente,
+        NroDocumento,
+        Nombre,
+        Apellido,
+        Correo,
+        Telefono,
+        CONVERT(CHAR(10), FechaCreacion, 103) [FechaCreacion] 
+    FROM Cliente
+END
+GO
 
-go
+CREATE PROCEDURE [dbo].[sp_obtenerCliente]
+    @NroDocumento VARCHAR(50)
+AS
+BEGIN
+    SELECT 
+        IdCliente,
+        NroDocumento,
+        Nombre,
+        Apellido,
+        Correo,
+        Telefono,
+        CONVERT(CHAR(10), FechaCreacion, 103) [FechaCreacion] 
+    FROM Cliente 
+    WHERE NroDocumento = @NroDocumento
+END
+GO
 
-create procedure sp_editarMoneda(
-@IdMoneda int,
-@Nombre varchar(50),
-@Simbolo varchar(50),
-@msgError varchar(100) OUTPUT
-)
-as
-begin
-
-	set @msgError = ''
-	if(not exists(select * from Moneda where 
-		Nombre = @Nombre COLLATE SQL_Latin1_General_CP1_CS_AS and
-		IdMoneda != @IdMoneda
-	))
-		update Moneda set Nombre = @Nombre ,Simbolo = @Simbolo where IdMoneda = @IdMoneda
-	else
-		set @msgError = 'La moneda ya existe'
-end
-
-go
-
-create procedure sp_eliminarMoneda(
-@IdMoneda int,
-@msgError varchar(100) OUTPUT
-)
-as
-begin
-
-	set @msgError = ''
-	if(not exists(select IdPrestamo from Prestamo where IdMoneda = @IdMoneda))
-		delete from Moneda where IdMoneda = @IdMoneda
-	else
-		set @msgError = 'La moneda esta utilizada en un prestamo, no se puede eliminar'
-end
-
-go
-
--- PROCEDMIENTOS PARA CLIENTE
-
-create procedure sp_listaCliente
-as
-begin
-	select IdCliente,NroDocumento,Nombre,Apellido,Correo,Telefono,convert(char(10),FechaCreacion,103)[FechaCreacion] from Cliente
-end
-
-go
-
-create procedure sp_obtenerCliente(
-@NroDocumento varchar(50)
-)
-as
-begin
-	select IdCliente,NroDocumento,Nombre,Apellido,Correo,Telefono,convert(char(10),FechaCreacion,103)[FechaCreacion] from Cliente
-	where NroDocumento = @NroDocumento
-end
-
-go
-
-CREATE PROCEDURE sp_crearCliente(
+CREATE PROCEDURE [dbo].[sp_crearCliente]
     @NroDocumento VARCHAR(50),
     @Nombre VARCHAR(50),
     @Apellido VARCHAR(50),
@@ -147,97 +164,101 @@ CREATE PROCEDURE sp_crearCliente(
     @Telefono VARCHAR(50),
     @IdCliente INT OUTPUT,
     @msgError VARCHAR(100) OUTPUT
-)
 AS
 BEGIN
     SET NOCOUNT ON;
     SET @msgError = '';
-
     BEGIN TRY
-        IF NOT EXISTS (SELECT * FROM Cliente WHERE NroDocumento = @NroDocumento)
-        BEGIN
+        IF NOT EXISTS(SELECT * FROM Cliente WHERE NroDocumento = @NroDocumento) BEGIN
             INSERT INTO Cliente (NroDocumento, Nombre, Apellido, Correo, Telefono, FechaCreacion)
-            VALUES (@NroDocumento, @Nombre, @Apellido, @Correo, @Telefono, GETDATE());
-
-            -- Obtener el IdCliente generado
+            VALUES (@NroDocumento, @Nombre, @Apellido, @Correo, @Telefono, GETDATE())
             SET @IdCliente = SCOPE_IDENTITY();
-        END
-        ELSE
-        BEGIN
-            SET @msgError = 'El cliente ya existe';
-        END
+        END ELSE
+            SET @msgError = 'El cliente ya existe'
     END TRY
     BEGIN CATCH
-        SET @msgError = ERROR_MESSAGE();
+        SET @msgError = ERROR_MESSAGE()
     END CATCH
 END
-go
+GO
 
+CREATE PROCEDURE [dbo].[sp_editarCliente]
+    @IdCliente INT,
+    @NroDocumento VARCHAR(50),
+    @Nombre VARCHAR(50),
+    @Apellido VARCHAR(50),
+    @Correo VARCHAR(50),
+    @Telefono VARCHAR(50),
+    @msgError VARCHAR(100) OUTPUT
+AS
+BEGIN
+    SET @msgError = ''
+    IF NOT EXISTS(SELECT * FROM Cliente WHERE NroDocumento = @NroDocumento AND IdCliente != @IdCliente)
+        UPDATE Cliente 
+        SET 
+            NroDocumento = @NroDocumento,
+            Nombre = @Nombre,
+            Apellido = @Apellido,
+            Correo = @Correo,
+            Telefono = @Telefono 
+        WHERE IdCliente = @IdCliente
+    ELSE
+        SET @msgError = 'El cliente ya existe'
+END
+GO
 
-create procedure sp_editarCliente(
-@IdCliente int,
-@NroDocumento varchar(50),
-@Nombre varchar(50),
-@Apellido varchar(50),
-@Correo varchar(50),
-@Telefono varchar(50),
-@msgError varchar(100) OUTPUT
-)
-as
-begin
+CREATE PROCEDURE [dbo].[sp_eliminarCliente]
+    @IdCliente INT,
+    @msgError VARCHAR(100) OUTPUT
+AS
+BEGIN
+    SET @msgError = ''
+    IF NOT EXISTS(SELECT IdPrestamo FROM Prestamo WHERE IdCliente = @IdCliente)
+        DELETE FROM Cliente 
+        WHERE IdCliente = @IdCliente
+    ELSE
+        SET @msgError = 'El cliente tiene prÃ©stamos asociados'
+END
+GO
 
-	set @msgError = ''
-	if(not exists(select * from Cliente where 
-		NroDocumento = @NroDocumento and IdCliente != @IdCliente
-	))
-		update Cliente set NroDocumento = @NroDocumento,Nombre = @Nombre,Apellido = @Apellido,Correo = @Correo,Telefono = @Telefono 
-		where IdCliente = @IdCliente
-	else
-		set @msgError = 'El cliente ya existe'
-end
+CREATE PROCEDURE [dbo].[sp_obtenerClientePorCorreo]
+    @Correo NVARCHAR(100)
+AS
+BEGIN
+    SELECT 
+        IdCliente,
+        NroDocumento,
+        Nombre,
+        Apellido,
+        Correo,
+        Telefono,
+        FechaCreacion
+    FROM Cliente 
+    WHERE Correo = @Correo
+END
+GO
 
-go
-
-create procedure sp_eliminarCliente(
-@IdCliente int,
-@msgError varchar(100) OUTPUT
-)
-as
-begin
-
-	set @msgError = ''
-	if(not exists(select IdPrestamo from Prestamo where IdCliente = @IdCliente))
-		delete from Cliente where IdCliente = @IdCliente
-	else
-		set @msgError = 'El cliente tiene historial de prestamo, no se puede eliminar'
-end
-
-go
-
-
--- PROCEDIMIENTOS PARA PRESTAMOS
-
-create procedure sp_crearPrestamo(
-@IdCliente int,
-@NroDocumento varchar(50),
-@Nombre varchar(50),
-@Apellido varchar(50),
-@Correo varchar(50),
-@Telefono varchar(50),
-@IdMoneda int,
-@FechaInicio varchar(50),
-@MontoPrestamo varchar(50),
-@InteresPorcentaje varchar(50),
-@NroCuotas int,
-@FormaDePago varchar(50),
-@ValorPorCuota varchar(50),
-@ValorInteres varchar(50),
-@ValorTotal varchar(50),
-@msgError varchar(100) OUTPUT
-)
-as
-begin
-	set dateformat dmy
+--- PROCEDIMIENTOS DE PRÃ‰STAMOS ---
+CREATE PROCEDURE [dbo].[sp_crearPrestamo]
+    @IdCliente INT,
+    @NroDocumento VARCHAR(50),
+    @Nombre VARCHAR(50),
+    @Apellido VARCHAR(50),
+    @Correo VARCHAR(50),
+    @Telefono VARCHAR(50),
+    @IdMoneda INT,
+    @FechaInicio VARCHAR(50),
+    @MontoPrestamo VARCHAR(50),
+    @InteresPorcentaje VARCHAR(50),
+    @NroCuotas INT,
+    @FormaDePago VARCHAR(50),
+    @ValorPorCuota VARCHAR(50),
+    @ValorInteres VARCHAR(50),
+    @ValorTotal VARCHAR(50),
+    @msgError VARCHAR(100) OUTPUT
+AS
+BEGIN
+    set dateformat dmy
 	set @msgError = ''
 
 	begin try
@@ -302,17 +323,15 @@ begin
 		rollback transaction
 		set @msgError = ERROR_MESSAGE()
 	end catch
-	
-end
+END
+GO
 
-go
-
-create procedure sp_obtenerPrestamos(
-@IdPrestamo int = 0,
-@NroDocumento varchar(50) = ''
-)as
-begin
-	select p.IdPrestamo,
+CREATE PROCEDURE [dbo].[sp_obtenerPrestamos]
+    @IdPrestamo INT = 0,
+    @NroDocumento VARCHAR(50) = ''
+AS
+BEGIN
+    select p.IdPrestamo,
 	c.IdCliente,c.NroDocumento,c.Nombre,c.Apellido,c.Correo,c.Telefono,
 	m.IdMoneda,m.Nombre[NombreMoneda],m.Simbolo,
 	CONVERT(char(10),p.FechaInicioPago, 103) [FechaInicioPago],
@@ -339,58 +358,14 @@ begin
 	where p.IdPrestamo = iif(@IdPrestamo = 0,p.idprestamo,@IdPrestamo) and
 	c.NroDocumento = iif(@NroDocumento = '',c.NroDocumento,@NroDocumento)
 	FOR XML PATH('Prestamo'), ROOT('Prestamos'), TYPE;
-end
-
-
-go
-  
-
-create procedure [dbo].[sp_obtenerUsuario](
-@Correo varchar(50),
-@Clave varchar(50)
-)
-as
-begin
-	select IdUsuario,NombreCompleto,Correo from Usuario where 
-	Correo = @Correo COLLATE SQL_Latin1_General_CP1_CS_AS and
-	Clave = @Clave COLLATE SQL_Latin1_General_CP1_CS_AS
-end
-
-
-GO
-/****** Object:  StoredProcedure [dbo].[sp_obtenerUsuarioPorCorreo]    Script Date: 13/02/2025 23:11:02 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-
--- Crear el procedimiento almacenado con los parámetros correctos
-CREATE PROCEDURE [dbo].[sp_obtenerUsuarioPorCorreo]
-    @Correo NVARCHAR(100)
-AS
-BEGIN
-    SELECT IdUsuario, NombreCompleto, Correo, Clave, Rol
-    FROM Usuario
-    WHERE Correo = @Correo
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_pagarCuotas]    Script Date: 13/02/2025 23:11:02 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
 
-IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'sp_pagarCuotas')
-    DROP PROCEDURE sp_pagarCuotas;
-GO
-
-CREATE PROCEDURE sp_pagarCuotas
-(
+CREATE PROCEDURE [dbo].[sp_pagarCuotas]
     @IdPrestamo INT,
     @NroCuotasPagadas VARCHAR(100),
     @NumeroTarjeta VARCHAR(16),
     @msgError VARCHAR(100) OUTPUT
-)
 AS
 BEGIN
     SET DATEFORMAT dmy;
@@ -421,7 +396,7 @@ BEGIN
 
         IF @Tarjeta != @NumeroTarjeta
         BEGIN
-            SET @msgError = 'Número de tarjeta incorrecto';
+            SET @msgError = 'NÃºmero de tarjeta incorrecto';
             ROLLBACK TRANSACTION;
             RETURN;
         END
@@ -445,7 +420,7 @@ BEGIN
         INNER JOIN dbo.SplitString(@NroCuotasPagadas, ',') ss ON ss.valor = pd.NroCuota
         WHERE IdPrestamo = @IdPrestamo;
 
-        -- Actualizar el estado del préstamo si todas las cuotas están pagadas
+        -- Actualizar el estado del prÃ©stamo si todas las cuotas estÃ¡n pagadas
         IF (SELECT COUNT(IdPrestamoDetalle) FROM PrestamoDetalle WHERE IdPrestamo = @IdPrestamo AND Estado = 'Pendiente') = 0
         BEGIN
             UPDATE Prestamo
@@ -459,39 +434,25 @@ BEGIN
         ROLLBACK TRANSACTION;
 		SET @msgError = 'Error en sp_pagarCuotas: ' + ERROR_MESSAGE() + ' | IdPrestamo: ' + CAST(@IdPrestamo AS VARCHAR) + ' | NroCuotasPagadas: ' + @NroCuotasPagadas + ' | NumeroTarjeta: ' + @NumeroTarjeta;
     END CATCH;
-END;
-
-
-
--- PROCEDIMIENTO PARA RESUMEN
-
+END
 GO
 
-create PROCEDURE sp_obtenerResumen
-as
-begin
-select 
-(select convert(varchar,count(*)) from Cliente) [TotalClientes],
-(select convert(varchar,count(*)) from Prestamo where Estado = 'Pendiente')[PrestamosPendientes],
-(select convert(varchar,count(*)) from Prestamo where Estado = 'Cancelado')[PrestamosCancelados],
-(select convert(varchar,isnull(sum(ValorInteres),0)) from Prestamo where Estado = 'Cancelado')[InteresAcumulado]
-end
-
-GO
-
--- Procedimiento para obtener cuenta
-CREATE PROCEDURE sp_obtenerCuenta
+--- PROCEDIMIENTOS DE CUENTAS ---
+CREATE PROCEDURE [dbo].[sp_obtenerCuenta]
     @IdCliente INT
 AS
 BEGIN
-    SELECT IdCuenta, IdCliente, Tarjeta, Monto
-    FROM Cuenta
+    SELECT 
+        IdCuenta, 
+        IdCliente, 
+        Tarjeta, 
+        Monto 
+    FROM Cuenta 
     WHERE IdCliente = @IdCliente
 END
 GO
 
--- Procedimiento para depositar
-CREATE PROCEDURE sp_depositarCuenta
+CREATE PROCEDURE [dbo].[sp_depositarCuenta]
     @IdCliente INT,
     @Monto DECIMAL(18,2),
     @msgError VARCHAR(100) OUTPUT
@@ -504,7 +465,7 @@ BEGIN
             
             IF NOT EXISTS (SELECT 1 FROM Cuenta WHERE IdCliente = @IdCliente)
             BEGIN
-                SET @msgError = 'No se encontró la cuenta del cliente'
+                SET @msgError = 'No se encontrÃ³ la cuenta del cliente'
                 ROLLBACK
                 RETURN
             END
@@ -527,8 +488,9 @@ BEGIN
         ROLLBACK TRANSACTION
     END CATCH
 END
+GO
 
-CREATE PROCEDURE sp_crearCuenta
+CREATE PROCEDURE [dbo].[sp_crearCuenta]
     @IdCliente INT,
     @Tarjeta VARCHAR(16),
     @Monto DECIMAL(18, 2),
@@ -542,7 +504,7 @@ BEGIN
         INSERT INTO Cuenta (IdCliente, Tarjeta, Monto, FechaCreacion)
         VALUES (@IdCliente, @Tarjeta, @Monto, GETDATE());
 
-        -- Establecer el mensaje de error a vacío si la operación es exitosa
+        -- Establecer el mensaje de error a vacÃ­o si la operaciÃ³n es exitosa
         SET @msgError = '';
     END TRY
     BEGIN CATCH
@@ -550,23 +512,16 @@ BEGIN
         SET @msgError = ERROR_MESSAGE();
     END CATCH
 END
+GO
 
-CREATE PROCEDURE sp_obtenerClientePorCorreo
-    @Correo NVARCHAR(100)
+--- PROCEDIMIENTOS DE REPORTES ---
+CREATE PROCEDURE [dbo].[sp_obtenerResumen]
 AS
 BEGIN
-    SET NOCOUNT ON;
-
     SELECT 
-        IdCliente,
-        NroDocumento,
-        Nombre,
-        Apellido,
-        Correo,
-        Telefono,
-        FechaCreacion
-    FROM 
-        Cliente
-    WHERE 
-        Correo = @Correo;
+        (SELECT CONVERT(VARCHAR, COUNT(*)) FROM Cliente) [TotalClientes],
+        (SELECT CONVERT(VARCHAR, COUNT(*)) FROM Prestamo WHERE Estado = 'Pendiente')[PrestamosPendientes],
+        (SELECT CONVERT(VARCHAR, COUNT(*)) FROM Prestamo WHERE Estado = 'Cancelado')[PrestamosCancelados],
+        (SELECT CONVERT(VARCHAR, ISNULL(SUM(ValorInteres), 0)) FROM Prestamo WHERE Estado = 'Cancelado')[InteresAcumulado]
 END
+GO

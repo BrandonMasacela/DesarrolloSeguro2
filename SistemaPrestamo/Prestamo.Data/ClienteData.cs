@@ -77,6 +77,18 @@ namespace Prestamo.Data
             }
             return objeto;
         }
+
+        private string GenerarTarjeta()
+        {
+            string tarjeta = "";
+            Random random = new Random();
+            for (int i = 0; i < 16; i++)
+            {
+                tarjeta += random.Next(0, 9).ToString();
+            }
+            return tarjeta;
+        }
+
         public async Task<string> CrearCuenta(Cuenta cuenta)
         {
             string respuesta = "";
@@ -143,6 +155,7 @@ namespace Prestamo.Data
                 cmd.Parameters.AddWithValue("@Apellido", objeto.Apellido);
                 cmd.Parameters.AddWithValue("@Correo", objeto.Correo);
                 cmd.Parameters.AddWithValue("@Telefono", objeto.Telefono);
+                cmd.Parameters.Add("@IdCliente", SqlDbType.Int).Direction = ParameterDirection.Output;
                 cmd.Parameters.Add("@msgError", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -153,6 +166,9 @@ namespace Prestamo.Data
 
                     if (respuesta == "")
                     {
+                        // Obtener el IdCliente generado
+                        objeto.IdCliente = Convert.ToInt32(cmd.Parameters["@IdCliente"].Value);
+
                         // Generar clave aleatoria
                         string claveAleatoria = usuarioData.GenerarClaveAleatoria(12);
 
@@ -162,7 +178,7 @@ namespace Prestamo.Data
                         // Crear usuario
                         Usuario nuevoUsuario = new Usuario
                         {
-                            NombreCompleto = objeto.Nombre +" "+ objeto.Apellido,
+                            NombreCompleto = objeto.Nombre + " " + objeto.Apellido,
                             Correo = objeto.Correo,
                             Clave = hashedClave,
                             Rol = "Cliente" // Asignar el rol adecuado
@@ -172,13 +188,31 @@ namespace Prestamo.Data
 
                         // Enviar correo con la contraseña
                         string asunto = "Bienvenido a nuestro sistema";
-                        string mensaje = $"Hola {objeto.Nombre +" "+ objeto.Apellido},<br/><br/>Tu cuenta ha sido creada exitosamente. Tu contraseña es: <b>{claveAleatoria}</b><br/><br/>Saludos,<br/>El equipo de Prestamo";
+                        string mensaje = $"Hola {objeto.Nombre + " " + objeto.Apellido},<br/><br/>Tu cuenta ha sido creada exitosamente. Tu contraseña es: <b>{claveAleatoria}</b><br/><br/>Saludos,<br/>El equipo de Prestamo";
                         await emailService.EnviarCorreoAsync(objeto.Correo, asunto, mensaje);
+
+                        // Crear Cuenta
+                        Cuenta nuevaCuenta = new Cuenta
+                        {
+                            IdCliente = objeto.IdCliente,
+                            Tarjeta = GenerarTarjeta(),
+                            Monto = 0
+                        };
+
+                        string respuestaCuenta = await CrearCuenta(nuevaCuenta);
+                        if (!string.IsNullOrEmpty(respuestaCuenta))
+                        {
+                            throw new Exception(respuestaCuenta);
+                        }
+
+                        Console.WriteLine("Cuenta creada");
+                        Console.WriteLine(nuevaCuenta.Tarjeta);
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
-                    respuesta = "Error al procesar";
+                    respuesta = "Error al procesar: " + ex.Message;
+                    Console.WriteLine("Error: " + ex.Message);
                 }
             }
             return respuesta;
