@@ -13,5 +13,9 @@ namespace Prestamo.Entidades
         public string Correo { get; set; } = null!;
         public string Clave { get; set; } = null!;
         public string Rol { get; set; } = null;
+        public int FailedAttempts { get; set; }
+        public DateTime? LastFailedAttempt { get; set; }
+        public DateTime? LockoutEnd { get; set; }
+        public bool IsLocked { get; set; }
     }
 }

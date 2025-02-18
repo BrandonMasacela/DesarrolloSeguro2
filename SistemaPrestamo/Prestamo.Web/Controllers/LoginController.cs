@@ -40,8 +40,34 @@ namespace Prestamo.Web.Controllers
             var usuario = await _usuarioData.ObtenerPorCorreo(correo);
             if (usuario == null)
             {
-                ViewData["Mensaje"] = "Correo electrónico no registrado";
+                ViewData["Mensaje"] = "Usuario no encontrado";
                 return View();
+            }
+
+            // Verificar si el usuario está bloqueado
+            if (usuario.IsLocked)
+            {
+                if (usuario.LockoutEnd > DateTime.UtcNow)
+                {
+                    ViewData["Mensaje"] = "Su cuenta está bloqueada. Por favor, contacte al administrador.";
+                    return View();
+                }
+                else
+                {
+                    // Si el tiempo de bloqueo ha pasado, resetear el estado
+                    await _usuarioData.ResetLockout(usuario.IdUsuario);
+                }
+            }
+
+            // Verificar si hay un bloqueo temporal activo
+            if (usuario.LockoutEnd != null && usuario.LockoutEnd > DateTime.UtcNow)
+            {
+                var tiempoRestante = (usuario.LockoutEnd.Value - DateTime.UtcNow).TotalSeconds;
+                ViewData["Mensaje"] = $"Por favor espere {(int)tiempoRestante} segundos antes de intentar nuevamente.";
+                ViewData["TiempoBloqueado"] = (int)tiempoRestante;
+                return View();
+                
+                
             }
 
             // Verificar la contraseña
@@ -52,12 +78,47 @@ namespace Prestamo.Web.Controllers
             }
 
             bool isPasswordValid = BCrypt.Net.BCrypt.Verify(clave, usuario.Clave);
-            Console.WriteLine(isPasswordValid);
+
             if (!isPasswordValid)
             {
-                ViewData["Mensaje"] = "Contraseña incorrecta";
+                usuario.FailedAttempts++;
+                usuario.LastFailedAttempt = DateTime.UtcNow;
+
+                int tiempoBloqueado = 0;
+                if (usuario.FailedAttempts == 3)
+                {
+                    tiempoBloqueado = 15;
+                    usuario.LockoutEnd = DateTime.UtcNow.AddSeconds(tiempoBloqueado);
+                }
+                else if (usuario.FailedAttempts == 4)
+                {
+                    tiempoBloqueado = 30;
+                    usuario.LockoutEnd = DateTime.UtcNow.AddSeconds(tiempoBloqueado);
+                }
+                else if (usuario.FailedAttempts >= 5)
+                {
+                    usuario.IsLocked = true;
+                    usuario.LockoutEnd = DateTime.MaxValue;
+                    await _usuarioData.UpdateLockoutStatus(usuario);
+                    ViewData["Mensaje"] = "Su cuenta ha sido bloqueada permanentemente. Contacte al administrador.";
+                    return View();
+                }
+
+                await _usuarioData.UpdateLockoutStatus(usuario);
+
+                if (tiempoBloqueado > 0)
+                {
+                    ViewData["Mensaje"] = "Demasiados intentos fallidos. Su cuenta está bloqueada temporalmente.";
+                    ViewData["TiempoBloqueado"] = tiempoBloqueado;
+                    return View();
+                }
+
+                ViewData["Mensaje"] = $"Contraseña incorrecta. Intentos restantes: {3 - usuario.FailedAttempts}";
                 return View();
             }
+
+            // Login exitoso - resetear contadores
+            await _usuarioData.ResetLockout(usuario.IdUsuario);
 
             // Generar código de verificación
             var codigoVerificacion = new Random().Next(100000, 999999).ToString();
@@ -69,13 +130,7 @@ namespace Prestamo.Web.Controllers
             string mensaje = $"Tu código de verificación es: {codigoVerificacion}";
             await _emailService.EnviarCorreoAsync(correo, asunto, mensaje);
 
-            foreach (var claim in User.Claims)
-            {
-                Console.WriteLine($"Claim Type: {claim.Type}, Value: {claim.Value}");
-            }
-
             return RedirectToAction("VerificarCodigo");
-
         }
 
         public IActionResult VerificarCodigo()

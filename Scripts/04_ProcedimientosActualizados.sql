@@ -50,15 +50,18 @@ END
 GO
 
 CREATE PROCEDURE [dbo].[sp_obtenerUsuarioPorCorreo]
-    @Correo NVARCHAR(100)
+@Correo VARCHAR(100)
 AS
 BEGIN
     SELECT 
-        IdUsuario, 
-        NombreCompleto, 
-        Correo, 
-        Clave, 
-        Rol
+        IdUsuario,
+        NombreCompleto,
+        Correo,
+        Clave,
+        Rol,
+        FailedAttempts,
+        IsLocked,
+		LockoutEnd
     FROM Usuario
     WHERE Correo = @Correo
 END
@@ -514,6 +517,38 @@ BEGIN
 END
 GO
 
+--- PROCEDIMIENTOS DE CONTROL DE LOGIN ---
+CREATE PROCEDURE sp_UpdateLockoutStatus
+    @IdUsuario INT,
+    @FailedAttempts INT,
+    @LastFailedAttempt DATETIME,
+    @LockoutEnd DATETIME = NULL,
+    @IsLocked BIT
+AS
+BEGIN
+    UPDATE Usuario
+    SET FailedAttempts = @FailedAttempts,
+        LastFailedAttempt = @LastFailedAttempt,
+        LockoutEnd = @LockoutEnd,
+        IsLocked = @IsLocked
+    WHERE IdUsuario = @IdUsuario
+END
+GO
+
+-- Procedimiento almacenado para resetear el bloqueo
+CREATE PROCEDURE sp_ResetLockout
+    @IdUsuario INT
+AS
+BEGIN
+    UPDATE Usuario
+    SET FailedAttempts = 0,
+        LastFailedAttempt = NULL,
+        LockoutEnd = NULL,
+        IsLocked = 0
+    WHERE IdUsuario = @IdUsuario
+END
+GO
+
 --- PROCEDIMIENTOS DE REPORTES ---
 CREATE PROCEDURE [dbo].[sp_obtenerResumen]
 AS
@@ -525,3 +560,4 @@ BEGIN
         (SELECT CONVERT(VARCHAR, ISNULL(SUM(ValorInteres), 0)) FROM Prestamo WHERE Estado = 'Cancelado')[InteresAcumulado]
 END
 GO
+

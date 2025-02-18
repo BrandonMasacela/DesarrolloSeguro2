@@ -1,5 +1,3 @@
-
-
 create database DBPrestamo
 
 go
@@ -76,8 +74,11 @@ NombreCompleto varchar(50),
 Correo varchar(50),
 Clave varchar(60),
 Rol varchar(50),
+FailedAttempts INT DEFAULT 0,
+LastFailedAttempt datetime NULL default getdate(),
+LockoutEnd datetime NULL default  getdate(),
+IsLocked BIT DEFAULT 0;
 FechaCreacion datetime default getdate()
 )
 
 go
-

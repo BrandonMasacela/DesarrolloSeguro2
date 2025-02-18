@@ -52,7 +52,10 @@ namespace Prestamo.Data
                             NombreCompleto = dr["NombreCompleto"].ToString()!,
                             Correo = dr["Correo"].ToString()!,
                             Clave = dr["Clave"].ToString()!, // Asegúrate de incluir la contraseña hasheada
-                            Rol = dr["Rol"].ToString()!
+                            Rol = dr["Rol"].ToString()!,
+                            FailedAttempts = Convert.ToInt32(dr["FailedAttempts"]),
+                            IsLocked = Convert.ToBoolean(dr["IsLocked"]),
+                            LockoutEnd = dr["LockoutEnd"] == DBNull.Value ? null : Convert.ToDateTime(dr["LockoutEnd"]),
                         };
                     }
                 }
@@ -74,6 +77,34 @@ namespace Prestamo.Data
 
                 int rowsAffected = await cmd.ExecuteNonQueryAsync();
                 return rowsAffected > 0;
+            }
+        }
+
+        public async Task UpdateLockoutStatus(Usuario usuario)
+        {
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_UpdateLockoutStatus", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdUsuario", usuario.IdUsuario);
+                cmd.Parameters.AddWithValue("@FailedAttempts", usuario.FailedAttempts);
+                cmd.Parameters.AddWithValue("@LastFailedAttempt", usuario.LastFailedAttempt);
+                cmd.Parameters.AddWithValue("@LockoutEnd", usuario.LockoutEnd ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IsLocked", usuario.IsLocked);
+                await cmd.ExecuteNonQueryAsync();
+            }
+        }
+
+        public async Task ResetLockout(int idUsuario)
+        {
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_ResetLockout", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+                await cmd.ExecuteNonQueryAsync();
             }
         }
 
