@@ -63,11 +63,20 @@ namespace Prestamo.Web.Controllers
             if (usuario.LockoutEnd != null && usuario.LockoutEnd > DateTime.UtcNow)
             {
                 var tiempoRestante = (usuario.LockoutEnd.Value - DateTime.UtcNow).TotalSeconds;
-                ViewData["Mensaje"] = $"Por favor espere {(int)tiempoRestante} segundos antes de intentar nuevamente.";
-                ViewData["TiempoBloqueado"] = (int)tiempoRestante;
-                return View();
-                
-                
+                Console.WriteLine($"Tiempo restante: {tiempoRestante}");
+                // Asegurar que no se redondee a 0
+                if (tiempoRestante > 0)
+                {
+                    ViewData["Mensaje"] = $"Por favor espere {(int)tiempoRestante} segundos antes de intentar nuevamente.";
+                    ViewData["TiempoBloqueado"] = (int)Math.Ceiling(tiempoRestante); // Redondear hacia arriba
+                    Console.WriteLine($"Tiempo bloqueado: {tiempoRestante}");
+                    Console.WriteLine(ViewData["TiempoBloqueado"]);
+                    return View();
+                }
+                else
+                {
+                    ViewData["TiempoBloqueado"] = null; // Evitar valores incorrectos
+                }
             }
 
             // Verificar la contraseña

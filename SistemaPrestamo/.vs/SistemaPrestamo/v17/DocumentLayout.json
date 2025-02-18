@@ -1,30 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\",
+  "WorkspaceRootPath": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\pspgo\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DBDC6D1-4221-4318-832F-9F57F187F834}|Prestamo.Data\\Prestamo.Data.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.data\\usuariodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DBDC6D1-4221-4318-832F-9F57F187F834}|Prestamo.Data\\Prestamo.Data.csproj|solutionrelative:prestamo.data\\usuariodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\pspgo\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52D9AA1-7170-4652-90F3-43A462D84C8C}|Prestamo.Entidades\\Prestamo.Entidades.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52D9AA1-7170-4652-90F3-43A462D84C8C}|Prestamo.Entidades\\Prestamo.Entidades.csproj|solutionrelative:prestamo.entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,96 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\css\\styles.css",
-              "RelativeDocumentMoniker": "Prestamo.Web\\wwwroot\\css\\styles.css",
-              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\css\\styles.css",
-              "RelativeToolTip": "Prestamo.Web\\wwwroot\\css\\styles.css",
-              "ViewState": "AgIAAPkrAAAAAAAAAAAqwDIsAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-17T21:59:14.53Z",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Prestamo.Web\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwDAAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T04:40:09.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "scripts.js",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
+              "DocumentMoniker": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
               "RelativeDocumentMoniker": "Prestamo.Web\\wwwroot\\js\\scripts.js",
-              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
+              "ToolTip": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
               "RelativeToolTip": "Prestamo.Web\\wwwroot\\js\\scripts.js",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAqwDMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-17T21:53:09.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "Prestamo.Web\\Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAACsAAAAAAAAAAAAkwDUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T21:49:47.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioData.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\UsuarioData.cs",
-              "RelativeDocumentMoniker": "Prestamo.Data\\UsuarioData.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Data\\UsuarioData.cs",
-              "RelativeToolTip": "Prestamo.Data\\UsuarioData.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T21:45:07.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Usuario.cs",
-              "RelativeDocumentMoniker": "Prestamo.Entidades\\Usuario.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Usuario.cs",
-              "RelativeToolTip": "Prestamo.Entidades\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T21:45:00.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Prestamo.Web\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Prestamo.Web\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAowEIAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T21:43:46.601Z",
+              "WhenOpened": "2025-02-18T04:31:19.033Z",
               "EditorCaption": ""
             }
           ]

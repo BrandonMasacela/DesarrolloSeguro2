@@ -24,25 +24,33 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     // Lógica para la cuenta regresiva en la página de inicio de sesión
-    var countdownElement = document.getElementById("countdown");
+    let tiempoRestante = parseInt(localStorage.getItem("TiempoBloqueado"));
+    let countdownElement = document.getElementById("tiempo");
+    let mensaje = document.getElementById("alerta");
+    let mensaje1 = document.getElementById("alerta1");
+    let boton = document.getElementById("btnlogin");
+    let correo = document.getElementsByName("correo");
+    let contrasena = document.getElementsByName("clave");
+        if (tiempoRestante > 0) {
 
-    if (countdownElement) {
-        var countdown = parseInt(countdownElement.innerText.trim(), 10);
-
-        if (!isNaN(countdown) && countdown > 0) {
-            countdownElement.innerText = countdown;
-
-            while (countdown > 0) {
-                await new Promise(resolve => setTimeout(resolve, 1000)); // Espera 1 segundo
-                countdown--; // Reducir el contador
-                countdownElement.innerText = countdown; // Actualizar la vista
-                location.reload();
-                
-            }
-
-            // Cuando llegue a 0, recargar la página
-            location.reload();
+            // Función para actualizar el contador cada segundo
+            let timer = setInterval(() => {
+                if (tiempoRestante > 0) {
+                    tiempoRestante--; // Reducir el tiempo
+                    countdownElement.innerText = tiempoRestante; // Actualizar el HTML
+                    boton.setAttribute("disabled", "true"); // Deshabilitar el botón
+                    correo.disabled = true; // Deshabilitar el campo de correo
+                    contrasena.disabled = true; // Deshabilitar el campo de contraseña
+                    localStorage.setItem("TiempoBloqueado", tiempoRestante); // Guardar el nuevo valor
+                } else {
+                    clearInterval(timer); // Detener el temporizador cuando llegue a 0
+                    localStorage.removeItem("TiempoBloqueado"); // Eliminar del localStorage
+                    mensaje.setAttribute("hidden", "true"); // Ocultar el mensaje
+                    mensaje1.setAttribute("hidden", "true"); // Ocultar el mensaje
+                    boton.removeAttribute("disabled"); // Habilitar el botón
+                    correo.disabled = false;
+                    contrasena.disabled = false;
+                }
+            }, 1000); // Ejecutar cada segundo
         }
-    }
-
 });

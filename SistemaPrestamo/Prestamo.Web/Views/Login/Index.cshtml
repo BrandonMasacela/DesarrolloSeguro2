@@ -46,20 +46,25 @@
                                         @if (ViewData["Mensaje"] != null)
                                         {
                                             <div class="form-group">
-                                                <div class="alert alert-danger" role="alert">
+                                                <div class="alert alert-danger" role="alert" id="alerta1">
                                                     @ViewData["Mensaje"]
                                                 </div>
                                             </div>
                                         }
                                         @if (ViewData["TiempoBloqueado"] != null)
                                         {
-                                            <div class="alert alert-warning" role="alert">
-                                                Tiempo restante: <span id="countdown">@ViewData["TiempoBloqueado"]</span> segundos
+                                            <div class="alert alert-warning" role="alert" id="alerta">
+                                                <p><strong>Tiempo restante:</strong> <span id="tiempo"></span> segundos</p>
                                             </div>
+                                            <script>
+                                                // Guardar directamente en localStorage desde el backend
+                                                localStorage.setItem("TiempoBloqueado", "@ViewData["TiempoBloqueado"]");
+                                                console.log("Tiempo bloqueado guardado en localStorage:", localStorage.getItem("TiempoBloqueado"));
+                                            </script>
                                         }
-
+                                        
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            <button type="submit" class="btn btn-primary" name="btnlogin">Iniciar Sesión</button>
+                                            <button type="submit" class="btn btn-primary" id="btnlogin">Iniciar Sesión</button>
                                         </div>
                                        
                                     </form>
