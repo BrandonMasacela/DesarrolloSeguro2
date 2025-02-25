@@ -82,3 +82,27 @@ FechaCreacion datetime default getdate()
 )
 
 go
+
+CREATE TABLE SolicitudPrestamo
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    IdUsuario INT NOT NULL,
+    Monto DECIMAL(18, 2) NOT NULL,
+    Plazo INT NOT NULL,
+    Estado NVARCHAR(50) NOT NULL,
+    FechaSolicitud DATETIME NOT NULL,
+	Sueldo DECIMAL(18, 2) NOT NULL,
+    EsCasado BIT NOT NULL,
+    NumeroHijos INT NOT NULL,
+    MetodoPago NVARCHAR(50) NOT NULL,
+	Cedula NVARCHAR(10) NOT NULL,
+    Ocupacion NVARCHAR(100) NOT NULL
+)
+go
+
+
+CREATE TABLE HistorialCrediticio
+(
+    IdUsuario INT PRIMARY KEY,
+    EstadoCrediticio INT NOT NULL
+);

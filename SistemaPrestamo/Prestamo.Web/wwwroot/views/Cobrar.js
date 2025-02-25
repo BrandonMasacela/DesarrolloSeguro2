@@ -1,28 +1,32 @@
 ﻿let idPrestamo = 0;
 let totalPagar = 0;
 let prestamosEncontrados = [];
+let nroDocumentoCliente = "";
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Obtener el número de cédula del cliente autenticado
+    fetch('/Prestamo/ObtenerCedulaCliente', {
+        method: "GET",
+        headers: { 'Content-Type': 'application/json;charset=utf-8' }
+    }).then(response => {
+        return response.ok ? response.json() : Promise.reject(response);
+    }).then(responseJson => {
+        nroDocumentoCliente = responseJson.cedula;
+        console.log("Cédula del cliente:", nroDocumentoCliente);
+        buscarPrestamos();
+    }).catch(error => {
+        console.error("Error al obtener la cédula del cliente:", error);
+    });
+
     // Validar que solo se ingresen números en el campo de número de tarjeta
     document.getElementById("txtNumeroTarjeta").addEventListener("input", function (e) {
         this.value = this.value.replace(/\D/g, '');
     });
 });
 
-
-$("#btnBuscar").on("click", function () {
-    if ($("#txtNroDocumento").val() == "") {
-        Swal.fire({
-            title: "Ups!",
-            text: "Debe ingresar un numero de documento.",
-            icon: "warning"
-        });
-        return;
-    }
-
+function buscarPrestamos() {
     $.LoadingOverlay("show");
-
-    fetch(`/Prestamo/ObtenerPrestamos?IdPrestamo=0&NroDocumento=${$("#txtNroDocumento").val()}`, {
+    fetch(`/Prestamo/ObtenerPrestamos?IdPrestamo=0&NroDocumento=${nroDocumentoCliente}`, {
         method: "GET",
         headers: { 'Content-Type': 'application/json;charset=utf-8' }
     }).then(response => {
@@ -35,7 +39,7 @@ $("#btnBuscar").on("click", function () {
             Limpiar(false);
             Swal.fire({
                 title: "Ups!",
-                text: "No se encontro un cliente.",
+                text: "No se encontró un cliente.",
                 icon: "warning"
             });
             return;
@@ -75,10 +79,10 @@ $("#btnBuscar").on("click", function () {
             icon: "warning"
         });
     })
-})
+}
 
 function obtenerTarjeta() {
-    const idCliente = $("#txtNroDocumento").val();
+    const idCliente = nroDocumentoCliente;
     if (idCliente) {
         fetch(`/Cobrar/ObtenerTarjeta?idCliente=${idCliente}`, {
             method: "GET",
@@ -92,6 +96,7 @@ function obtenerTarjeta() {
         });
     }
 }
+
 function Limpiar(limpiarNroDocumento) {
     if (limpiarNroDocumento)
         $("#txtNroDocumento").val("");

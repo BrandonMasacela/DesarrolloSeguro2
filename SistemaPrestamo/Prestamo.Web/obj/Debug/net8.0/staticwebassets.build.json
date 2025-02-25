@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xkjzk4n89tZ/CnEtcFuROCPd1X6xf9lgSe8BBiOs1xI=",
+  "Hash": "mnBzrQ0MGEDYQQMCgTj4RxU+4+wtXYebyd6MkVDI72w=",
   "Source": "Prestamo.Web",
   "BasePath": "_content/Prestamo.Web",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sx9reoi8d6",
-      "Integrity": "ELn/WhgSP+8p/4Dz0qnb2NpoOKmwSN1ptH1oBW94Bz0=",
+      "Fingerprint": "7z4y2ksic4",
+      "Integrity": "s5/ClpZjBzB6UPIx36DLdXbTHQt9dznJS0Xgw/kTbfM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
@@ -1529,6 +1529,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\sweetAlert2\\js\\sweetalert2.js"
     },
     {
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
+      "SourceId": "Prestamo.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "BasePath": "_content/Prestamo.Web",
+      "RelativePath": "views/cambiarContrasena#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sy79zqwpp7",
+      "Integrity": "lHtH4FJD2cIknVW+kuXoB5Z50cwFQz4rCDBxT19QIUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\views\\cambiarContrasena.js"
+    },
+    {
       "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
@@ -1564,8 +1585,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a0xzkewzxx",
-      "Integrity": "JiKHE7jhulqCVgRHOVHtEJP7HDafv/MlYU5lF1xpS3g=",
+      "Fingerprint": "d7np93myjk",
+      "Integrity": "ubZLNv3+5l4VBvxF9+7H9nRe4u1zNaN9c9+dXDBdBTM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Cobrar.js"
@@ -1585,11 +1606,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qbox301lzs",
-      "Integrity": "Zixyoz2LgLtgrwRVZ0CKP5KutpsOBl7gZbBvroMRKjw=",
+      "Fingerprint": "2l0undj4tg",
+      "Integrity": "iqau+RoL0DLkgwz4saI89Us8+kUKZmdcAvjupf3oP2o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Cuenta.js"
+    },
+    {
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+      "SourceId": "Prestamo.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "BasePath": "_content/Prestamo.Web",
+      "RelativePath": "views/gestionarSolicitudes#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rinon506wj",
+      "Integrity": "E7g1umUKmi5+sro6TPn5MjxNN5B3F1NYGf+PuCaIPqE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\views\\gestionarSolicitudes.js"
     },
     {
       "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Home.js",
@@ -1606,8 +1648,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "i9tk36izdx",
-      "Integrity": "2pPhHEEXrKqiwm3aXFbJdOegyer2I6ktARUq71uoacA=",
+      "Fingerprint": "a0rwmg8zh9",
+      "Integrity": "Rlm6clQfeqCPZK+O9gb6vAzvx/CMN9RrTWAiA3GdcPU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Home.js"
@@ -1674,6 +1716,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Prestamo.js"
+    },
+    {
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
+      "SourceId": "Prestamo.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "BasePath": "_content/Prestamo.Web",
+      "RelativePath": "views/solicitudPrestamo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8timi2wtor",
+      "Integrity": "vOL1138PeoxQujD7zqU9ad9S1AS79RZK+GdZT/8NsEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\views\\solicitudPrestamo.js"
     }
   ],
   "Endpoints": [
@@ -1700,7 +1763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1745,7 +1808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1782,7 +1845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1827,7 +1890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1842,6 +1905,51 @@
       ]
     },
     {
+      "Route": "js/scripts.7z4y2ksic4.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s5/ClpZjBzB6UPIx36DLdXbTHQt9dznJS0Xgw/kTbfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 23:19:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7z4y2ksic4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/scripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s5/ClpZjBzB6UPIx36DLdXbTHQt9dznJS0Xgw/kTbfM="
+        }
+      ]
+    },
+    {
       "Route": "js/scripts.js",
       "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
       "Selectors": [],
@@ -1852,7 +1960,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2821"
+          "Value": "2229"
         },
         {
           "Name": "Content-Type",
@@ -1860,11 +1968,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ELn/WhgSP+8p/4Dz0qnb2NpoOKmwSN1ptH1oBW94Bz0=\""
+          "Value": "\"s5/ClpZjBzB6UPIx36DLdXbTHQt9dznJS0Xgw/kTbfM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 13:48:34 GMT"
+          "Value": "Mon, 24 Feb 2025 23:19:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1874,52 +1982,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ELn/WhgSP+8p/4Dz0qnb2NpoOKmwSN1ptH1oBW94Bz0="
-        }
-      ]
-    },
-    {
-      "Route": "js/scripts.sx9reoi8d6.js",
-      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2821"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ELn/WhgSP+8p/4Dz0qnb2NpoOKmwSN1ptH1oBW94Bz0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 13:48:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "sx9reoi8d6"
-        },
-        {
-          "Name": "label",
-          "Value": "js/scripts.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ELn/WhgSP+8p/4Dz0qnb2NpoOKmwSN1ptH1oBW94Bz0="
+          "Value": "sha256-s5/ClpZjBzB6UPIx36DLdXbTHQt9dznJS0Xgw/kTbfM="
         }
       ]
     },
@@ -1946,7 +2009,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1983,7 +2046,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2028,7 +2091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2065,7 +2128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2110,7 +2173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2147,7 +2210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2192,7 +2255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2229,7 +2292,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2274,7 +2337,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2311,7 +2374,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2356,7 +2419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2393,7 +2456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2438,7 +2501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2483,7 +2546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2520,7 +2583,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2565,7 +2628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2602,7 +2665,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2639,7 +2702,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2676,7 +2739,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2721,7 +2784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2766,7 +2829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2803,7 +2866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2848,7 +2911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2885,7 +2948,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2930,7 +2993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2967,7 +3030,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3012,7 +3075,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3049,7 +3112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3094,7 +3157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3131,7 +3194,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3168,7 +3231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3213,7 +3276,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3258,7 +3321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3295,7 +3358,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3340,7 +3403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3377,7 +3440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3414,7 +3477,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3451,7 +3514,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3496,7 +3559,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3541,7 +3604,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3586,7 +3649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3631,7 +3694,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3668,7 +3731,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3713,7 +3776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3750,7 +3813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3787,7 +3850,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3824,7 +3887,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3869,7 +3932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3914,7 +3977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3951,7 +4014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3996,7 +4059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4033,7 +4096,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4078,7 +4141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4115,7 +4178,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4152,7 +4215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4197,7 +4260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4234,7 +4297,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4279,7 +4342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4316,7 +4379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4353,7 +4416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4398,7 +4461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4435,7 +4498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4480,7 +4543,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4525,7 +4588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4570,7 +4633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4615,7 +4678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4660,7 +4723,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4697,7 +4760,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4742,7 +4805,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4779,7 +4842,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4824,7 +4887,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4861,7 +4924,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4906,7 +4969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4943,7 +5006,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4980,7 +5043,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5025,7 +5088,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5062,7 +5125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5107,7 +5170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5144,7 +5207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5181,7 +5244,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5226,7 +5289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5271,7 +5334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5308,7 +5371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5353,7 +5416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5390,7 +5453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5435,7 +5498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5472,7 +5535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5509,7 +5572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5554,7 +5617,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5591,7 +5654,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5636,7 +5699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5673,7 +5736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5718,7 +5781,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5763,7 +5826,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5800,7 +5863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5845,7 +5908,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5882,7 +5945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5919,7 +5982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5964,7 +6027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6009,7 +6072,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6046,7 +6109,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6091,7 +6154,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6136,7 +6199,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6173,7 +6236,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6210,7 +6273,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6255,7 +6318,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6292,7 +6355,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6337,7 +6400,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6374,7 +6437,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6419,7 +6482,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6456,7 +6519,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6501,7 +6564,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6538,7 +6601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6575,7 +6638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6620,7 +6683,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6657,7 +6720,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6702,7 +6765,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6747,7 +6810,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6784,7 +6847,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6829,7 +6892,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6866,7 +6929,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6911,7 +6974,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6948,7 +7011,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6993,7 +7056,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7030,7 +7093,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7075,7 +7138,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7112,7 +7175,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7157,7 +7220,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7194,7 +7257,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7231,7 +7294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7276,7 +7339,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7321,7 +7384,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7358,7 +7421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7395,7 +7458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7440,7 +7503,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7485,7 +7548,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7530,7 +7593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7567,7 +7630,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7578,6 +7641,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-4WvupDVAQoUVzb7QO9WtCcnCotd7YjKupGaRsCjWt/4="
+        }
+      ]
+    },
+    {
+      "Route": "views/cambiarContrasena.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lHtH4FJD2cIknVW+kuXoB5Z50cwFQz4rCDBxT19QIUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 01:00:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lHtH4FJD2cIknVW+kuXoB5Z50cwFQz4rCDBxT19QIUs="
+        }
+      ]
+    },
+    {
+      "Route": "views/cambiarContrasena.sy79zqwpp7.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lHtH4FJD2cIknVW+kuXoB5Z50cwFQz4rCDBxT19QIUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 01:00:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sy79zqwpp7"
+        },
+        {
+          "Name": "label",
+          "Value": "views/cambiarContrasena.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lHtH4FJD2cIknVW+kuXoB5Z50cwFQz4rCDBxT19QIUs="
         }
       ]
     },
@@ -7604,7 +7749,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7649,7 +7794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7664,7 +7809,7 @@
       ]
     },
     {
-      "Route": "views/Cobrar.a0xzkewzxx.js",
+      "Route": "views/Cobrar.d7np93myjk.js",
       "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cobrar.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7674,7 +7819,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9051"
+          "Value": "9168"
         },
         {
           "Name": "Content-Type",
@@ -7682,11 +7827,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JiKHE7jhulqCVgRHOVHtEJP7HDafv/MlYU5lF1xpS3g=\""
+          "Value": "\"ubZLNv3+5l4VBvxF9+7H9nRe4u1zNaN9c9+dXDBdBTM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Sat, 22 Feb 2025 22:57:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7696,7 +7841,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a0xzkewzxx"
+          "Value": "d7np93myjk"
         },
         {
           "Name": "label",
@@ -7704,7 +7849,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-JiKHE7jhulqCVgRHOVHtEJP7HDafv/MlYU5lF1xpS3g="
+          "Value": "sha256-ubZLNv3+5l4VBvxF9+7H9nRe4u1zNaN9c9+dXDBdBTM="
         }
       ]
     },
@@ -7719,7 +7864,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9051"
+          "Value": "9168"
         },
         {
           "Name": "Content-Type",
@@ -7727,11 +7872,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JiKHE7jhulqCVgRHOVHtEJP7HDafv/MlYU5lF1xpS3g=\""
+          "Value": "\"ubZLNv3+5l4VBvxF9+7H9nRe4u1zNaN9c9+dXDBdBTM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Sat, 22 Feb 2025 22:57:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7741,7 +7886,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JiKHE7jhulqCVgRHOVHtEJP7HDafv/MlYU5lF1xpS3g="
+          "Value": "sha256-ubZLNv3+5l4VBvxF9+7H9nRe4u1zNaN9c9+dXDBdBTM="
+        }
+      ]
+    },
+    {
+      "Route": "views/Cuenta.2l0undj4tg.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4447"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iqau+RoL0DLkgwz4saI89Us8+kUKZmdcAvjupf3oP2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 03:31:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2l0undj4tg"
+        },
+        {
+          "Name": "label",
+          "Value": "views/Cuenta.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iqau+RoL0DLkgwz4saI89Us8+kUKZmdcAvjupf3oP2o="
         }
       ]
     },
@@ -7756,7 +7946,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3991"
+          "Value": "4447"
         },
         {
           "Name": "Content-Type",
@@ -7764,11 +7954,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Zixyoz2LgLtgrwRVZ0CKP5KutpsOBl7gZbBvroMRKjw=\""
+          "Value": "\"iqau+RoL0DLkgwz4saI89Us8+kUKZmdcAvjupf3oP2o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 25 Feb 2025 03:31:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7778,13 +7968,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Zixyoz2LgLtgrwRVZ0CKP5KutpsOBl7gZbBvroMRKjw="
+          "Value": "sha256-iqau+RoL0DLkgwz4saI89Us8+kUKZmdcAvjupf3oP2o="
         }
       ]
     },
     {
-      "Route": "views/Cuenta.qbox301lzs.js",
-      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+      "Route": "views/gestionarSolicitudes.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7793,7 +7983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3991"
+          "Value": "4957"
         },
         {
           "Name": "Content-Type",
@@ -7801,11 +7991,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Zixyoz2LgLtgrwRVZ0CKP5KutpsOBl7gZbBvroMRKjw=\""
+          "Value": "\"E7g1umUKmi5+sro6TPn5MjxNN5B3F1NYGf+PuCaIPqE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Sat, 22 Feb 2025 21:59:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E7g1umUKmi5+sro6TPn5MjxNN5B3F1NYGf+PuCaIPqE="
+        }
+      ]
+    },
+    {
+      "Route": "views/gestionarSolicitudes.rinon506wj.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E7g1umUKmi5+sro6TPn5MjxNN5B3F1NYGf+PuCaIPqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 21:59:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7815,20 +8042,20 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qbox301lzs"
+          "Value": "rinon506wj"
         },
         {
           "Name": "label",
-          "Value": "views/Cuenta.js"
+          "Value": "views/gestionarSolicitudes.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Zixyoz2LgLtgrwRVZ0CKP5KutpsOBl7gZbBvroMRKjw="
+          "Value": "sha256-E7g1umUKmi5+sro6TPn5MjxNN5B3F1NYGf+PuCaIPqE="
         }
       ]
     },
     {
-      "Route": "views/Home.i9tk36izdx.js",
+      "Route": "views/Home.a0rwmg8zh9.js",
       "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Home.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7838,7 +8065,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1016"
+          "Value": "3783"
         },
         {
           "Name": "Content-Type",
@@ -7846,11 +8073,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2pPhHEEXrKqiwm3aXFbJdOegyer2I6ktARUq71uoacA=\""
+          "Value": "\"Rlm6clQfeqCPZK+O9gb6vAzvx/CMN9RrTWAiA3GdcPU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Mon, 24 Feb 2025 23:40:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7860,7 +8087,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "i9tk36izdx"
+          "Value": "a0rwmg8zh9"
         },
         {
           "Name": "label",
@@ -7868,7 +8095,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2pPhHEEXrKqiwm3aXFbJdOegyer2I6ktARUq71uoacA="
+          "Value": "sha256-Rlm6clQfeqCPZK+O9gb6vAzvx/CMN9RrTWAiA3GdcPU="
         }
       ]
     },
@@ -7883,7 +8110,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1016"
+          "Value": "3783"
         },
         {
           "Name": "Content-Type",
@@ -7891,11 +8118,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2pPhHEEXrKqiwm3aXFbJdOegyer2I6ktARUq71uoacA=\""
+          "Value": "\"Rlm6clQfeqCPZK+O9gb6vAzvx/CMN9RrTWAiA3GdcPU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Mon, 24 Feb 2025 23:40:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7905,7 +8132,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2pPhHEEXrKqiwm3aXFbJdOegyer2I6ktARUq71uoacA="
+          "Value": "sha256-Rlm6clQfeqCPZK+O9gb6vAzvx/CMN9RrTWAiA3GdcPU="
         }
       ]
     },
@@ -7932,7 +8159,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7977,7 +8204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8014,7 +8241,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8059,7 +8286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8096,7 +8323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8133,7 +8360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 02:26:30 GMT"
+          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8152,6 +8379,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-czRrtK7xgNmn0WA/Dlc1g4dx17a6XMYzQmryeewwpNg="
+        }
+      ]
+    },
+    {
+      "Route": "views/solicitudPrestamo.8timi2wtor.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "898"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vOL1138PeoxQujD7zqU9ad9S1AS79RZK+GdZT/8NsEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 16:36:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8timi2wtor"
+        },
+        {
+          "Name": "label",
+          "Value": "views/solicitudPrestamo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vOL1138PeoxQujD7zqU9ad9S1AS79RZK+GdZT/8NsEY="
+        }
+      ]
+    },
+    {
+      "Route": "views/solicitudPrestamo.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "898"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vOL1138PeoxQujD7zqU9ad9S1AS79RZK+GdZT/8NsEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 16:36:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vOL1138PeoxQujD7zqU9ad9S1AS79RZK+GdZT/8NsEY="
         }
       ]
     }

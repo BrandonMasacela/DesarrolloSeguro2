@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Solicitar Préstamo";
+}
+
+<br />
+<form id="solicitudForm" method="post">
+    <div class="col-sm-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fa-solid fa-file-invoice"></i>
+                Solicitar Préstamo
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="txtCedula" class="form-label">Nro. Documento:</label>
+                            <input type="text" class="form-control data-prestamo" id="txtCedula" name="Cedula" min="1" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="txtMontoPrestamo" class="form-label">Monto Préstamo:</label>
+                            <input type="number" class="form-control data-prestamo" id="txtMontoPrestamo" name="Monto" min="1" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="txtSueldo" class="form-label">Sueldo:</label>
+                            <input type="number" class="form-control data-prestamo" id="txtSueldo" name="Sueldo" min="1" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="cboCasado" class="form-label">¿Es Casado?</label>
+                            <select class="form-select data-prestamo" id="cboCasado" name="EsCasado" required>
+                                <option value="true">Sí</option>
+                                <option value="false">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="txtPlazo" class="form-label">Plazo:</label>
+                            <input type="number" class="form-control data-prestamo" id="txtPlazo" name="Plazo" min="1" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="txtNroHijos" class="form-label">Nro. Hijos:</label>
+                            <input type="number" class="form-control data-prestamo" id="txtNroHijos" name="NumeroHijos" min="0" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="txtOcupacion" class="form-label">Ocupación:</label>
+                            <input type="text" class="form-control data-prestamo" id="txtOcupacion" name="Ocupacion" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label for="cboFormaPago" class="form-label">Forma de pago:</label>
+                            <select class="form-select data-prestamo" id="cboFormaPago" name="MetodoPago" required>
+                                <option value="Diario">Diario</option>
+                                <option value="Semanal">Semanal</option>
+                                <option value="Quincenal">Quincenal</option>
+                                <option value="Mensual">Mensual</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Solicitar</button>
+</form>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/views/solicitudPrestamo.js"></script>
+}

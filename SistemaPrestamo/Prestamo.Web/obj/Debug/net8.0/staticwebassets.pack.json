@@ -313,6 +313,18 @@
       "PackagePath": "staticwebassets\\views\\Prestamo.js"
     },
     {
+      "Id": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
+      "PackagePath": "staticwebassets\\views\\cambiarContrasena.js"
+    },
+    {
+      "Id": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+      "PackagePath": "staticwebassets\\views\\gestionarSolicitudes.js"
+    },
+    {
+      "Id": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
+      "PackagePath": "staticwebassets\\views\\solicitudPrestamo.js"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Prestamo.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

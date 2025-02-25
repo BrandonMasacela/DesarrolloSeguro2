@@ -108,5 +108,50 @@ namespace Prestamo.Data
             }
         }
 
+        public async Task Actualizar(Usuario usuario)
+        {
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_actualizarUsuario", conexion);
+                cmd.Parameters.AddWithValue("@IdUsuario", usuario.IdUsuario);
+                cmd.Parameters.AddWithValue("@Clave", usuario.Clave);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                await cmd.ExecuteNonQueryAsync();
+            }
+        }
+
+        public async Task<Usuario> ObtenerPorId(int idUsuario)
+        {
+            Usuario objeto = null!;
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_obtenerUsuarioPorId", conexion);
+                cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+                cmd.CommandType = CommandType.StoredProcedure;
+                using (var dr = await cmd.ExecuteReaderAsync())
+                {
+                    while (await dr.ReadAsync())
+                    {
+                        objeto = new Usuario()
+                        {
+                            IdUsuario = Convert.ToInt32(dr["IdUsuario"].ToString()!),
+                            NombreCompleto = dr["NombreCompleto"].ToString()!,
+                            Correo = dr["Correo"].ToString()!,
+                            Clave = dr["Clave"].ToString()!, // Asegúrate de incluir la contraseña hasheada
+                            Rol = dr["Rol"].ToString()!,
+                            FailedAttempts = Convert.ToInt32(dr["FailedAttempts"]),
+                            IsLocked = Convert.ToBoolean(dr["IsLocked"]),
+                            LockoutEnd = dr["LockoutEnd"] == DBNull.Value ? null : Convert.ToDateTime(dr["LockoutEnd"]),
+                        };
+                    }
+                }
+            }
+            Console.WriteLine(objeto);
+            return objeto;
+        }
+
     }
 }

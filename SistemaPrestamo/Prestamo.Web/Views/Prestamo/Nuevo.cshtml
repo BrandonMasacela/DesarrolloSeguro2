@@ -46,6 +46,10 @@
                             <label for="txtTelefono" class="form-label">Telefono:</label>
                             <input type="text" class="form-control data-in" id="txtTelefono" autocomplete="off" name="Telefono" disabled>
                         </div>
+                        <div class="mb-3">
+                            <label for="txtHistorialCrediticio" class="form-label">Historial Crediticio:</label>
+                            <input type="text" class="form-control data-in" id="txtHistorialCrediticio" autocomplete="off" disabled>
+                        </div>
                     </div>
                 </div>
 
@@ -150,4 +154,19 @@
 @section Scripts {
     <script src="~/lib/moment/moment.min.js"></script>
     <script src="~/views/nuevoprestamo.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const solicitud = JSON.parse(localStorage.getItem('solicitud'));
+            const historial = JSON.parse(localStorage.getItem('historial'));
+            if (solicitud) {
+                document.getElementById('txtMontoPrestamo').value = solicitud.monto;
+                document.getElementById('txtNroCuotas').value = solicitud.plazo;
+                document.getElementById('cboFormaPago').value = solicitud.metodoPago;
+                document.getElementById('txtNroDocumento').value = solicitud.cedula;
+            }
+            if (historial) {
+                        document.getElementById('txtHistorialCrediticio').value = historial.estadoCrediticio;
+            }
+        });
+    </script>
 }

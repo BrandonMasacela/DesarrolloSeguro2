@@ -16,6 +16,28 @@ namespace Prestamo.Data
             con = options.Value;
         }
 
+        public async Task<int> ObtenerIdPrestamoPorCliente(int idCliente)
+        {
+            int idPrestamo = 0;
+
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_obtenerIdPrestamoPorCliente", conexion);
+                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                using (var dr = await cmd.ExecuteReaderAsync())
+                {
+                    if (await dr.ReadAsync())
+                    {
+                        idPrestamo = Convert.ToInt32(dr["IdPrestamo"]);
+                    }
+                }
+            }
+            return idPrestamo;
+        }
+
         public async Task<string> Crear(Prestamo.Entidades.Prestamo objeto)
         {
 
@@ -144,6 +166,177 @@ namespace Prestamo.Data
                 }
             }
             return respuesta;
+        }
+
+        public async Task<bool> CrearSolicitudPrestamo(SolicitudPrestamo solicitud)
+        {
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_crearSolicitudPrestamo", conexion);
+                cmd.Parameters.AddWithValue("@IdUsuario", solicitud.IdUsuario);
+                cmd.Parameters.AddWithValue("@Monto", solicitud.Monto);
+                cmd.Parameters.AddWithValue("@Plazo", solicitud.Plazo);
+                cmd.Parameters.AddWithValue("@Estado", solicitud.Estado);
+                cmd.Parameters.AddWithValue("@FechaSolicitud", solicitud.FechaSolicitud);
+                cmd.Parameters.AddWithValue("@Sueldo", solicitud.Sueldo);
+                cmd.Parameters.AddWithValue("@EsCasado", solicitud.EsCasado);
+                cmd.Parameters.AddWithValue("@NumeroHijos", solicitud.NumeroHijos);
+                cmd.Parameters.AddWithValue("@MetodoPago", solicitud.MetodoPago);
+                cmd.Parameters.AddWithValue("@Cedula", solicitud.Cedula);
+                cmd.Parameters.AddWithValue("@Ocupacion", solicitud.Ocupacion);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                int rowsAffected = await cmd.ExecuteNonQueryAsync();
+                return rowsAffected > 0;
+            }
+        }
+
+        public async Task<List<SolicitudPrestamo>> ObtenerSolicitudesPendientes()
+        {
+            List<SolicitudPrestamo> solicitudes = new List<SolicitudPrestamo>();
+
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_obtenerSolicitudesPendientes", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                using (var dr = await cmd.ExecuteReaderAsync())
+                {
+                    while (await dr.ReadAsync())
+                    {
+                        solicitudes.Add(new SolicitudPrestamo
+                        {
+                            Id = Convert.ToInt32(dr["Id"]),
+                            IdUsuario = Convert.ToInt32(dr["IdUsuario"]),
+                            Monto = Convert.ToDecimal(dr["Monto"]),
+                            Plazo = Convert.ToInt32(dr["Plazo"]),
+                            Estado = dr["Estado"].ToString(),
+                            FechaSolicitud = Convert.ToDateTime(dr["FechaSolicitud"]),
+                            Sueldo = Convert.ToDecimal(dr["Sueldo"]),
+                            EsCasado = Convert.ToBoolean(dr["EsCasado"]),
+                            NumeroHijos = Convert.ToInt32(dr["NumeroHijos"]),
+                            MetodoPago = dr["MetodoPago"].ToString(),
+                            Cedula = dr["Cedula"].ToString(),
+                            Ocupacion = dr["Ocupacion"].ToString()
+                        });
+                    }
+                }
+            }
+            return solicitudes;
+        }
+
+        public async Task<bool> ActualizarEstadoSolicitud(int id, string estado)
+        {
+
+            try
+            {
+                using (var conexion = new SqlConnection(con.CadenaSQL))
+                {
+                    await conexion.OpenAsync();
+                    Console.WriteLine(estado);
+                    SqlCommand cmd = new SqlCommand("sp_actualizarEstadoSolicitud", conexion);
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    cmd.Parameters.AddWithValue("@Estado", estado);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    int rowsAffected = await cmd.ExecuteNonQueryAsync();
+                    return rowsAffected > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> CrearHistorialCrediticio(Prestamo.Entidades.HistorialCrediticio historial)
+        {
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_crearHistorialCrediticio", conexion);
+                cmd.Parameters.AddWithValue("@IdUsuario", historial.IdUsuario);
+                cmd.Parameters.AddWithValue("@EstadoCrediticio", historial.EstadoCrediticio);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                int rowsAffected = await cmd.ExecuteNonQueryAsync();
+                return rowsAffected > 0;
+            }
+        }
+
+        public async Task<bool> ActualizarHistorialCrediticio(int idUsuario, bool aprobado)
+        {
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_actualizarHistorialCrediticio", conexion);
+                cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+                cmd.Parameters.AddWithValue("@Aprobado", aprobado);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                int rowsAffected = await cmd.ExecuteNonQueryAsync();
+                return rowsAffected > 0;
+            }
+        }
+
+        public async Task<HistorialCrediticio> ObtenerHistorialCrediticio(int idUsuario)
+        {
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_obtenerHistorialCrediticio", conexion);
+                cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                using (var dr = await cmd.ExecuteReaderAsync())
+                {
+                    if (await dr.ReadAsync())
+                    {
+                        return new HistorialCrediticio
+                        {
+                            IdUsuario = Convert.ToInt32(dr["IdUsuario"]),
+                            EstadoCrediticio = Convert.ToInt32(dr["EstadoCrediticio"])
+                        };
+                    }
+                }
+            }
+            return null;
+        }
+
+        public async Task<SolicitudPrestamo> ObtenerSolicitudPorId(int id)
+        {
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+                SqlCommand cmd = new SqlCommand("sp_obtenerSolicitudPorId", conexion);
+                cmd.Parameters.AddWithValue("@Id", id);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                using (var dr = await cmd.ExecuteReaderAsync())
+                {
+                    if (await dr.ReadAsync())
+                    {
+                        return new SolicitudPrestamo
+                        {
+                            Id = Convert.ToInt32(dr["Id"]),
+                            IdUsuario = Convert.ToInt32(dr["IdUsuario"]),
+                            Monto = Convert.ToDecimal(dr["Monto"]),
+                            Plazo = Convert.ToInt32(dr["Plazo"]),
+                            Estado = dr["Estado"].ToString(),
+                            FechaSolicitud = Convert.ToDateTime(dr["FechaSolicitud"]),
+                            Sueldo = Convert.ToDecimal(dr["Sueldo"]),
+                            EsCasado = Convert.ToBoolean(dr["EsCasado"]),
+                            NumeroHijos = Convert.ToInt32(dr["NumeroHijos"]),
+                            MetodoPago = dr["MetodoPago"].ToString(),
+                            Cedula = dr["Cedula"].ToString(),
+                            Ocupacion = dr["Ocupacion"].ToString()
+                        };
+                    }
+                }
+            }
+            return null;
         }
 
     }

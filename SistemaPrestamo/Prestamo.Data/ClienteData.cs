@@ -315,6 +315,48 @@ namespace Prestamo.Data
             return cliente;
         }
 
+        public async Task<Cliente> ObtenerPorCedula(string cedula)
+        {
+            Cliente cliente = null;
+
+            // Validación del parámetro
+            if (string.IsNullOrEmpty(cedula))
+            {
+                throw new ArgumentException("El cedula no puede estar vacío");
+            }
+
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+
+                using (SqlCommand cmd = new SqlCommand("sp_obtenerCliente", conexion))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Asegurarse de que el parámetro no sea null
+                    cmd.Parameters.AddWithValue("@NroDocumento", cedula ?? string.Empty);
+
+                    using (var dr = await cmd.ExecuteReaderAsync())
+                    {
+                        if (await dr.ReadAsync())
+                        {
+                            cliente = new Cliente()
+                            {
+                                IdCliente = Convert.ToInt32(dr["IdCliente"]),
+                                NroDocumento = dr["NroDocumento"].ToString(),
+                                Nombre = dr["Nombre"].ToString(),
+                                Apellido = dr["Apellido"].ToString(),
+                                Correo = dr["Correo"].ToString(),
+                                Telefono = dr["Telefono"].ToString(),
+                                FechaCreacion = dr["FechaCreacion"].ToString()
+                            };
+                        }
+                    }
+                }
+            }
+            return cliente;
+        }
+
         public async Task<string> Depositar(int idCliente, decimal monto)
         {
             string respuesta = "";

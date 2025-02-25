@@ -1,5 +1,6 @@
 ﻿@{
     Layout = null;
+    var token = ViewData["Token"] as string;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -69,6 +70,15 @@
         </div>
     </div>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const token = '@token';
+            console.log('Token1:', token);
+            if (token) {
+                localStorage.setItem('token', token);
+                console.log('Token2:', token);
+            }
+        });
+    </script>
 </body>
 </html>

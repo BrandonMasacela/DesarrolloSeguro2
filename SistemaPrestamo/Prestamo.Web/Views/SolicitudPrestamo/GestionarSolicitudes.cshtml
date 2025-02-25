@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Gestionar Solicitudes de Préstamo";
+}
+
+@section Estilos {
+    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" />
+}
+
+<div class="row mt-4">
+    <div class="col-sm-12">
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fa-solid fa-file-invoice"></i>
+                Lista de Solicitudes de Préstamo
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="display cell-border" id="tbSolicitudes" cellspacing="0" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Usuario</th>
+                                    <th>Monto</th>
+                                    <th>Plazo</th>
+                                    <th>Estado</th>
+                                    <th>Metodo de Pago</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/datatables2/js/moment.min.js"></script>
+    <script src="~/lib/datatables2/js/datatables.js"></script>
+    <script src="~/views/gestionarSolicitudes.js"></script>
+}

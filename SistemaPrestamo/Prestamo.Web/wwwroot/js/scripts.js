@@ -1,26 +1,24 @@
-﻿/*!
-    * Start Bootstrap - SB Admin v7.0.7 (https://startbootstrap.com/template/sb-admin)
-    * Copyright 2013-2023 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
-    */
-// 
-// Scripts
-// 
+﻿document.getElementById("loginForm").addEventListener("submit", async function (event) {
+    event.preventDefault();
 
-window.addEventListener('DOMContentLoaded', event => {
+    let correo = document.getElementById("correo").value;
+    let clave = document.getElementById("clave").value;
 
-    // Toggle the side navigation
-    const sidebarToggle = document.body.querySelector('#sidebarToggle');
-    if (sidebarToggle) {
-        // Uncomment Below to persist sidebar toggle between refreshes
-        // if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
-        //     document.body.classList.toggle('sb-sidenav-toggled');
-        // }
-        sidebarToggle.addEventListener('click', event => {
-            event.preventDefault();
-            document.body.classList.toggle('sb-sidenav-toggled');
-            localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
-        });
+    let response = await fetch("/Login/Index", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ correo: correo, clave: clave })
+    });
+
+    let data = await response.json();
+
+    if (data.success) {
+        localStorage.setItem("token", data.token);
+        window.location.href = "/Login/VerificarCodigo";  // Redirigir al dashboard
+    } else {
+        let errorMessage = document.getElementById("errorMessage");
+        errorMessage.innerText = data.message;
+        errorMessage.classList.remove("d-none");
     }
 
     // Lógica para la cuenta regresiva en la página de inicio de sesión
@@ -29,28 +27,25 @@ window.addEventListener('DOMContentLoaded', event => {
     let mensaje = document.getElementById("alerta");
     let mensaje1 = document.getElementById("alerta1");
     let boton = document.getElementById("btnlogin");
-    let correo = document.getElementsByName("correo");
-    let contrasena = document.getElementsByName("clave");
-        if (tiempoRestante > 0) {
+    if (tiempoRestante > 0) {
 
-            // Función para actualizar el contador cada segundo
-            let timer = setInterval(() => {
-                if (tiempoRestante > 0) {
-                    tiempoRestante--; // Reducir el tiempo
-                    countdownElement.innerText = tiempoRestante; // Actualizar el HTML
-                    boton.setAttribute("disabled", "true"); // Deshabilitar el botón
-                    correo.disabled = true; // Deshabilitar el campo de correo
-                    contrasena.disabled = true; // Deshabilitar el campo de contraseña
-                    localStorage.setItem("TiempoBloqueado", tiempoRestante); // Guardar el nuevo valor
-                } else {
-                    clearInterval(timer); // Detener el temporizador cuando llegue a 0
-                    localStorage.removeItem("TiempoBloqueado"); // Eliminar del localStorage
-                    mensaje.setAttribute("hidden", "true"); // Ocultar el mensaje
-                    mensaje1.setAttribute("hidden", "true"); // Ocultar el mensaje
-                    boton.removeAttribute("disabled"); // Habilitar el botón
-                    correo.disabled = false;
-                    contrasena.disabled = false;
-                }
-            }, 1000); // Ejecutar cada segundo
-        }
+        // Función para actualizar el contador cada segundo
+        let timer = setInterval(() => {
+            if (tiempoRestante > 0) {
+                tiempoRestante--; // Reducir el tiempo
+                countdownElement.innerText = tiempoRestante; // Actualizar el HTML
+                boton.setAttribute("disabled", "true"); // Deshabilitar el botón
+                localStorage.setItem("TiempoBloqueado", tiempoRestante); // Guardar el nuevo valor
+            } else {
+                clearInterval(timer); // Detener el temporizador cuando llegue a 0
+                localStorage.removeItem("TiempoBloqueado"); // Eliminar del localStorage
+                mensaje.setAttribute("hidden", "true"); // Ocultar el mensaje
+                mensaje1.setAttribute("hidden", "true"); // Ocultar el mensaje
+                boton.removeAttribute("disabled"); // Habilitar el botón
+            }
+        }, 1000); // Ejecutar cada segundo
+    }
 });
+
+
+   

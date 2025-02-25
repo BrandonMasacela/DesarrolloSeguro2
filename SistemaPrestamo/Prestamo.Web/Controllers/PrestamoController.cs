@@ -4,6 +4,8 @@ using Prestamo.Data;
 using Prestamo.Entidades;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
+using System;
+using System.Security.Claims;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Prestamo.Web.Controllers
@@ -35,12 +37,33 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
 
+        [HttpGet]
+        public async Task<IActionResult> ObtenerCedulaCliente()
+        {
+            var correo = User.FindFirst(ClaimTypes.Email)?.Value;
+            Console.WriteLine(correo);
+            if (string.IsNullOrEmpty(correo))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var cliente = await _clienteData.ObtenerPorCorreo(correo);
+            Console.WriteLine(cliente.NroDocumento);
+            if (cliente == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            return Ok(new { cedula = cliente.NroDocumento });
+
+        }
+
         [HttpPost]
         public async Task<IActionResult> Crear([FromBody] Prestamo.Entidades.Prestamo objeto)
         {
             string respuesta = await _prestamoData.Crear(objeto);
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
         }
+
 
         [HttpGet]
         public async Task<IActionResult> ObtenerPrestamos(int IdPrestamo, string NroDocumento)
