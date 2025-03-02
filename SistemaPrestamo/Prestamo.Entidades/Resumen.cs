@@ -12,5 +12,7 @@ namespace Prestamo.Entidades
         public string PrestamosPendientes { get; set; } = null!;
         public string PrestamosCancelados { get; set; } = null!;
         public string InteresAcumulado { get; set; } = null!;
+        public string SolicitudesPendientes { get; set; } = null!;
+
     }
 }

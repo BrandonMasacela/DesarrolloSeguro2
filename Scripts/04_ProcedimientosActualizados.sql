@@ -334,33 +334,46 @@ CREATE PROCEDURE [dbo].[sp_obtenerPrestamos]
     @NroDocumento VARCHAR(50) = ''
 AS
 BEGIN
-    select p.IdPrestamo,
-	c.IdCliente,c.NroDocumento,c.Nombre,c.Apellido,c.Correo,c.Telefono,
-	m.IdMoneda,m.Nombre[NombreMoneda],m.Simbolo,
-	CONVERT(char(10),p.FechaInicioPago, 103) [FechaInicioPago],
-	CONVERT(VARCHAR,p.MontoPrestamo)[MontoPrestamo],
-	CONVERT(VARCHAR,p.InteresPorcentaje)[InteresPorcentaje],
-	p.NroCuotas,
-	p.FormaDePago,
-	CONVERT(VARCHAR,p.ValorPorCuota)[ValorPorCuota],
-	CONVERT(VARCHAR,p.ValorInteres)[ValorInteres],
-	CONVERT(VARCHAR,p.ValorTotal)[ValorTotal],
-	p.Estado,
-	CONVERT(char(10),p.FechaCreacion, 103) [FechaCreacion],
-	(
-		select pd.IdPrestamoDetalle,CONVERT(char(10),pd.FechaPago, 103) [FechaPago],
-		CONVERT(VARCHAR,pd.MontoCuota)[MontoCuota],
-		pd.NroCuota,pd.Estado,isnull(CONVERT(varchar(10),pd.FechaPagado, 103),'')[FechaPagado]
-		from PrestamoDetalle pd
-		where pd.IdPrestamo = p.IdPrestamo
-		FOR XML PATH('Detalle'), TYPE, ROOT('PrestamoDetalle')
-	)
-	from Prestamo p
-	inner join Cliente c on c.IdCliente = p.IdCliente
-	inner join Moneda m on m.IdMoneda = p.IdMoneda
-	where p.IdPrestamo = iif(@IdPrestamo = 0,p.idprestamo,@IdPrestamo) and
-	c.NroDocumento = iif(@NroDocumento = '',c.NroDocumento,@NroDocumento)
-	FOR XML PATH('Prestamo'), ROOT('Prestamos'), TYPE;
+    SELECT TOP 1
+        p.IdPrestamo,
+        c.IdCliente,
+        c.NroDocumento,
+        c.Nombre,
+        c.Apellido,
+        c.Correo,
+        c.Telefono,
+        m.IdMoneda,
+        m.Nombre AS [NombreMoneda],
+        m.Simbolo,
+        CONVERT(char(10), p.FechaInicioPago, 103) AS [FechaInicioPago],
+        CONVERT(VARCHAR, p.MontoPrestamo) AS [MontoPrestamo],
+        CONVERT(VARCHAR, p.InteresPorcentaje) AS [InteresPorcentaje],
+        p.NroCuotas,
+        p.FormaDePago,
+        CONVERT(VARCHAR, p.ValorPorCuota) AS [ValorPorCuota],
+        CONVERT(VARCHAR, p.ValorInteres) AS [ValorInteres],
+        CONVERT(VARCHAR, p.ValorTotal) AS [ValorTotal],
+        p.Estado,
+        CONVERT(char(10), p.FechaCreacion, 103) AS [FechaCreacion],
+        (
+            SELECT
+                pd.IdPrestamoDetalle,
+                CONVERT(char(10), pd.FechaPago, 103) AS [FechaPago],
+                CONVERT(VARCHAR, pd.MontoCuota) AS [MontoCuota],
+                pd.NroCuota,
+                pd.Estado,
+                ISNULL(CONVERT(varchar(10), pd.FechaPagado, 103), '') AS [FechaPagado]
+            FROM PrestamoDetalle pd
+            WHERE pd.IdPrestamo = p.IdPrestamo
+            FOR XML PATH('Detalle'), TYPE, ROOT('PrestamoDetalle')
+        )
+    FROM Prestamo p
+    INNER JOIN Cliente c ON c.IdCliente = p.IdCliente
+    INNER JOIN Moneda m ON m.IdMoneda = p.IdMoneda
+    WHERE p.IdPrestamo = IIF(@IdPrestamo = 0, p.IdPrestamo, @IdPrestamo)
+      AND c.NroDocumento = IIF(@NroDocumento = '', c.NroDocumento, @NroDocumento)
+    ORDER BY p.FechaCreacion DESC
+    FOR XML PATH('Prestamo'), ROOT('Prestamos'), TYPE;
 END
 GO
 
@@ -495,7 +508,7 @@ GO
 
 CREATE PROCEDURE [dbo].[sp_crearCuenta]
     @IdCliente INT,
-    @Tarjeta VARCHAR(16),
+    @Tarjeta VARCHAR(64),
     @Monto DECIMAL(18, 2),
     @msgError NVARCHAR(100) OUTPUT
 AS
@@ -549,6 +562,173 @@ BEGIN
 END
 GO
 
+-- Procedimiento para cambio de contraseña
+CREATE PROCEDURE sp_actualizarUsuario
+    @IdUsuario INT,
+    @Clave NVARCHAR(100)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    UPDATE Usuario
+    SET Clave = @Clave
+    WHERE IdUsuario = @IdUsuario;
+END
+GO
+
+-- Procedimiento para obtener usuario por id
+CREATE PROCEDURE [dbo].[sp_obtenerUsuarioPorId]
+@IdUsuario INT
+AS
+BEGIN
+    SELECT
+		IdUsuario,
+        NombreCompleto,
+        Correo,
+        Clave,
+        Rol,
+        FailedAttempts,
+        IsLocked,
+		LockoutEnd
+    FROM Usuario
+    WHERE IdUsuario = @IdUsuario;
+END
+GO
+
+
+--- PROCEDIMIENTOS DE SOLICITUD PRESTAMO---
+
+CREATE PROCEDURE sp_crearSolicitudPrestamo
+    @IdUsuario INT,
+    @Monto DECIMAL(18, 2),
+    @Plazo INT,
+    @Estado NVARCHAR(50),
+    @FechaSolicitud DATETIME,
+    @Sueldo DECIMAL(18, 2),
+    @EsCasado BIT,
+    @NumeroHijos INT,
+    @MetodoPago NVARCHAR(50),
+	@Cedula NVARCHAR(10),
+    @Ocupacion NVARCHAR(100)
+AS
+BEGIN
+    INSERT INTO SolicitudPrestamo (IdUsuario, Monto, Plazo, Estado, FechaSolicitud, Sueldo, EsCasado, NumeroHijos, MetodoPago, Cedula, Ocupacion)
+    VALUES (@IdUsuario, @Monto, @Plazo, @Estado, @FechaSolicitud, @Sueldo, @EsCasado, @NumeroHijos, @MetodoPago, @Cedula, @Ocupacion);
+END
+GO
+
+CREATE PROCEDURE sp_obtenerSolicitudesPendientes
+AS
+BEGIN
+    SELECT Id, IdUsuario, Monto, Plazo, Estado, FechaSolicitud, Sueldo, EsCasado, NumeroHijos, MetodoPago, Cedula, Ocupacion
+    FROM SolicitudPrestamo
+    WHERE Estado = 'Pendiente';
+END
+GO
+
+CREATE PROCEDURE sp_actualizarEstadoSolicitud
+    @Id INT,
+    @Estado NVARCHAR(50)
+AS
+BEGIN
+    UPDATE SolicitudPrestamo
+    SET Estado = @Estado
+    WHERE Id = @Id;
+END
+GO
+
+CREATE PROCEDURE sp_obtenerHistorialCrediticio
+    @IdUsuario INT
+AS
+BEGIN
+    SELECT IdUsuario, EstadoCrediticio
+    FROM HistorialCrediticio
+    WHERE IdUsuario = @IdUsuario;
+END
+GO
+
+CREATE PROCEDURE sp_crearHistorialCrediticio
+    @IdUsuario INT,
+    @EstadoCrediticio INT
+AS
+BEGIN
+    INSERT INTO HistorialCrediticio (IdUsuario, EstadoCrediticio)
+    VALUES (@IdUsuario, @EstadoCrediticio);
+END
+GO
+
+CREATE PROCEDURE sp_actualizarHistorialCrediticio
+    @IdUsuario INT,
+    @Aprobado BIT
+AS
+BEGIN
+    IF @Aprobado = 1
+    BEGIN
+        UPDATE HistorialCrediticio
+        SET EstadoCrediticio = EstadoCrediticio + 1
+        WHERE IdUsuario = @IdUsuario;
+    END
+    ELSE
+    BEGIN
+        UPDATE HistorialCrediticio
+        SET EstadoCrediticio = EstadoCrediticio - 1
+        WHERE IdUsuario = @IdUsuario;
+    END
+END
+GO
+
+--- PROCEDIMIENTOS DE REPORTES CLIENTES ---
+CREATE PROCEDURE [dbo].[sp_obtenerResumenPorCliente]
+    @IdCliente INT,
+    @IdPrestamo INT
+AS
+BEGIN
+    DECLARE @PrestamosPendientes INT;
+    DECLARE @PrestamosCancelados INT;
+	DECLARE @PrestamosTotales INT;
+
+	SELECT @PrestamosTotales = COUNT(*) 
+    FROM Prestamo 
+    WHERE IdCliente = @IdCliente AND Estado = 'Pendiente';
+    -- Obtener cantidad de préstamos pendientes del cliente
+    SELECT @PrestamosPendientes = COUNT(*) 
+    FROM PrestamoDetalle  
+    WHERE IdPrestamo = @IdPrestamo AND Estado = 'Pendiente';
+
+    -- Obtener cantidad de préstamos cancelados del préstamo específico
+    SELECT @PrestamosCancelados = COUNT(*) 
+    FROM PrestamoDetalle 
+    WHERE IdPrestamo = @IdPrestamo AND Estado = 'Cancelado';
+
+    -- Retornar resultados 
+    SELECT 
+        @PrestamosPendientes AS [PrestamosPendientes],
+        @PrestamosTotales AS [PrestamosPagados];
+END
+GO
+
+
+CREATE PROCEDURE sp_obtenerIdPrestamoPorCliente
+    @IdCliente INT
+AS
+BEGIN
+    SELECT TOP 1 IdPrestamo
+    FROM Prestamo
+    WHERE IdCliente = @IdCliente
+    ORDER BY FechaCreacion DESC;
+END
+GO
+
+CREATE PROCEDURE sp_obtenerSolicitudPorId
+    @Id INT
+AS
+BEGIN
+    SELECT Id, IdUsuario, Monto, Plazo, Estado, FechaSolicitud, Sueldo, EsCasado, NumeroHijos, MetodoPago, Cedula, Ocupacion
+    FROM SolicitudPrestamo
+    WHERE Id = @Id;
+END
+GO
+
 --- PROCEDIMIENTOS DE REPORTES ---
 CREATE PROCEDURE [dbo].[sp_obtenerResumen]
 AS
@@ -557,7 +737,20 @@ BEGIN
         (SELECT CONVERT(VARCHAR, COUNT(*)) FROM Cliente) [TotalClientes],
         (SELECT CONVERT(VARCHAR, COUNT(*)) FROM Prestamo WHERE Estado = 'Pendiente')[PrestamosPendientes],
         (SELECT CONVERT(VARCHAR, COUNT(*)) FROM Prestamo WHERE Estado = 'Cancelado')[PrestamosCancelados],
+		(SELECT CONVERT(VARCHAR, COUNT(*)) FROM SolicitudPrestamo WHERE Estado = 'Pendiente')[SolicitudesPendientes],
         (SELECT CONVERT(VARCHAR, ISNULL(SUM(ValorInteres), 0)) FROM Prestamo WHERE Estado = 'Cancelado')[InteresAcumulado]
 END
 GO
 
+--- PROCEDIMIENTOS DE AUDITORIA ---
+CREATE PROCEDURE [dbo].[sp_insertarAuditoria]
+    @Usuario NVARCHAR(256),
+    @Accion NVARCHAR(256),
+    @Fecha DATETIME,
+    @Detalles NVARCHAR(MAX)
+AS
+BEGIN
+    INSERT INTO Auditoria (Usuario, Accion, Fecha, Detalles)
+    VALUES (@Usuario, @Accion, @Fecha, @Detalles)
+END
+GO

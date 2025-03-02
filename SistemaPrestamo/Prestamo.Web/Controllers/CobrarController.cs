@@ -1,20 +1,22 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Prestamo.Data;
 using Prestamo.Web.Models;
+using Prestamo.Web.Servives;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CobrarController : Controller
     {
-        private readonly ClienteData _clienteData;
         private readonly PrestamoData _prestamoData;
+        private readonly AuditoriaService _auditoriaService;
 
-        public CobrarController(ClienteData clienteData, PrestamoData prestamoData)
+        public CobrarController(PrestamoData prestamoData, AuditoriaService auditoriaService)
         {
-            _clienteData = clienteData;
             _prestamoData = prestamoData;
+            _auditoriaService = auditoriaService;
         }
         public IActionResult Index()
         {
@@ -22,6 +24,7 @@ namespace Prestamo.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> PagarCuotas([FromBody] PagarCuotasRequest request)
         {
             if (request == null)
@@ -51,6 +54,7 @@ namespace Prestamo.Web.Controllers
                     request.NroCuotasPagadas, 
                     request.NumeroTarjeta
                 );
+                await _auditoriaService.RegistrarLog(User.Identity.Name, "Pagar", $"Cuota pagada: {request.NroCuotasPagadas}");
                 return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
             }
             catch (Exception ex)

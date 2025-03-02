@@ -1,30 +1,55 @@
 ﻿let idPrestamo = 0;
 let totalPagar = 0;
 let prestamosEncontrados = [];
-
+let nroDocumentoCliente = "";
+// Definir la variable token al inicio del script
+let token;
 document.addEventListener("DOMContentLoaded", function () {
+    // Obtener el token del almacenamiento local
+    token = localStorage.getItem('token');
+
+    // Verificar si el token existe
+    if (!token) {
+        $.LoadingOverlay("hide");
+        Swal.fire({
+            title: "Error!",
+            text: "No se encontró el token de autenticación.",
+            icon: "warning"
+        });
+        return;
+    }
+
+    // Obtener el número de cédula del cliente autenticado
+    fetch('/Prestamo/ObtenerCedulaCliente', {
+        method: "GET",
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json;charset=utf-8'
+        }
+    }).then(response => {
+        return response.ok ? response.json() : Promise.reject(response);
+    }).then(responseJson => {
+        nroDocumentoCliente = responseJson.cedula;
+        console.log("Cédula del cliente:", nroDocumentoCliente);
+        buscarPrestamos();
+    }).catch(error => {
+        console.error("Error al obtener la cédula del cliente:", error);
+    });
+
     // Validar que solo se ingresen números en el campo de número de tarjeta
     document.getElementById("txtNumeroTarjeta").addEventListener("input", function (e) {
         this.value = this.value.replace(/\D/g, '');
     });
 });
 
-
-$("#btnBuscar").on("click", function () {
-    if ($("#txtNroDocumento").val() == "") {
-        Swal.fire({
-            title: "Ups!",
-            text: "Debe ingresar un numero de documento.",
-            icon: "warning"
-        });
-        return;
-    }
-
+function buscarPrestamos() {
     $.LoadingOverlay("show");
-
-    fetch(`/Prestamo/ObtenerPrestamos?IdPrestamo=0&NroDocumento=${$("#txtNroDocumento").val()}`, {
+    fetch(`/Prestamo/ObtenerPrestamos?IdPrestamo=0&NroDocumento=${nroDocumentoCliente}`, {
         method: "GET",
-        headers: { 'Content-Type': 'application/json;charset=utf-8' }
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json;charset=utf-8'
+        }
     }).then(response => {
         return response.ok ? response.json() : Promise.reject(response);
     }).then(responseJson => {
@@ -35,7 +60,7 @@ $("#btnBuscar").on("click", function () {
             Limpiar(false);
             Swal.fire({
                 title: "Ups!",
-                text: "No se encontro un cliente.",
+                text: "No se encontró un cliente.",
                 icon: "warning"
             });
             return;
@@ -75,14 +100,17 @@ $("#btnBuscar").on("click", function () {
             icon: "warning"
         });
     })
-})
+}
 
 function obtenerTarjeta() {
-    const idCliente = $("#txtNroDocumento").val();
+    const idCliente = nroDocumentoCliente;
     if (idCliente) {
         fetch(`/Cobrar/ObtenerTarjeta?idCliente=${idCliente}`, {
             method: "GET",
-            headers: { 'Content-Type': 'application/json;charset=utf-8' }
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json;charset=utf-8'
+            }
         }).then(response => {
             return response.ok ? response.json() : Promise.reject(response);
         }).then(responseJson => {
@@ -92,6 +120,7 @@ function obtenerTarjeta() {
         });
     }
 }
+
 function Limpiar(limpiarNroDocumento) {
     if (limpiarNroDocumento)
         $("#txtNroDocumento").val("");
@@ -218,6 +247,7 @@ $("#btnRegistrarPago").on("click", function () {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`,
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify(requestData)

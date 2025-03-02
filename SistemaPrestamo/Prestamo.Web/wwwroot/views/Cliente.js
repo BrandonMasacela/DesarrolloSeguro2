@@ -5,8 +5,24 @@ const modal = "mdData";
 const preguntaEliminar = "Desea eliminar la cliente";
 const confirmaEliminar = "El cliente fue eliminado.";
 const confirmaRegistro = "Cliente registrado!";
+// Definir la variable token al inicio del script
+let token;
 
 document.addEventListener("DOMContentLoaded", function (event) {
+
+    // Obtener el token del almacenamiento local
+    token = localStorage.getItem('token');
+
+    // Verificar si el token existe
+    if (!token) {
+        $.LoadingOverlay("hide");
+        Swal.fire({
+            title: "Error!",
+            text: "No se encontró el token de autenticación.",
+            icon: "warning"
+        });
+        return;
+    }
 
     tablaData = $('#tbData').DataTable({
         responsive: true,
@@ -14,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         "ajax": {
             "url": `/${controlador}/Lista`,
             "type": "GET",
+            'Authorization': `Bearer ${token}`,
             "datatype": "json"
         },
         "columns": [
@@ -86,7 +103,10 @@ $("#tbData tbody").on("click", ".btn-eliminar", function () {
 
             fetch(`/${controlador}/Eliminar?Id=${data.idCliente}`, {
                 method: "DELETE",
-                headers: { 'Content-Type': 'application/json;charset=utf-8' }
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json;charset=utf-8'
+                }
             }).then(response => {
                 return response.ok ? response.json() : Promise.reject(response);
             }).then(responseJson => {
@@ -143,7 +163,10 @@ $("#btnGuardar").on("click", function () {
 
         fetch(`/${controlador}/Editar`, {
             method: "PUT",
-            headers: { 'Content-Type': 'application/json;charset=utf-8' },
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json;charset=utf-8'
+            },
             body: JSON.stringify(objeto)
         }).then(response => {
             return response.ok ? response.json() : Promise.reject(response);
@@ -173,7 +196,10 @@ $("#btnGuardar").on("click", function () {
     } else {
         fetch(`/${controlador}/Crear`, {
             method: "POST",
-            headers: { 'Content-Type': 'application/json;charset=utf-8' },
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json;charset=utf-8'
+            },
             body: JSON.stringify(objeto)
         }).then(response => {
             return response.ok ? response.json() : Promise.reject(response);

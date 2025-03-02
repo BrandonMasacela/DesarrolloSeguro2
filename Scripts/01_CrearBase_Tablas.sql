@@ -30,7 +30,7 @@ go
 create table Cuenta (
     IdCuenta int primary key identity,
     IdCliente int references Cliente(IdCliente),
-    Tarjeta varchar(16),
+    Tarjeta varchar(64),
     FechaCreacion datetime default getdate(),
     Monto decimal(18, 2)
 )
@@ -82,3 +82,36 @@ FechaCreacion datetime default getdate()
 )
 
 go
+
+CREATE TABLE SolicitudPrestamo
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    IdUsuario INT NOT NULL,
+    Monto DECIMAL(18, 2) NOT NULL,
+    Plazo INT NOT NULL,
+    Estado NVARCHAR(50) NOT NULL,
+    FechaSolicitud DATETIME NOT NULL,
+	Sueldo DECIMAL(18, 2) NOT NULL,
+    EsCasado BIT NOT NULL,
+    NumeroHijos INT NOT NULL,
+    MetodoPago NVARCHAR(50) NOT NULL,
+	Cedula NVARCHAR(10) NOT NULL,
+    Ocupacion NVARCHAR(100) NOT NULL
+)
+go
+
+
+CREATE TABLE HistorialCrediticio
+(
+    IdUsuario INT PRIMARY KEY,
+    EstadoCrediticio INT NOT NULL
+);
+
+
+CREATE TABLE Auditoria (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Usuario NVARCHAR(256),
+    Accion NVARCHAR(256),
+    Fecha DATETIME,
+    Detalles NVARCHAR(MAX)
+);

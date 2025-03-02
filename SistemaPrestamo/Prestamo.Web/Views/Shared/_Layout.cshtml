@@ -64,12 +64,20 @@
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-money-bill"></i></div>
                                 Prestamos
                             </a>
+                            <a class="nav-link" asp-controller="SolicitudPrestamo" asp-action="GestionarSolicitudes">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                                Solicitudes
+                            </a>
                         }
                         else
                         {
-                            <a class="nav-link" asp-controller="Prestamo" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-money-bill"></i></div>
-                                Prestamos
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Resumen
+                            </a>
+                            <a class="nav-link" asp-controller="Account" asp-action="ChangePassword">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-key"></i></div>
+                                Cambiar Contraseña
                             </a>
                             <a class="nav-link" asp-controller="Cobrar" asp-action="Index">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
@@ -78,6 +86,10 @@
                             <a class="nav-link" asp-controller="Cuenta" asp-action="Index">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-credit-card"></i></div>
                                 Cuenta
+                            </a>
+                            <a class="nav-link" asp-controller="SolicitudPrestamo" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                                Realizar Solicitud
                             </a>
                         }
                     </div>

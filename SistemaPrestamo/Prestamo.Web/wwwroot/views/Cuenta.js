@@ -1,4 +1,21 @@
-﻿document.addEventListener("DOMContentLoaded", function (event) {
+﻿// Definir la variable token al inicio del script
+let token;
+document.addEventListener("DOMContentLoaded", function (event) {
+
+    // Obtener el token del almacenamiento local
+    token = localStorage.getItem('token');
+
+    // Verificar si el token existe
+    if (!token) {
+        $.LoadingOverlay("hide");
+        Swal.fire({
+            title: "Error!",
+            text: "No se encontró el token de autenticación.",
+            icon: "warning"
+        });
+        return;
+    }
+
     const idClienteElement = document.getElementById("idCliente");
     const idCliente = idClienteElement ? idClienteElement.value : null;
 
@@ -7,12 +24,13 @@
         return;
     }
 
-    console.log("Id Cliente: " + idCliente);
-
     // Obtener los datos de la cuenta
     fetch(`/Cuenta/ObtenerCuenta?idCliente=${idCliente}`, {
         method: "GET",
-        headers: { 'Content-Type': 'application/json;charset=utf-8' }
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+            'Authorization': `Bearer ${token}`
+        }
     })
         .then(response => {
             if (!response.ok) {
@@ -66,7 +84,8 @@
         fetch('/Cliente/Depositar', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(requestData)
         })

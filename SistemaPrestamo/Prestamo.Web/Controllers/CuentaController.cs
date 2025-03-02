@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -8,7 +9,7 @@ using System.Security.Claims;
 namespace Prestamo.Web.Controllers
 {
 
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CuentaController : Controller
     {
         private readonly ClienteData _clienteData;
@@ -54,9 +55,11 @@ namespace Prestamo.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> ObtenerCuenta(int idCliente)
         {
             Console.WriteLine($"Obteniendo cuenta para cliente ID: {idCliente}");
+           
             try
             {
                 var cuenta = await _cuentaData.ObtenerCuenta(idCliente);
@@ -64,6 +67,7 @@ namespace Prestamo.Web.Controllers
                 {
                     return Json(new { success = false, message = "No se encontró la cuenta" });
                 }
+
                 Console.WriteLine($"Cuenta encontrada: {cuenta?.Tarjeta ?? "null"}");
                 return Json(new { success = true, data = cuenta });
             }

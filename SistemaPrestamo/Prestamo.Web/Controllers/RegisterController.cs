@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Prestamo.Web.Controllers
 {
+
     public class RegisterController : Controller
     {
         private readonly UsuarioData _usuarioData;

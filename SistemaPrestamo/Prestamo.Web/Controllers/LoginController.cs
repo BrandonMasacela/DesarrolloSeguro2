@@ -8,19 +8,28 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Prestamo.Web.Servives;
 
 
 namespace Prestamo.Web.Controllers
-{ 
+{
     public class LoginController : Controller
     {
         private readonly UsuarioData _usuarioData;
         private readonly EmailService _emailService;
+        private readonly IConfiguration _configuration;
+        private readonly AuditoriaService _auditoriaService;
 
-        public LoginController(UsuarioData usuarioData, EmailService emailService)
+        public LoginController(UsuarioData usuarioData, EmailService emailService, IConfiguration configuration, AuditoriaService auditoriaService)
         {
             _usuarioData = usuarioData;
             _emailService = emailService;
+            _configuration = configuration;
+            _auditoriaService = auditoriaService;
         }
         public IActionResult Index()
         {
@@ -139,41 +148,74 @@ namespace Prestamo.Web.Controllers
             string mensaje = $"Tu código de verificación es: {codigoVerificacion}";
             await _emailService.EnviarCorreoAsync(correo, asunto, mensaje);
 
+            // Aquí guardamos la información de nuestro usuario
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.Name, usuario.NombreCompleto),
+                new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
+                new Claim(ClaimTypes.Email, usuario.Correo),
+                new Claim(ClaimTypes.Role, usuario.Rol)
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
+            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expires = DateTime.Now.AddMinutes(Convert.ToDouble(_configuration["Jwt:expires"]));
+
+            var token = new JwtSecurityToken(
+                _configuration["Jwt:Issuer"],
+                _configuration["Jwt:Audience"],
+                claims,
+                expires: expires,
+                signingCredentials: credentials
+            );
+
+            HttpContext.Session.SetString("Token", new JwtSecurityTokenHandler().WriteToken(token));
+            TempData["Token"] = new JwtSecurityTokenHandler().WriteToken(token);
             return RedirectToAction("VerificarCodigo");
         }
 
         public IActionResult VerificarCodigo()
         {
+            ViewData["Token"] = TempData["Token"];
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> VerificarCodigo(string codigo)
+        public async Task<IActionResult> VerificarCodigoAsync(string codigo)
         {
             var codigoVerificacion = HttpContext.Session.GetString("CodigoVerificacion");
             var correo = HttpContext.Session.GetString("CorreoVerificacion");
+            var token = HttpContext.Session.GetString("Token");
 
             if (codigo == codigoVerificacion)
             {
-                // Obtener el usuario por correo
-                var usuario = await _usuarioData.ObtenerPorCorreo(correo);
-
-                // Aquí guardamos la información de nuestro usuario
-                List<Claim> claims = new List<Claim>
+                var usuario = _usuarioData.ObtenerPorCorreo(correo!).Result;
+                // Crear identidad del usuario
+                var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, usuario.NombreCompleto),
-                    new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
                     new Claim(ClaimTypes.Email, usuario.Correo),
                     new Claim(ClaimTypes.Role, usuario.Rol)
                 };
 
-                ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                AuthenticationProperties properties = new AuthenticationProperties
-                {
-                    AllowRefresh = true
-                };
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
 
-                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), properties);
+                // Generar cookie de autenticación
+                await HttpContext.SignInAsync(
+                    CookieAuthenticationDefaults.AuthenticationScheme,
+                    principal,
+                    new AuthenticationProperties { IsPersistent = false }
+                );
+
+                // Opcional: Guardar JWT en cookie adicional
+                Response.Cookies.Append("access_token", token!, new CookieOptions
+                {
+                    HttpOnly = true,
+                    Secure = true
+                });
+                TempData["Token"] = token;
+                await _auditoriaService.RegistrarLog(usuario.Correo, "Inicio de sesión", "Inicio de sesión exitoso");
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -185,7 +227,7 @@ namespace Prestamo.Web.Controllers
 
         public async Task<IActionResult> Salir()
         {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            await HttpContext.SignOutAsync(JwtBearerDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Login");
         }
     }

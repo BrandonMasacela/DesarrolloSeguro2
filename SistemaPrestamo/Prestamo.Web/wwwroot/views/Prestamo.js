@@ -5,8 +5,23 @@ const modal = "mdData";
 const preguntaEliminar = "Desea eliminar la moneda";
 const confirmaEliminar = "La moneda fue eliminada.";
 const confirmaRegistro = "Moneda registrada!";
-
+// Definir la variable token al inicio del script
+let token;
 document.addEventListener("DOMContentLoaded", function (event) {
+
+    // Obtener el token del almacenamiento local
+    token = localStorage.getItem('token');
+
+    // Verificar si el token existe
+    if (!token) {
+        $.LoadingOverlay("hide");
+        Swal.fire({
+            title: "Error!",
+            text: "No se encontró el token de autenticación.",
+            icon: "warning"
+        });
+        return;
+    }
 
     tablaData = $('#tbData').DataTable({
         responsive: true,
@@ -14,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         "ajax": {
             "url": `/${controlador}/ObtenerPrestamos?IdPrestamo=0&NroDocumento=`,
             "type": "GET",
+            'Authorization': `Bearer ${token}`,
             "datatype": "json"
         },
         "columns": [

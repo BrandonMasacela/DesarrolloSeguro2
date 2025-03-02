@@ -4,12 +4,31 @@ const controlador = "Prestamo";
 const confirmaRegistro = "Prestamo registrado!";
 
 let idCliente = 0;
-
+// Definir la variable token al inicio del script
+let token;
 document.addEventListener("DOMContentLoaded", function (event) {
+
+    // Obtener el token del almacenamiento local
+    token = localStorage.getItem('token');
+
+    // Verificar si el token existe
+    if (!token) {
+        $.LoadingOverlay("hide");
+        Swal.fire({
+            title: "Error!",
+            text: "No se encontró el token de autenticación.",
+            icon: "warning"
+        });
+        return;
+    }
+
     $.LoadingOverlay("show");
     fetch(`/Moneda/Lista`, {
         method: "GET",
-        headers: { 'Content-Type': 'application/json;charset=utf-8' }
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json;charset=utf-8'
+        }
     }).then(response => {
         return response.ok ? response.json() : Promise.reject(response);
     }).then(responseJson => {
@@ -45,7 +64,10 @@ $("#btnBuscar").on("click", function () {
 
     fetch(`/${controlador}/ObtenerCliente?NroDocumento=${$("#txtNroDocumento").val()}`, {
         method: "GET",
-        headers: { 'Content-Type': 'application/json;charset=utf-8' }
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json;charset=utf-8'
+        }
     }).then(response => {
         return response.ok ? response.json() : Promise.reject(response);
     }).then(responseJson => {
@@ -172,7 +194,10 @@ $("#btnRegistrar").on("click", function () {
 
     fetch(`/${controlador}/Crear`, {
         method: "POST",
-        headers: { 'Content-Type': 'application/json;charset=utf-8' },
+        headers: {
+            'Authorization': `Bearer ${token}`, 
+            'Content-Type': 'application/json;charset=utf-8'
+        },
         body: JSON.stringify(objeto)
     }).then(response => {
         return response.ok ? response.json() : Promise.reject(response);

@@ -2,6 +2,8 @@
 using Prestamo.Entidades;
 using System.Data.SqlClient;
 using System.Data;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Prestamo.Data
 {
@@ -10,6 +12,7 @@ namespace Prestamo.Data
         private readonly ConnectionStrings con;
         private readonly UsuarioData usuarioData;
         private readonly EmailService emailService;
+        private readonly string encryptionKey = "aB3dE5fG7hI9jK1mN2oP4qR6sT8uV0wX";
 
         public ClienteData(IOptions<ConnectionStrings> options, UsuarioData usuarioData, EmailService emailService)
         {
@@ -17,6 +20,34 @@ namespace Prestamo.Data
             this.usuarioData = usuarioData;
             this.emailService = emailService;
         }
+
+        private string Encrypt(string plainText)
+        {
+            using (var aes = Aes.Create())
+            {
+                byte[] key = Encoding.UTF8.GetBytes(encryptionKey);
+                Array.Resize(ref key, 32); // 256 bits
+                aes.Key = key;
+
+                // Generar IV automáticamente (16 bytes)
+                aes.GenerateIV();
+                byte[] iv = aes.IV;
+
+                using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
+                using (var ms = new MemoryStream())
+                {
+                    // Escribir IV seguido del texto cifrado
+                    ms.Write(iv, 0, iv.Length);
+                    using (var cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))
+                    using (var sw = new StreamWriter(cs))
+                    {
+                        sw.Write(plainText);
+                    }
+                    return Convert.ToBase64String(ms.ToArray());
+                }
+            }
+        }
+
 
         public async Task<List<Cliente>> Lista()
         {
@@ -89,6 +120,7 @@ namespace Prestamo.Data
             return tarjeta;
         }
 
+
         public async Task<string> CrearCuenta(Cuenta cuenta)
         {
             string respuesta = "";
@@ -97,7 +129,8 @@ namespace Prestamo.Data
                 await conexion.OpenAsync();
                 SqlCommand cmd = new SqlCommand("sp_crearCuenta", conexion);
                 cmd.Parameters.AddWithValue("@IdCliente", cuenta.IdCliente);
-                cmd.Parameters.AddWithValue("@Tarjeta", cuenta.Tarjeta);
+                cmd.Parameters.Add("@Tarjeta", SqlDbType.VarChar, 256).Value = Encrypt(cuenta.Tarjeta);
+                Console.WriteLine("Tarjeta encriptada: " + Encrypt(cuenta.Tarjeta));
                 cmd.Parameters.AddWithValue("@Monto", cuenta.Monto);
                 cmd.Parameters.Add("@msgError", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -115,34 +148,6 @@ namespace Prestamo.Data
             return respuesta;
         }
 
-        public async Task<Cuenta> ObtenerCuentaPorCliente(int idCliente)
-        {
-            Cuenta cuenta = new Cuenta();
-
-            using (var conexion = new SqlConnection(con.CadenaSQL))
-            {
-                await conexion.OpenAsync();
-                SqlCommand cmd = new SqlCommand("sp_obtenerCuentaPorCliente", conexion);
-                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                using (var dr = await cmd.ExecuteReaderAsync())
-                {
-                    while (await dr.ReadAsync())
-                    {
-                        cuenta = new Cuenta()
-                        {
-                            IdCuenta = Convert.ToInt32(dr["IdCuenta"]),
-                            IdCliente = Convert.ToInt32(dr["IdCliente"]),
-                            Tarjeta = dr["Tarjeta"].ToString()!,
-                            FechaCreacion = Convert.ToDateTime(dr["FechaCreacion"]),
-                            Monto = Convert.ToDecimal(dr["Monto"])
-                        };
-                    }
-                }
-            }
-            return cuenta;
-        }
         public async Task<string> Crear(Cliente objeto)
         {
             string respuesta = "";
@@ -191,7 +196,6 @@ namespace Prestamo.Data
                         string mensaje = $"Hola {objeto.Nombre + " " + objeto.Apellido},<br/><br/>Tu cuenta ha sido creada exitosamente. Tu contraseña es: <b>{claveAleatoria}</b><br/><br/>Saludos,<br/>El equipo de Prestamo";
                         await emailService.EnviarCorreoAsync(objeto.Correo, asunto, mensaje);
 
-                        // Crear Cuenta
                         Cuenta nuevaCuenta = new Cuenta
                         {
                             IdCliente = objeto.IdCliente,
@@ -315,13 +319,55 @@ namespace Prestamo.Data
             return cliente;
         }
 
+        public async Task<Cliente> ObtenerPorCedula(string cedula)
+        {
+            Cliente cliente = null;
+
+            // Validación del parámetro
+            if (string.IsNullOrEmpty(cedula))
+            {
+                throw new ArgumentException("El cedula no puede estar vacío");
+            }
+
+            using (var conexion = new SqlConnection(con.CadenaSQL))
+            {
+                await conexion.OpenAsync();
+
+                using (SqlCommand cmd = new SqlCommand("sp_obtenerCliente", conexion))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Asegurarse de que el parámetro no sea null
+                    cmd.Parameters.AddWithValue("@NroDocumento", cedula ?? string.Empty);
+
+                    using (var dr = await cmd.ExecuteReaderAsync())
+                    {
+                        if (await dr.ReadAsync())
+                        {
+                            cliente = new Cliente()
+                            {
+                                IdCliente = Convert.ToInt32(dr["IdCliente"]),
+                                NroDocumento = dr["NroDocumento"].ToString(),
+                                Nombre = dr["Nombre"].ToString(),
+                                Apellido = dr["Apellido"].ToString(),
+                                Correo = dr["Correo"].ToString(),
+                                Telefono = dr["Telefono"].ToString(),
+                                FechaCreacion = dr["FechaCreacion"].ToString()
+                            };
+                        }
+                    }
+                }
+            }
+            return cliente;
+        }
+
         public async Task<string> Depositar(int idCliente, decimal monto)
         {
             string respuesta = "";
             using (var conexion = new SqlConnection(con.CadenaSQL))
             {
                 await conexion.OpenAsync();
-                SqlCommand cmd = new SqlCommand("sp_depositar", conexion);
+                SqlCommand cmd = new SqlCommand("sp_depositarCuenta", conexion);
                 cmd.Parameters.AddWithValue("@IdCliente", idCliente);
                 cmd.Parameters.AddWithValue("@Monto", monto);
                 cmd.Parameters.Add("@msgError", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;

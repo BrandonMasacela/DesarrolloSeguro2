@@ -32,6 +32,7 @@ namespace Prestamo.Data
                             PrestamosPendientes = dr["PrestamosPendientes"].ToString()!,
                             PrestamosCancelados = dr["PrestamosCancelados"].ToString()!,
                             InteresAcumulado = dr["InteresAcumulado"].ToString()!,
+                            SolicitudesPendientes = dr["SolicitudesPendientes"].ToString()!
                         };
                     }
                 }

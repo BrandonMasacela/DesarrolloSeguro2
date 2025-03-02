@@ -1,25 +1,31 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Prestamo.Data;
 using Prestamo.Entidades;
+using Prestamo.Web.Servives;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
+using System;
+using System.Security.Claims;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class PrestamoController : Controller
     {
         private readonly ClienteData _clienteData;
         private readonly PrestamoData _prestamoData;
-        public PrestamoController(ClienteData clienteData, PrestamoData prestamoData)
+        private readonly AuditoriaService _auditoriaService;
+        public PrestamoController(ClienteData clienteData, PrestamoData prestamoData, AuditoriaService auditoriaService)
         {
             _clienteData = clienteData;
             _prestamoData = prestamoData;
+            _auditoriaService = auditoriaService;
         }
         public IActionResult Index()
-        {
+        {   
             return View();
         }
 
@@ -29,20 +35,46 @@ namespace Prestamo.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Cliente,Administrador")]
         public async Task<IActionResult> ObtenerCliente(string NroDocumento)
         {
             Cliente objeto = await _clienteData.Obtener(NroDocumento);
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
 
+        [HttpGet]
+        [Authorize(Roles = "Cliente, Administrador")]
+        public async Task<IActionResult> ObtenerCedulaCliente()
+        {
+            var correo = User.FindFirst(ClaimTypes.Email)?.Value;
+            Console.WriteLine(correo);
+            if (string.IsNullOrEmpty(correo))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var cliente = await _clienteData.ObtenerPorCorreo(correo);
+            Console.WriteLine(cliente.NroDocumento);
+            if (cliente == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            return Ok(new { cedula = cliente.NroDocumento });
+
+        }
+
         [HttpPost]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Crear([FromBody] Prestamo.Entidades.Prestamo objeto)
         {
             string respuesta = await _prestamoData.Crear(objeto);
+            await _auditoriaService.RegistrarLog(User.Identity.Name, "Crear", $"Préstamo creado: {objeto.IdPrestamo}");
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
         }
 
+
         [HttpGet]
+        [Authorize(Roles = "Cliente, Administrador")]
         public async Task<IActionResult> ObtenerPrestamos(int IdPrestamo, string NroDocumento)
         {
             List<Prestamo.Entidades.Prestamo> objeto = await _prestamoData.ObtenerPrestamos(IdPrestamo,NroDocumento == null ? "": NroDocumento);
@@ -50,6 +82,7 @@ namespace Prestamo.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ImprimirPrestamo(int IdPrestamo)
         {
             List<Prestamo.Entidades.Prestamo> lista = await _prestamoData.ObtenerPrestamos(IdPrestamo, "");

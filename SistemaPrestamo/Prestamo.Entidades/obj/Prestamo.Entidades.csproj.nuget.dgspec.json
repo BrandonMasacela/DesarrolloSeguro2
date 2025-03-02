@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {}
+    "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
+    "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj",
         "projectName": "Prestamo.Entidades",
-        "projectPath": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj",
-        "packagesPath": "C:\\Users\\pspgo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\Prestamo.Entidades.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pspgo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

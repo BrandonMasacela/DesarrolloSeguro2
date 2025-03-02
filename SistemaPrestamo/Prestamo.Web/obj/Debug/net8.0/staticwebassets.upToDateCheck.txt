@@ -68,10 +68,13 @@ wwwroot\lib\select2\css\select2.min.css
 wwwroot\lib\select2\css\select2-bootstrap-5-theme.min.css
 wwwroot\lib\select2\js\select2.min.js
 wwwroot\lib\sweetAlert2\js\sweetalert2.js
+wwwroot\views\cambiarContrasena.js
 wwwroot\views\Cliente.js
 wwwroot\views\Cobrar.js
 wwwroot\views\Cuenta.js
+wwwroot\views\gestionarSolicitudes.js
 wwwroot\views\Home.js
 wwwroot\views\Moneda.js
 wwwroot\views\NuevoPrestamo.js
 wwwroot\views\Prestamo.js
+wwwroot\views\solicitudPrestamo.js

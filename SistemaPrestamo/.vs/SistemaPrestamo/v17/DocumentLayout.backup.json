@@ -1,14 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\",
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\pspgo\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\cobrar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\cobrar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\pspgo\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\cuenta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\cuenta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\views\\cuenta.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\wwwroot\\views\\cuenta.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\views\\cliente.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\wwwroot\\views\\cliente.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\solicitudprestamo\\gestionarsolicitudes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\solicitudprestamo\\gestionarsolicitudes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\views\\prestamo\\nuevo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\views\\prestamo\\nuevo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\views\\gestionarsolicitudes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\wwwroot\\views\\gestionarsolicitudes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\controllers\\solicitudprestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\controllers\\solicitudprestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\views\\prestamo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\wwwroot\\views\\prestamo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|c:\\users\\usuario\\desarrolloseguro2\\sistemaprestamo\\prestamo.web\\wwwroot\\views\\nuevoprestamo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{888097C3-0277-479E-9C09-88A8C5EB3656}|Prestamo.Web\\Prestamo.Web.csproj|solutionrelative:prestamo.web\\wwwroot\\views\\nuevoprestamo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +74,226 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "Prestamo.Web\\Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAqwDAAAABoAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Cliente.js",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
+              "RelativeDocumentMoniker": "Prestamo.Web\\wwwroot\\views\\Cliente.js",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
+              "RelativeToolTip": "Prestamo.Web\\wwwroot\\views\\Cliente.js",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-01T23:48:55.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cuenta.js",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+              "RelativeDocumentMoniker": "Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+              "RelativeToolTip": "Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-01T23:48:46.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GestionarSolicitudes.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\SolicitudPrestamo\\GestionarSolicitudes.cshtml",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\SolicitudPrestamo\\GestionarSolicitudes.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\SolicitudPrestamo\\GestionarSolicitudes.cshtml",
+              "RelativeToolTip": "Prestamo.Web\\Views\\SolicitudPrestamo\\GestionarSolicitudes.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T04:40:09.759Z",
+              "WhenOpened": "2025-03-01T23:41:57.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "Prestamo.Web\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T23:32:39.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CuentaController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\CuentaController.cs",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Controllers\\CuentaController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\CuentaController.cs",
+              "RelativeToolTip": "Prestamo.Web\\Controllers\\CuentaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T23:38:10.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Prestamo.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T23:37:57.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Cliente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "Prestamo.Web\\Views\\Cliente\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T23:37:07.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "scripts.js",
-              "DocumentMoniker": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
-              "RelativeDocumentMoniker": "Prestamo.Web\\wwwroot\\js\\scripts.js",
-              "ToolTip": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
-              "RelativeToolTip": "Prestamo.Web\\wwwroot\\js\\scripts.js",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwDMAAAAwAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Cobrar\\Index.cshtml",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Cobrar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Cobrar\\Index.cshtml*",
+              "RelativeToolTip": "Prestamo.Web\\Views\\Cobrar\\Index.cshtml*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T23:36:15.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Cuenta\\Index.cshtml",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Cuenta\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Cuenta\\Index.cshtml",
+              "RelativeToolTip": "Prestamo.Web\\Views\\Cuenta\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T23:36:03.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Prestamo.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T23:42:29.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Nuevo.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Prestamo\\Nuevo.cshtml",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Views\\Prestamo\\Nuevo.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Views\\Prestamo\\Nuevo.cshtml",
+              "RelativeToolTip": "Prestamo.Web\\Views\\Prestamo\\Nuevo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T23:11:01.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Prestamo.js",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
+              "RelativeDocumentMoniker": "Prestamo.Web\\wwwroot\\views\\Prestamo.js",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
+              "RelativeToolTip": "Prestamo.Web\\wwwroot\\views\\Prestamo.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-18T04:31:19.033Z",
+              "WhenOpened": "2025-03-01T23:10:35.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PrestamoController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\PrestamoController.cs",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Controllers\\PrestamoController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\PrestamoController.cs",
+              "RelativeToolTip": "Prestamo.Web\\Controllers\\PrestamoController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAYwEwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T22:29:38.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NuevoPrestamo.js",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
+              "RelativeDocumentMoniker": "Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
+              "RelativeToolTip": "Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-01T22:18:39.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SolicitudPrestamoController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\SolicitudPrestamoController.cs",
+              "RelativeDocumentMoniker": "Prestamo.Web\\Controllers\\SolicitudPrestamoController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\Controllers\\SolicitudPrestamoController.cs",
+              "RelativeToolTip": "Prestamo.Web\\Controllers\\SolicitudPrestamoController.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAuwI8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T22:17:14.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "gestionarSolicitudes.js",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+              "RelativeDocumentMoniker": "Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+              "ToolTip": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+              "RelativeToolTip": "Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwEsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-01T22:17:28.392Z",
               "EditorCaption": ""
             }
           ]
