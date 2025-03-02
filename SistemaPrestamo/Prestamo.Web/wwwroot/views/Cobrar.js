@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return response.ok ? response.json() : Promise.reject(response);
     }).then(responseJson => {
         nroDocumentoCliente = responseJson.cedula;
-        console.log("Cédula del cliente:", nroDocumentoCliente);
         buscarPrestamos();
     }).catch(error => {
         console.error("Error al obtener la cédula del cliente:", error);
@@ -212,7 +211,7 @@ $("#btnRegistrarPago").on("click", function () {
         inputAttributes: {
             autocapitalize: 'off'
         },
-        cancleButtonText: 'Cancelar',
+        cancelButtonText: 'Cancelar',
         showCancelButton: true,
         confirmButtonText: 'Pagar',
         showLoaderOnConfirm: true,
@@ -262,13 +261,21 @@ $("#btnRegistrarPago").on("click", function () {
         allowOutsideClick: () => !Swal.isLoading()
     }).then((result) => {
         if (result.isConfirmed) {
-            Swal.fire({
-                title: 'Éxito!',
-                text: result.value.data,
-                icon: 'success'
-            }).then(() => {
-                window.location.reload();
-            });
+            if (result.value.data.startsWith("Error") || result.value.data.includes("incorrecto") || result.value.data.includes("insuficientes")) {
+                Swal.fire({
+                    title: 'Error!',
+                    text: result.value.data,
+                    icon: 'error'
+                });
+            } else {
+                Swal.fire({
+                    title: 'Éxito!',
+                    text: result.value.data,
+                    icon: 'success'
+                }).then(() => {
+                    window.location.reload();
+                });
+            }
         }
     }).catch(error => {
         Swal.fire({

@@ -17,6 +17,7 @@ using Prestamo.Web.Servives;
 
 namespace Prestamo.Web.Controllers
 {
+    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     public class LoginController : Controller
     {
         private readonly UsuarioData _usuarioData;

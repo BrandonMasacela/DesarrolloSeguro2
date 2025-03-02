@@ -4,11 +4,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Prestamo.Data;
+using Prestamo.Web.Servives;
 using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-
+    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CuentaController : Controller
     {

@@ -8,6 +8,7 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
+    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class SolicitudPrestamoController : Controller
     {

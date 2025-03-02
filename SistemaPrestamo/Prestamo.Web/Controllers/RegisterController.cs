@@ -6,10 +6,14 @@ using Prestamo.Entidades;
 using System.Security.Claims;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Prestamo.Web.Servives;
 
 namespace Prestamo.Web.Controllers
 {
-
+    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class RegisterController : Controller
     {
         private readonly UsuarioData _usuarioData;

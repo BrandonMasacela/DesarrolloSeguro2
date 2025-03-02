@@ -21,6 +21,7 @@ builder.Services.AddSingleton<UsuarioData>();
 builder.Services.AddScoped<ResumenClienteData>();
 builder.Services.AddSingleton<AuditoriaData>();
 builder.Services.AddScoped<AuditoriaService>();
+builder.Services.AddScoped<ContentSecurityPolicyFilter>();
 // Registrar CuentaData con la cadena de conexión
 builder.Services.AddSingleton<CuentaData>();
 
@@ -91,10 +92,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseSession();
 
-
 app.MapControllerRoute(
-    //name: "default",
-    //pattern: "{controller=Login}/{action=Index}/{id?}");
     name: "default",
     pattern: "{controller=Login}/{action=Index}/{id?}");
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5WDIu6mbNJ5xUYDOf3DTsoc769axZus90UG3QSu02dc=",
+  "Hash": "/eX2GfJzMfiKpDHmnh4AtVCR4LLtV7UlhnuTTBckOmc=",
   "Source": "Prestamo.Web",
   "BasePath": "_content/Prestamo.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Prestamo.Web\\wwwroot",
       "Source": "Prestamo.Web",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prestamo.Web.styles.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prestamo.Web.styles.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "Prestamo.Web#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "4WvupDVAQoUVzb7QO9WtCcnCotd7YjKupGaRsCjWt/4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prestamo.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prestamo.Web.styles.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Prestamo.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Prestamo.Web.bundle.scp.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "Prestamo.Web#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "4WvupDVAQoUVzb7QO9WtCcnCotd7YjKupGaRsCjWt/4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Prestamo.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Prestamo.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\css\\styles.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "css/styles#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\favicon.ico",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "js/scripts#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\css\\dataTables.dataTables.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\css\\dataTables.dataTables.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/datatables2/css/dataTables.dataTables#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatables2\\css\\dataTables.dataTables.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\dataTables.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\dataTables.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/datatables2/js/dataTables#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1109,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatables2\\js\\dataTables.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\moment.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\moment.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/datatables2/js/moment.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1130,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatables2\\js\\moment.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\fontawesome\\all.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\fontawesome\\all.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/fontawesome/all#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1151,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\fontawesome\\all.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1172,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1193,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1235,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1256,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1298,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\loadingoverlay\\loadingoverlay.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\loadingoverlay\\loadingoverlay.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/loadingoverlay/loadingoverlay.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\loadingoverlay\\loadingoverlay.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\moment\\moment.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\moment\\moment.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/moment/moment.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\moment\\moment.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/select2/css/select2.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\select2\\css\\select2.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2-bootstrap-5-theme.min.css",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2-bootstrap-5-theme.min.css",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/select2/css/select2-bootstrap-5-theme.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\select2\\css\\select2-bootstrap-5-theme.min.css"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\js\\select2.min.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\js\\select2.min.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/select2/js/select2.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\select2\\js\\select2.min.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\sweetAlert2\\js\\sweetalert2.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\sweetAlert2\\js\\sweetalert2.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "lib/sweetAlert2/js/sweetalert2#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\sweetAlert2\\js\\sweetalert2.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/cambiarContrasena#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1543,17 +1543,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jhy87eeluh",
-      "Integrity": "l99uJWCk9k5dm5wyG4OpKtokD7+o5Ob3J4r2GasRN44=",
+      "Fingerprint": "k09fijcnu1",
+      "Integrity": "ZNkQI+j7LrxLEN6w3/hYYvKO6PbhPEWTYYo42WcyQEM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\cambiarContrasena.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/Cliente#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\views\\Cliente.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cobrar.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cobrar.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/Cobrar#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1585,17 +1585,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ouw540jml6",
-      "Integrity": "kGkP1Kyx6H47YlNtUdaDJaMsI7d/T0m5+lK2edAPzE0=",
+      "Fingerprint": "g75a9rff91",
+      "Integrity": "JCI+HBZkWSr0RT57X3vw4jMzFaHrb4uwfvrmTl/+ibA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Cobrar.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/Cuenta#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\views\\Cuenta.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/gestionarSolicitudes#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1627,17 +1627,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xvvrgs1rfa",
-      "Integrity": "01XxH/FAUFbt+93oWVdEcKodsI55G70h8vTEJe9i460=",
+      "Fingerprint": "yreeza7ikv",
+      "Integrity": "Tp3vIiv4l4VAGP6LVXCUnRwLkMTiubnCAZTQKHNeZkU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\gestionarSolicitudes.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Home.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Home.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/Home#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1648,17 +1648,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6kzumszdjh",
-      "Integrity": "erpsHG2Qc6GltMrTei8jxWJtoX/VsSBo5gr2P6bRe0g=",
+      "Fingerprint": "d8ldxisbhd",
+      "Integrity": "Q4oxauXm4Rv2/yAQsYhw1TvB7q4FY69ayaVH3ahvtLU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Home.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Moneda.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Moneda.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/Moneda#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\views\\Moneda.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/NuevoPrestamo#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\views\\NuevoPrestamo.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/Prestamo#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1718,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\views\\Prestamo.js"
     },
     {
-      "Identity": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
+      "Identity": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
       "SourceId": "Prestamo.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\",
       "BasePath": "_content/Prestamo.Web",
       "RelativePath": "views/solicitudPrestamo#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1732,8 +1732,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b41ez2uvwp",
-      "Integrity": "K+jhsDo0Li1GD/kxuHkeYvk/cfoIZMMG7IDOomqDYBM=",
+      "Fingerprint": "svnpfu1g0l",
+      "Integrity": "2AN3Acb8IFvGT9FyOW10rihKfTQUNztM2H0Js6Fn1Uk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\solicitudPrestamo.js"
@@ -1742,7 +1742,7 @@
   "Endpoints": [
     {
       "Route": "css/styles.0ownyqf73o.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\css\\styles.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\css\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1763,7 +1763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1787,7 +1787,7 @@
     },
     {
       "Route": "css/styles.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\css\\styles.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\css\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1808,7 +1808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1824,7 +1824,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1845,7 +1845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1869,7 +1869,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1890,7 +1890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1906,7 +1906,7 @@
     },
     {
       "Route": "js/scripts.7z4y2ksic4.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1927,7 +1927,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 23:19:20 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1951,7 +1951,7 @@
     },
     {
       "Route": "js/scripts.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\js\\scripts.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1972,7 +1972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 23:19:20 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1988,7 +1988,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2009,7 +2009,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2025,7 +2025,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2046,7 +2046,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2070,7 +2070,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2091,7 +2091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2107,7 +2107,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2128,7 +2128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2152,7 +2152,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2173,7 +2173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2189,7 +2189,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2210,7 +2210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2234,7 +2234,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2255,7 +2255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2271,7 +2271,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.ozu22stjof.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2292,7 +2292,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2316,7 +2316,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2337,7 +2337,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2353,7 +2353,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2374,7 +2374,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2398,7 +2398,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2419,7 +2419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2435,7 +2435,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.gjcw7pocpk.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2456,7 +2456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2480,7 +2480,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.6l4ir0ityv.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2501,7 +2501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2525,7 +2525,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2546,7 +2546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2562,7 +2562,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2583,7 +2583,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2607,7 +2607,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2628,7 +2628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2644,7 +2644,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2665,7 +2665,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2681,7 +2681,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2702,7 +2702,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2718,7 +2718,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2739,7 +2739,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2763,7 +2763,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.5p029spbuu.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2784,7 +2784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2808,7 +2808,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2829,7 +2829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2845,7 +2845,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2866,7 +2866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2890,7 +2890,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2911,7 +2911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2927,7 +2927,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.nakmwdwsxp.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2948,7 +2948,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2972,7 +2972,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2993,7 +2993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3009,7 +3009,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3030,7 +3030,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3054,7 +3054,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3075,7 +3075,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3091,7 +3091,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.e6q6xbwqzk.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3112,7 +3112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3136,7 +3136,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3157,7 +3157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3173,7 +3173,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3194,7 +3194,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3210,7 +3210,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3231,7 +3231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3255,7 +3255,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.dy6jgresuo.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3276,7 +3276,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3300,7 +3300,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3321,7 +3321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3337,7 +3337,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3358,7 +3358,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3382,7 +3382,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3403,7 +3403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3419,7 +3419,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3440,7 +3440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3456,7 +3456,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3477,7 +3477,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3493,7 +3493,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3514,7 +3514,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3538,7 +3538,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.z7kmom2977.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3559,7 +3559,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3583,7 +3583,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.mk8rdyw69w.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3604,7 +3604,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3628,7 +3628,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.97yrjpyf9r.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3649,7 +3649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3673,7 +3673,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3694,7 +3694,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3710,7 +3710,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3731,7 +3731,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3755,7 +3755,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3776,7 +3776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3792,7 +3792,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3813,7 +3813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3829,7 +3829,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3850,7 +3850,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3866,7 +3866,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3887,7 +3887,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3911,7 +3911,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.y53cy5s2zj.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3932,7 +3932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3956,7 +3956,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3977,7 +3977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3993,7 +3993,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4014,7 +4014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4038,7 +4038,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4059,7 +4059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4075,7 +4075,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.2yn17lgxub.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4096,7 +4096,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4120,7 +4120,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4141,7 +4141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4157,7 +4157,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4178,7 +4178,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4194,7 +4194,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4215,7 +4215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4239,7 +4239,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4260,7 +4260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4276,7 +4276,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4297,7 +4297,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4321,7 +4321,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4342,7 +4342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4358,7 +4358,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4379,7 +4379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4395,7 +4395,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4416,7 +4416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4440,7 +4440,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4461,7 +4461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4477,7 +4477,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.ik6i2hrs65.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4498,7 +4498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4522,7 +4522,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.ophe14yye5.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4543,7 +4543,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4567,7 +4567,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.z9shlbduue.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4588,7 +4588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4612,7 +4612,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.1piudyfv7h.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4633,7 +4633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4657,7 +4657,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.f6zq8v6eb3.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4678,7 +4678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4702,7 +4702,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4723,7 +4723,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4739,7 +4739,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4760,7 +4760,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4784,7 +4784,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4805,7 +4805,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4821,7 +4821,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.89qbw8ngem.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4842,7 +4842,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4866,7 +4866,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4887,7 +4887,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4903,7 +4903,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4924,7 +4924,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4948,7 +4948,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4969,7 +4969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4985,7 +4985,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5006,7 +5006,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5022,7 +5022,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5043,7 +5043,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5067,7 +5067,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5088,7 +5088,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5104,7 +5104,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jqwzsa9uv6.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5125,7 +5125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5149,7 +5149,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5170,7 +5170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5186,7 +5186,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5207,7 +5207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5223,7 +5223,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5244,7 +5244,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5268,7 +5268,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.n5w6o92d9r.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5289,7 +5289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5313,7 +5313,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5334,7 +5334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5350,7 +5350,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5371,7 +5371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5395,7 +5395,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5416,7 +5416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5432,7 +5432,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.4908xmbfjr.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5453,7 +5453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5477,7 +5477,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5498,7 +5498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5514,7 +5514,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5535,7 +5535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5551,7 +5551,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5572,7 +5572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5596,7 +5596,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5617,7 +5617,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5633,7 +5633,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5654,7 +5654,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5678,7 +5678,7 @@
     },
     {
       "Route": "lib/datatables2/css/dataTables.dataTables.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\css\\dataTables.dataTables.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\css\\dataTables.dataTables.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5699,7 +5699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5715,7 +5715,7 @@
     },
     {
       "Route": "lib/datatables2/css/dataTables.dataTables.x1ngqvka36.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\css\\dataTables.dataTables.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\css\\dataTables.dataTables.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5736,7 +5736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5760,7 +5760,7 @@
     },
     {
       "Route": "lib/datatables2/js/dataTables.2xzx4hw3za.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\dataTables.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\dataTables.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5781,7 +5781,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5805,7 +5805,7 @@
     },
     {
       "Route": "lib/datatables2/js/dataTables.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\dataTables.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\dataTables.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5826,7 +5826,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5842,7 +5842,7 @@
     },
     {
       "Route": "lib/datatables2/js/moment.min.237w4zsnyc.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\moment.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\moment.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5863,7 +5863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5887,7 +5887,7 @@
     },
     {
       "Route": "lib/datatables2/js/moment.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\moment.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\datatables2\\js\\moment.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5908,7 +5908,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5924,7 +5924,7 @@
     },
     {
       "Route": "lib/fontawesome/all.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\fontawesome\\all.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\fontawesome\\all.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5945,7 +5945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5961,7 +5961,7 @@
     },
     {
       "Route": "lib/fontawesome/all.wrud7twppe.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\fontawesome\\all.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\fontawesome\\all.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5982,7 +5982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6006,7 +6006,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.7s2n0ol71w.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6027,7 +6027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6051,7 +6051,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6072,7 +6072,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6088,7 +6088,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6109,7 +6109,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6133,7 +6133,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ehgnz7f14e.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6154,7 +6154,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6178,7 +6178,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6199,7 +6199,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6215,7 +6215,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6236,7 +6236,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6252,7 +6252,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6273,7 +6273,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6297,7 +6297,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6318,7 +6318,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6334,7 +6334,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6355,7 +6355,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6379,7 +6379,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6400,7 +6400,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6416,7 +6416,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6437,7 +6437,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6461,7 +6461,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6482,7 +6482,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6498,7 +6498,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.6d0lkjaslc.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6519,7 +6519,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6543,7 +6543,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6564,7 +6564,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6580,7 +6580,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6601,7 +6601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6617,7 +6617,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.l1zq2mitth.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6638,7 +6638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6662,7 +6662,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6683,7 +6683,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6699,7 +6699,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6720,7 +6720,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6744,7 +6744,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.03hjc8e09r.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6765,7 +6765,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6789,7 +6789,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6810,7 +6810,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6826,7 +6826,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.48y08845bh.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6847,7 +6847,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6871,7 +6871,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6892,7 +6892,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6908,7 +6908,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6929,7 +6929,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6953,7 +6953,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6974,7 +6974,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6990,7 +6990,7 @@
     },
     {
       "Route": "lib/loadingoverlay/loadingoverlay.min.cm5ltkwq0d.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\loadingoverlay\\loadingoverlay.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\loadingoverlay\\loadingoverlay.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7011,7 +7011,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7035,7 +7035,7 @@
     },
     {
       "Route": "lib/loadingoverlay/loadingoverlay.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\loadingoverlay\\loadingoverlay.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\loadingoverlay\\loadingoverlay.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7056,7 +7056,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7072,7 +7072,7 @@
     },
     {
       "Route": "lib/moment/moment.min.grolaapw8p.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\moment\\moment.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\moment\\moment.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7093,7 +7093,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7117,7 +7117,7 @@
     },
     {
       "Route": "lib/moment/moment.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\moment\\moment.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\moment\\moment.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7138,7 +7138,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7154,7 +7154,7 @@
     },
     {
       "Route": "lib/select2/css/select2.min.a7k2rfmp13.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7175,7 +7175,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7199,7 +7199,7 @@
     },
     {
       "Route": "lib/select2/css/select2.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7220,7 +7220,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7236,7 +7236,7 @@
     },
     {
       "Route": "lib/select2/css/select2-bootstrap-5-theme.min.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2-bootstrap-5-theme.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2-bootstrap-5-theme.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7257,7 +7257,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7273,7 +7273,7 @@
     },
     {
       "Route": "lib/select2/css/select2-bootstrap-5-theme.min.pdllv2etjl.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2-bootstrap-5-theme.min.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\css\\select2-bootstrap-5-theme.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7294,7 +7294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7318,7 +7318,7 @@
     },
     {
       "Route": "lib/select2/js/select2.min.f3cvhx6bwo.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\js\\select2.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\js\\select2.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7339,7 +7339,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7363,7 +7363,7 @@
     },
     {
       "Route": "lib/select2/js/select2.min.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\js\\select2.min.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\select2\\js\\select2.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7384,7 +7384,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7400,7 +7400,7 @@
     },
     {
       "Route": "lib/sweetAlert2/js/sweetalert2.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\sweetAlert2\\js\\sweetalert2.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\sweetAlert2\\js\\sweetalert2.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7421,7 +7421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7437,7 +7437,7 @@
     },
     {
       "Route": "lib/sweetAlert2/js/sweetalert2.rhz4mnjwzo.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\sweetAlert2\\js\\sweetalert2.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\lib\\sweetAlert2\\js\\sweetalert2.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7458,7 +7458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7482,7 +7482,7 @@
     },
     {
       "Route": "Prestamo.Web.9qzw33epri.bundle.scp.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Prestamo.Web.bundle.scp.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Prestamo.Web.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7503,7 +7503,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7527,7 +7527,7 @@
     },
     {
       "Route": "Prestamo.Web.9qzw33epri.styles.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prestamo.Web.styles.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prestamo.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7548,7 +7548,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7572,7 +7572,7 @@
     },
     {
       "Route": "Prestamo.Web.bundle.scp.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Prestamo.Web.bundle.scp.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Prestamo.Web.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7593,7 +7593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7609,7 +7609,7 @@
     },
     {
       "Route": "Prestamo.Web.styles.css",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prestamo.Web.styles.css",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Prestamo.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7630,7 +7630,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 23:58:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7645,53 +7645,8 @@
       ]
     },
     {
-      "Route": "views/cambiarContrasena.jhy87eeluh.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3604"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"l99uJWCk9k5dm5wyG4OpKtokD7+o5Ob3J4r2GasRN44=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:00:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jhy87eeluh"
-        },
-        {
-          "Name": "label",
-          "Value": "views/cambiarContrasena.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-l99uJWCk9k5dm5wyG4OpKtokD7+o5Ob3J4r2GasRN44="
-        }
-      ]
-    },
-    {
       "Route": "views/cambiarContrasena.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7700,7 +7655,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3604"
+          "Value": "3713"
         },
         {
           "Name": "Content-Type",
@@ -7708,11 +7663,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"l99uJWCk9k5dm5wyG4OpKtokD7+o5Ob3J4r2GasRN44=\""
+          "Value": "\"ZNkQI+j7LrxLEN6w3/hYYvKO6PbhPEWTYYo42WcyQEM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:00:22 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7722,13 +7677,58 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-l99uJWCk9k5dm5wyG4OpKtokD7+o5Ob3J4r2GasRN44="
+          "Value": "sha256-ZNkQI+j7LrxLEN6w3/hYYvKO6PbhPEWTYYo42WcyQEM="
+        }
+      ]
+    },
+    {
+      "Route": "views/cambiarContrasena.k09fijcnu1.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\cambiarContrasena.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZNkQI+j7LrxLEN6w3/hYYvKO6PbhPEWTYYo42WcyQEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k09fijcnu1"
+        },
+        {
+          "Name": "label",
+          "Value": "views/cambiarContrasena.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZNkQI+j7LrxLEN6w3/hYYvKO6PbhPEWTYYo42WcyQEM="
         }
       ]
     },
     {
       "Route": "views/Cliente.d1r4ahc1t6.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7749,7 +7749,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 18:56:57 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7773,7 +7773,7 @@
     },
     {
       "Route": "views/Cliente.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7794,7 +7794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 18:56:57 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7809,8 +7809,8 @@
       ]
     },
     {
-      "Route": "views/Cobrar.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cobrar.js",
+      "Route": "views/Cobrar.g75a9rff91.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cobrar.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7819,7 +7819,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10137"
+          "Value": "10453"
         },
         {
           "Name": "Content-Type",
@@ -7827,48 +7827,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kGkP1Kyx6H47YlNtUdaDJaMsI7d/T0m5+lK2edAPzE0=\""
+          "Value": "\"JCI+HBZkWSr0RT57X3vw4jMzFaHrb4uwfvrmTl/+ibA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 18:59:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kGkP1Kyx6H47YlNtUdaDJaMsI7d/T0m5+lK2edAPzE0="
-        }
-      ]
-    },
-    {
-      "Route": "views/Cobrar.ouw540jml6.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cobrar.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10137"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kGkP1Kyx6H47YlNtUdaDJaMsI7d/T0m5+lK2edAPzE0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 18:59:08 GMT"
+          "Value": "Sun, 02 Mar 2025 03:14:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7878,7 +7841,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ouw540jml6"
+          "Value": "g75a9rff91"
         },
         {
           "Name": "label",
@@ -7886,13 +7849,50 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kGkP1Kyx6H47YlNtUdaDJaMsI7d/T0m5+lK2edAPzE0="
+          "Value": "sha256-JCI+HBZkWSr0RT57X3vw4jMzFaHrb4uwfvrmTl/+ibA="
+        }
+      ]
+    },
+    {
+      "Route": "views/Cobrar.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cobrar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JCI+HBZkWSr0RT57X3vw4jMzFaHrb4uwfvrmTl/+ibA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 03:14:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JCI+HBZkWSr0RT57X3vw4jMzFaHrb4uwfvrmTl/+ibA="
         }
       ]
     },
     {
       "Route": "views/Cuenta.7724g81sft.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7913,7 +7913,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:13:50 GMT"
+          "Value": "Sun, 02 Mar 2025 02:27:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7937,7 +7937,7 @@
     },
     {
       "Route": "views/Cuenta.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cuenta.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7958,7 +7958,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:13:50 GMT"
+          "Value": "Sun, 02 Mar 2025 02:27:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7974,7 +7974,7 @@
     },
     {
       "Route": "views/gestionarSolicitudes.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7983,7 +7983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5480"
+          "Value": "5626"
         },
         {
           "Name": "Content-Type",
@@ -7991,11 +7991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"01XxH/FAUFbt+93oWVdEcKodsI55G70h8vTEJe9i460=\""
+          "Value": "\"Tp3vIiv4l4VAGP6LVXCUnRwLkMTiubnCAZTQKHNeZkU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 23:29:50 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8005,13 +8005,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-01XxH/FAUFbt+93oWVdEcKodsI55G70h8vTEJe9i460="
+          "Value": "sha256-Tp3vIiv4l4VAGP6LVXCUnRwLkMTiubnCAZTQKHNeZkU="
         }
       ]
     },
     {
-      "Route": "views/gestionarSolicitudes.xvvrgs1rfa.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
+      "Route": "views/gestionarSolicitudes.yreeza7ikv.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\gestionarSolicitudes.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8020,7 +8020,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5480"
+          "Value": "5626"
         },
         {
           "Name": "Content-Type",
@@ -8028,11 +8028,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"01XxH/FAUFbt+93oWVdEcKodsI55G70h8vTEJe9i460=\""
+          "Value": "\"Tp3vIiv4l4VAGP6LVXCUnRwLkMTiubnCAZTQKHNeZkU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 23:29:50 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8042,7 +8042,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xvvrgs1rfa"
+          "Value": "yreeza7ikv"
         },
         {
           "Name": "label",
@@ -8050,13 +8050,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-01XxH/FAUFbt+93oWVdEcKodsI55G70h8vTEJe9i460="
+          "Value": "sha256-Tp3vIiv4l4VAGP6LVXCUnRwLkMTiubnCAZTQKHNeZkU="
         }
       ]
     },
     {
-      "Route": "views/Home.6kzumszdjh.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Home.js",
+      "Route": "views/Home.d8ldxisbhd.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Home.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8065,7 +8065,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3945"
+          "Value": "4048"
         },
         {
           "Name": "Content-Type",
@@ -8073,11 +8073,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"erpsHG2Qc6GltMrTei8jxWJtoX/VsSBo5gr2P6bRe0g=\""
+          "Value": "\"Q4oxauXm4Rv2/yAQsYhw1TvB7q4FY69ayaVH3ahvtLU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 22:50:09 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8087,7 +8087,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6kzumszdjh"
+          "Value": "d8ldxisbhd"
         },
         {
           "Name": "label",
@@ -8095,13 +8095,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-erpsHG2Qc6GltMrTei8jxWJtoX/VsSBo5gr2P6bRe0g="
+          "Value": "sha256-Q4oxauXm4Rv2/yAQsYhw1TvB7q4FY69ayaVH3ahvtLU="
         }
       ]
     },
     {
       "Route": "views/Home.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Home.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Home.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8110,7 +8110,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3945"
+          "Value": "4048"
         },
         {
           "Name": "Content-Type",
@@ -8118,11 +8118,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"erpsHG2Qc6GltMrTei8jxWJtoX/VsSBo5gr2P6bRe0g=\""
+          "Value": "\"Q4oxauXm4Rv2/yAQsYhw1TvB7q4FY69ayaVH3ahvtLU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 22:50:09 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8132,13 +8132,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-erpsHG2Qc6GltMrTei8jxWJtoX/VsSBo5gr2P6bRe0g="
+          "Value": "sha256-Q4oxauXm4Rv2/yAQsYhw1TvB7q4FY69ayaVH3ahvtLU="
         }
       ]
     },
     {
       "Route": "views/Moneda.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Moneda.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Moneda.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8159,7 +8159,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 18:59:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8175,7 +8175,7 @@
     },
     {
       "Route": "views/Moneda.t7pps1xbfh.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Moneda.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Moneda.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8196,7 +8196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 18:59:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8220,7 +8220,7 @@
     },
     {
       "Route": "views/NuevoPrestamo.41v23mk5wv.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8241,7 +8241,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:00:06 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8265,7 +8265,7 @@
     },
     {
       "Route": "views/NuevoPrestamo.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\NuevoPrestamo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8286,7 +8286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:00:06 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8302,7 +8302,7 @@
     },
     {
       "Route": "views/Prestamo.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8323,7 +8323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:00:13 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8339,7 +8339,7 @@
     },
     {
       "Route": "views/Prestamo.nqe69h96hy.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8360,7 +8360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:00:13 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8383,53 +8383,8 @@
       ]
     },
     {
-      "Route": "views/solicitudPrestamo.b41ez2uvwp.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1365"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"K+jhsDo0Li1GD/kxuHkeYvk/cfoIZMMG7IDOomqDYBM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:03:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b41ez2uvwp"
-        },
-        {
-          "Name": "label",
-          "Value": "views/solicitudPrestamo.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-K+jhsDo0Li1GD/kxuHkeYvk/cfoIZMMG7IDOomqDYBM="
-        }
-      ]
-    },
-    {
       "Route": "views/solicitudPrestamo.js",
-      "AssetFile": "C:\\Users\\USUARIO\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8438,7 +8393,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1365"
+          "Value": "1410"
         },
         {
           "Name": "Content-Type",
@@ -8446,11 +8401,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K+jhsDo0Li1GD/kxuHkeYvk/cfoIZMMG7IDOomqDYBM=\""
+          "Value": "\"2AN3Acb8IFvGT9FyOW10rihKfTQUNztM2H0Js6Fn1Uk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 19:03:58 GMT"
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8460,7 +8415,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K+jhsDo0Li1GD/kxuHkeYvk/cfoIZMMG7IDOomqDYBM="
+          "Value": "sha256-2AN3Acb8IFvGT9FyOW10rihKfTQUNztM2H0Js6Fn1Uk="
+        }
+      ]
+    },
+    {
+      "Route": "views/solicitudPrestamo.svnpfu1g0l.js",
+      "AssetFile": "C:\\Users\\pspgo\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1410"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2AN3Acb8IFvGT9FyOW10rihKfTQUNztM2H0Js6Fn1Uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 01:24:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "svnpfu1g0l"
+        },
+        {
+          "Name": "label",
+          "Value": "views/solicitudPrestamo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2AN3Acb8IFvGT9FyOW10rihKfTQUNztM2H0Js6Fn1Uk="
         }
       ]
     }

@@ -7,6 +7,7 @@ using Prestamo.Web.Servives;
 
 namespace Prestamo.Web.Controllers
 {
+    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CobrarController : Controller
     {
@@ -18,6 +19,7 @@ namespace Prestamo.Web.Controllers
             _prestamoData = prestamoData;
             _auditoriaService = auditoriaService;
         }
+   
         public IActionResult Index()
         {
             return View();
@@ -47,13 +49,19 @@ namespace Prestamo.Web.Controllers
                 return StatusCode(StatusCodes.Status400BadRequest, new { data = "Debe seleccionar al menos una cuota" });
             }
 
-            try 
+            try
             {
                 string respuesta = await _prestamoData.PagarCuotas(
-                    request.IdPrestamo, 
-                    request.NroCuotasPagadas, 
+                    request.IdPrestamo,
+                    request.NroCuotasPagadas,
                     request.NumeroTarjeta
                 );
+
+                if (respuesta.StartsWith("Error") || respuesta.Contains("incorrecto") || respuesta.Contains("insuficientes"))
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest, new { data = respuesta });
+                }
+
                 await _auditoriaService.RegistrarLog(User.Identity.Name, "Pagar", $"Cuota pagada: {request.NroCuotasPagadas}");
                 return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
             }

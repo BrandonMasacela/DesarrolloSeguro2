@@ -12,6 +12,7 @@ using Prestamo.Web.Servives;
 
 namespace Prestamo.Web.Controllers
 {
+    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class HomeController : Controller
     {

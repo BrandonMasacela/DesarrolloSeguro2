@@ -7,6 +7,7 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
+    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize]
     public class MonedaController : Controller
     {

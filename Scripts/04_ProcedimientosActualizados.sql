@@ -405,18 +405,26 @@ BEGIN
         -- Verificar el saldo de la cuenta
         DECLARE @SaldoCuenta DECIMAL(18, 2);
         DECLARE @Tarjeta NVARCHAR(16);
+        DECLARE @TarjetaDesencriptada NVARCHAR(16);
 
-        SELECT @SaldoCuenta = c.Monto, @Tarjeta = c.Tarjeta
+        -- Obtener el saldo y la tarjeta encriptada
+        SELECT @SaldoCuenta = c.Monto, 
+               @Tarjeta = c.Tarjeta
         FROM Cuenta c
         WHERE c.IdCliente = @IdCliente;
 
-        IF @Tarjeta != @NumeroTarjeta
+        -- Desencriptar la tarjeta antes de compararla
+        SET @TarjetaDesencriptada = CONVERT(NVARCHAR(16), DecryptByPassphrase('aB3dE5fG7hI9jK1mN2oP4qR6sT8uV0wX', @Tarjeta));
+
+        -- Validar que la tarjeta ingresada coincida con la desencriptada
+        IF @TarjetaDesencriptada != @NumeroTarjeta
         BEGIN
             SET @msgError = 'Número de tarjeta incorrecto';
             ROLLBACK TRANSACTION;
             RETURN;
         END
 
+        -- Verificar si hay saldo suficiente
         IF @SaldoCuenta < @TotalPagar
         BEGIN
             SET @msgError = 'Fondos insuficientes';
@@ -452,6 +460,7 @@ BEGIN
     END CATCH;
 END
 GO
+
 
 --- PROCEDIMIENTOS DE CUENTAS ---
 CREATE PROCEDURE [dbo].[sp_obtenerCuenta]

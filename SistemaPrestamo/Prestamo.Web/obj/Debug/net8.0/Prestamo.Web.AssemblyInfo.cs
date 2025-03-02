@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prestamo.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d0e78d86260a90460f27de80dd18835d65579b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a246beca2af131f20b403e435d510f8ca1da05fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prestamo.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prestamo.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
