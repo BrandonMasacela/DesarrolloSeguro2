@@ -12,8 +12,6 @@ using Prestamo.Web.Servives;
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class RegisterController : Controller
     {
         private readonly UsuarioData _usuarioData;
