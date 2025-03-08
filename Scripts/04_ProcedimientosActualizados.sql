@@ -404,7 +404,7 @@ BEGIN
 
         -- Verificar el saldo de la cuenta
         DECLARE @SaldoCuenta DECIMAL(18, 2);
-        DECLARE @Tarjeta NVARCHAR(16);
+        DECLARE @Tarjeta NVARCHAR(64);
         DECLARE @TarjetaDesencriptada NVARCHAR(16);
 
         -- Obtener el saldo y la tarjeta encriptada
@@ -427,7 +427,7 @@ BEGIN
         -- Verificar si hay saldo suficiente
         IF @SaldoCuenta < @TotalPagar
         BEGIN
-            SET @msgError = 'Fondos insuficientes';
+            SET @msgError = 'Fondos insuficientes' + @TarjetaDesencriptada;
             ROLLBACK TRANSACTION;
             RETURN;
         END
@@ -460,7 +460,6 @@ BEGIN
     END CATCH;
 END
 GO
-
 
 --- PROCEDIMIENTOS DE CUENTAS ---
 CREATE PROCEDURE [dbo].[sp_obtenerCuenta]

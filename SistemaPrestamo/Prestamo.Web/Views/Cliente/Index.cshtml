@@ -3,20 +3,22 @@
 *@
 @if (!User.IsInRole("Administrador"))
 {
-    <script>
+    <script nonce="@Context.Items["ScriptNonce"]">
         window.location.href = '@Url.Action("Index", "Home")';
     </script>
 }
 else
 {
     @section Estilos {
-        <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" />
+    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" nonce="@Context.Items["ScriptNonce"]">
+
     }
     <div class="row mt-4">
         <div class="col-sm-12">
             <div class="card mb-4">
                 <div class="card-header">
-                    <i class="fa-solid fa-user-group"></i>
+                    <i class="fa-solid fa-user-group fa-2xl"></i>
                     Lista de Clientes
                 </div>
                 <div class="card-body">
@@ -82,8 +84,8 @@ else
     </div>
 
     @section Scripts {
-        <script src="~/lib/datatables2/js/moment.min.js"></script>
-        <script src="~/lib/datatables2/js/datatables.js"></script>
-        <script src="~/views/cliente.js"></script>
+    <script src="~/lib/datatables/js/datatables-custom.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/datatables2/js/datatables.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/views/cliente.js" nonce="@Context.Items["ScriptNonce"]"></script>
     }
 }

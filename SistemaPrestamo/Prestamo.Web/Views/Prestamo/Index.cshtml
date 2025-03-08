@@ -2,7 +2,7 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @section Estilos {
-    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" />
+    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
 }
 
 <div class="row mt-4">
@@ -93,7 +93,7 @@
 </div>
 
 @section Scripts {
-    <script src="~/lib/datatables2/js/moment.min.js"></script>
-    <script src="~/lib/datatables2/js/datatables.js"></script>
-    <script src="~/views/prestamo.js"></script>
+    <script src="~/lib/datatables2/js/moment.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/datatables2/js/datatables.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/views/prestamo.js" nonce="@Context.Items["ScriptNonce"]"></script>
 }

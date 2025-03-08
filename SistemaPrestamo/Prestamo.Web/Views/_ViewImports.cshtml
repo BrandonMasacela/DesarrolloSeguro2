@@ -1,3 +1,22 @@
 ﻿@using Prestamo.Web
 @using Prestamo.Web.Models
+@using Prestamo.Web.Servives
+@inject SecurityHeadersService SecurityHeaders
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@functions {
+    public static string GetNonce(Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper html)
+    {
+        return html.ViewContext.HttpContext.Items["ScriptNonce"]?.ToString() ?? "";
+    }
+
+    public string GetScriptHash(string script)
+    {
+        return SecurityHeaders.GetScriptHash(script);
+    }
+
+    public string GetStyleHash(string style)
+    {
+        return SecurityHeaders.GetStyleHash(style);
+    }
+}

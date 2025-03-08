@@ -36,9 +36,10 @@ namespace Prestamo.Web.Controllers
                 return View();
             }
 
-            if (!Regex.IsMatch(correo, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            // Validar el formato del correo electrónico con un timeout y opciones de no retroceso
+            if (!Regex.IsMatch(correo, @"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.None, TimeSpan.FromMilliseconds(250)))
             {
-                ViewData["Mensaje"] = "Correo electrónico no válido";
+                ViewData["Mensaje"] = "Formato de correo electrónico no válido";
                 return View();
             }
 

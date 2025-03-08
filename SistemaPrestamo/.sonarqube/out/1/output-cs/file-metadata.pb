@@ -1,10 +1,14 @@
-~
-sC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.AssemblyInfo.csutf-8ê
-ÑC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8Ä
-uC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.GlobalUsings.g.csutf-8\
-SC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\UsuarioData.csutf-8\
-SC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ResumenData.csutf-8]
-TC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\PrestamoData.csutf-8[
-RC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\MonedaData.csutf-8b
-YC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ConnectionStrings.csutf-8\
-SC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ClienteData.csutf-8
+Ç
+wC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.AssemblyInfo.csutf-8î
+àC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8Ñ
+yC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\obj\Debug\net8.0\Prestamo.Data.GlobalUsings.g.csutf-8`
+WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\UsuarioData.csutf-8`
+WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ResumenData.csutf-8h
+_C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ResumenClienteData .csutf-8a
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\PrestamoData.csutf-8_
+VC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\MonedaData.csutf-8a
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\EmailService.csutf-8f
+VC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\CuentaData.cswindows-1252f
+]C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ConnectionStrings.csutf-8`
+WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ClienteData.csutf-8b
+YC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\AuditoriaData.csutf-8

@@ -8,16 +8,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Verificar si el token existe
     if (!token) {
         $.LoadingOverlay("hide");
-        Swal.fire({
-            title: "Error!",
-            text: "No se encontró el token de autenticación.",
-            icon: "warning"
-        });
+        mostrarMensajeError("No se encontró el token de autenticación.");
         return;
     }
     let tablaSolicitudes = $('#tbSolicitudes').DataTable({
         responsive: true,
         scrollX: true,
+        scrollY: '50vh',
+        scrollCollapse: true,
+        autoWidth: false,
         "ajax": {
             "url": `/SolicitudPrestamo/ObtenerSolicitudesPendientes`,
             "type": "GET",
@@ -25,25 +24,85 @@ document.addEventListener("DOMContentLoaded", function (event) {
             "datatype": "json"
         },
         "columns": [
-            { title: "ID", "data": "id" },
-            { title: "Usuario", "data": "cedula" },
-            { title: "Monto", "data": "monto" },
-            { title: "Plazo", "data": "plazo" },
-            { title: "Metodo de Pago", "data": "metodoPago" },
-            { title: "Estado", "data": "estado" },
+            { 
+                title: "ID", 
+                data: "id",
+                className: 'col-id fixed-column',
+                width: "80px"
+            },
+            { 
+                title: "Usuario", 
+                data: "cedula",
+                className: 'col-usuario',
+                width: "120px"
+            },
+            { 
+                title: "Monto", 
+                data: "monto",
+                className: 'col-monto',
+                width: "120px"
+            },
+            { 
+                title: "Plazo", 
+                data: "plazo",
+                className: 'col-plazo',
+                width: "100px"
+            },
+            { 
+                title: "Método de Pago", 
+                data: "metodoPago",
+                className: 'col-metodo',
+                width: "150px"
+            },
+            { 
+                title: "Estado", 
+                data: "estado",
+                className: 'col-estado',
+                width: "100px"
+            },
             {
-                title: "Acciones", "data": "id", width: "120px", render: function (data, type, row) {
+                title: "Acciones", 
+                data: "id",
+                className: 'col-acciones',
+                width: "200px",
+                orderable: false,
+                render: function (data, type, row) {
                     return `
-                        <button class="btn btn-success me-2 btn-aceptar" data-id="${data}"><i class="fa-solid fa-check"></i> Aceptar</button>
-                        <button class="btn btn-danger btn-rechazar" data-id="${data}"><i class="fa-solid fa-times"></i> Rechazar</button>
+                        <button class="btn btn-success btn-action btn-aceptar" data-id="${data}" title="Aceptar">
+                            <i class="fas fa-check"></i>
+                        </button>
+                        <button class="btn btn-danger btn-action btn-rechazar" data-id="${data}" title="Rechazar">
+                            <i class="fas fa-times"></i>
+                        </button>
                     `;
                 }
             }
         ],
-        "order": [0, 'desc'],
-        language: {
-            url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+        "order": [[0, 'desc']],
+        fixedColumns: {
+            left: 1
         },
+        language: {
+            search: "Buscar:",
+            lengthMenu: "Mostrar _MENU_ registros por página",
+            info: "Mostrando _START_ a _END_ de _TOTAL_ registros",
+            infoEmpty: "Mostrando 0 a 0 de 0 registros",
+            infoFiltered: "(filtrado de _MAX_ registros totales)",
+            zeroRecords: "No se encontraron resultados",
+            emptyTable: "Ningún dato disponible en esta tabla",
+            paginate: {
+                first: "Primero",
+                last: "Último",
+                next: "Siguiente",
+                previous: "Anterior"
+            }
+        },
+        dom: '<"row"<"col-sm-12 col-md-6"f><"col-sm-12 col-md-6"l>>' +
+             '<"row"<"col-sm-12"tr>>' +
+             '<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
+        drawCallback: function() {
+            $('.dataTables_scrollBody').css('min-height', '300px');
+        }
     });
 
     $('#tbSolicitudes tbody').on('click', '.btn-aceptar', function () {
@@ -79,26 +138,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     localStorage.setItem('historial', JSON.stringify(result.historial));
                     window.location.href = result.redirectUrl;
                 } else {
-                    Swal.fire({
-                        title: "Listo!",
-                        text: "Estado actualizado con éxito",
-                        icon: "success"
-                    });
+                    mostrarMensajeExito("Estado actualizado con éxito");
                     tablaSolicitudes.ajax.reload();
                 }
             } else {
-                Swal.fire({
-                    title: "Error!",
-                    text: result.message || "Error al actualizar el estado",
-                    icon: "warning"
-                });
+                mostrarMensajeError(result.message || "Error al actualizar el estado");
             }
         } else {
-            Swal.fire({
-                title: "Error!",
-                text: "Error al obtener la solicitud",
-                icon: "warning"
-            });
+            mostrarMensajeError("Error al obtener la solicitud");
         }
     }
 
@@ -123,25 +170,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             const result = await updateResponse.json();
             if (result.success) {
-                Swal.fire({
-                    title: "Listo!",
-                    text: "Estado actualizado con éxito",
-                    icon: "success"
-                });
+                mostrarMensajeExito("Estado actualizado con éxito");
                 tablaSolicitudes.ajax.reload();
             } else {
-                Swal.fire({
-                    title: "Error!",
-                    text: result.message || "Error al actualizar el estado",
-                    icon: "warning"
-                });
+                mostrarMensajeError(result.message || "Error al actualizar el estado");
             }
         } else {
-            Swal.fire({
-                title: "Error!",
-                text: "Error al obtener la solicitud",
-                icon: "warning"
-            });
+            mostrarMensajeError("Error al obtener la solicitud");
         }
     }
 });

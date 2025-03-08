@@ -9,7 +9,6 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CuentaController : Controller
     {
@@ -59,6 +58,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> ObtenerCuenta(int idCliente)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             Console.WriteLine($"Obteniendo cuenta para cliente ID: {idCliente}");
            
             try

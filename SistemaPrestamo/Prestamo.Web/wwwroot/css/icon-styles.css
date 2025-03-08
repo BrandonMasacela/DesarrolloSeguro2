@@ -1,0 +1,63 @@
+/* Estilos generales para íconos */
+.fa-solid {
+    font-size: 1rem !important; /* Tamaño base para todos los íconos */
+}
+
+/* Estilos específicos para íconos en botones */
+.btn .fa-solid {
+    font-size: 0.875rem !important; /* Tamaño más pequeño para íconos dentro de botones */
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+/* Estilos para íconos en la barra lateral */
+.sb-sidenav .nav-link .fa-solid {
+    font-size: 0.875rem !important;
+    width: 1.25rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+/* Estilos para íconos en encabezados */
+h1 .fa-solid,
+h2 .fa-solid,
+h3 .fa-solid,
+h4 .fa-solid,
+h5 .fa-solid,
+h6 .fa-solid {
+    font-size: inherit !important;
+}
+
+/* Estilos específicos para ciertos íconos */
+.fa-user-group,
+.fa-dollar-sign,
+.fa-money-bill,
+.fa-file-invoice,
+.fa-key,
+.fa-hand-holding-dollar,
+.fa-credit-card,
+.fa-plus,
+.fa-pen,
+.fa-trash,
+.fa-check,
+.fa-times,
+.fa-info-circle,
+.fa-list-ol {
+    font-size: 0.875rem !important;
+}
+
+/* Estilos para íconos en la barra de navegación */
+.navbar .fa-solid {
+    font-size: 0.875rem !important;
+}
+
+/* Ajustes para íconos en dispositivos móviles */
+@media (max-width: 768px) {
+    .fa-solid {
+        font-size: 0.875rem !important;
+    }
+    
+    .btn .fa-solid {
+        font-size: 0.8125rem !important;
+    }
+} 

@@ -1,0 +1,26 @@
+@{
+    var nonce = Context.Items["ScriptNonce"]?.ToString();
+}
+
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"
+        integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC" nonce="@nonce"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"
+        integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC" nonce="@nonce"></script>
+
+<script nonce="@nonce">
+    $(document).ready(function() {
+        if ($.fn.DataTable.isDataTable('#tbData')) {
+            $('#tbData').DataTable().destroy();
+        }
+        
+        $('#tbData').DataTable({
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json'
+            },
+            initComplete: function() {
+                // Aplicar estilos después de la inicialización
+                $('div.dataTables_wrapper').addClass('dt-bootstrap5');
+            }
+        });
+    });
+</script> 

@@ -1,0 +1,82 @@
+.btn i {
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+    line-height: 1;
+}
+
+.btn-icon {
+    padding: 0.375rem;
+    line-height: 1;
+}
+
+.btn-icon i {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+/* Botones de acción en tablas */
+.btn-action {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 0 0.25rem;
+}
+
+.btn-action i {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Estilos específicos para tipos de botones */
+.btn-edit i {
+    color: #fff;
+}
+
+.btn-delete i {
+    color: #fff;
+}
+
+.btn-info i {
+    color: #fff;
+}
+
+/* Estilos para botones en formularios */
+.form-buttons i {
+    font-size: 1.125rem;
+}
+
+/* Estilos para botones flotantes */
+.btn-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-float i {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .btn-action {
+        width: 28px;
+        height: 28px;
+    }
+
+    .btn-action i {
+        font-size: 0.75rem;
+    }
+} 

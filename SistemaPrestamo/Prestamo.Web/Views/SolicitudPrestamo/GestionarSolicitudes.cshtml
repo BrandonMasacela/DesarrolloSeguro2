@@ -3,7 +3,8 @@
 }
 
 @section Estilos {
-    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" />
+    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" nonce="@Context.Items["ScriptNonce"]">
 }
 
 <div class="row mt-4">
@@ -16,20 +17,11 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-12">
-                        <table class="display cell-border" id="tbSolicitudes" cellspacing="0" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Usuario</th>
-                                    <th>Monto</th>
-                                    <th>Plazo</th>
-                                    <th>Estado</th>
-                                    <th>Metodo de Pago</th>
-                                    <th>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
+                        <div class="col-sm-12">
+                            <table class="display cell-border" id="tbSolicitudes" cellspacing="0" style="width:100%">
+                                <tbody></tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,7 +30,7 @@
 </div>
 
 @section Scripts {
-    <script src="~/lib/datatables2/js/moment.min.js"></script>
-    <script src="~/lib/datatables2/js/datatables.js"></script>
-    <script src="~/views/gestionarSolicitudes.js"></script>
+    <script src="~/lib/datatables/js/datatables-custom.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/datatables2/js/datatables.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/views/gestionarSolicitudes.js"  nonce="@Context.Items["ScriptNonce"]"></script>
 }

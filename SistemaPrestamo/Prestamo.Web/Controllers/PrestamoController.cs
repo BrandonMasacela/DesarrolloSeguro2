@@ -12,7 +12,6 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class PrestamoController : Controller
     {
@@ -68,6 +67,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Crear([FromBody] Prestamo.Entidades.Prestamo objeto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             string respuesta = await _prestamoData.Crear(objeto);
             await _auditoriaService.RegistrarLog(User.Identity.Name, "Crear", $"Préstamo creado: {objeto.IdPrestamo}");
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
@@ -78,6 +81,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Cliente, Administrador")]
         public async Task<IActionResult> ObtenerPrestamos(int IdPrestamo, string NroDocumento)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             List<Prestamo.Entidades.Prestamo> objeto = await _prestamoData.ObtenerPrestamos(IdPrestamo,NroDocumento == null ? "": NroDocumento);
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
@@ -86,6 +93,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ImprimirPrestamo(int IdPrestamo)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             List<Prestamo.Entidades.Prestamo> lista = await _prestamoData.ObtenerPrestamos(IdPrestamo, "");
             Prestamo.Entidades.Prestamo objeto = lista[0];
 

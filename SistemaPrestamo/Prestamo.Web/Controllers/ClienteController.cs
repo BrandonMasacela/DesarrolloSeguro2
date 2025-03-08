@@ -8,7 +8,6 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ClienteController : Controller
     {
@@ -41,6 +40,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Crear([FromBody] Cliente objeto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             string respuesta = await _clienteData.Crear(objeto);
             await _auditoriaService.RegistrarLog(User.Identity.Name, "Crear", $"Cliente creado: {objeto.Nombre} {objeto.Apellido}");
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
@@ -50,6 +53,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Editar([FromBody] Cliente objeto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             string respuesta = await _clienteData.Editar(objeto);
             await _auditoriaService.RegistrarLog(User.Identity.Name, "Editar", $"Cliente editado: {objeto.Nombre} {objeto.Apellido}");
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
@@ -59,6 +66,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Eliminar(int Id)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             string respuesta = await _clienteData.Eliminar(Id);
             await _auditoriaService.RegistrarLog(User.Identity.Name, "Eliminar", $"Cliente eliminado con ID: {Id}");
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
@@ -88,6 +99,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> Depositar([FromBody] DepositoRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             try
             {
                 var resultado = await _cuentaData.Depositar(request.IdCliente, request.Monto);

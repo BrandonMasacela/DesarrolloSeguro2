@@ -1,5 +1,90 @@
-ã
-UC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Prestamo.cs
+“
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Usuario.cs
+
+		 
+
+ 
+
+ $
+
+ 
+
+ 
+
+ 
+
+ !
+
+ *
+
+ #
+
+ Ö
+_C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\ResumenCliente.cs
+
+		 
+
+ &
+
+ ,Ä
+bC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\SolicitudPrestamo.cs
+
+		 "
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ &
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ ¢
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Resumen.cs
+
+		 
+
+ #
+
+ )
+
+ )
+
+ &
+
+ +∂
+`C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\PrestamoDetalle.cs
+
+  
+
+ $
+
+ 
+
+		 
+
+
+
+  
+
+ 
+
+ !è
+YC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Prestamo.cs
 
 		 
 
@@ -29,8 +114,31 @@ UC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Prest
 
  #
 
-% 4ë
-SC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Moneda.cs
+% 4Ì
+gC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\NuevoPrestamoViewModel.cs
+
+		 '
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ %
+
+ 
+
+ 
+
+ 
+
+ ï
+WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Moneda.cs
 
 		 
 
@@ -40,36 +148,41 @@ SC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Moned
 
  
 
- #≤
-\C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\PrestamoDetalle.cs
+ #ä
+dC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\HistorialCrediticio.cs
 
-  
+		 $
 
- $
+ 
 
- 
+ #°
+WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Cuenta.cs
 
-		 
+		 
 
-
-
-  
+ 
 
- 
+ 
 
- !í
-TC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Resumen.cs
+ 
 
-		 
+ %
 
- #
+ §
+ZC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Auditoria.cs
 
- )
+		 
 
- )
+ 
 
- &∂
-TC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Cliente.cs
+ 
+
+ 
+
+ 
+
+ ∫
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Cliente.cs
 
 		 
 
@@ -85,15 +198,4 @@ TC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Clien
 
  
 
- #í
-TC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Usuario.cs
-
-		 
-
- 
-
- $
-
- 
-
- 
+ #

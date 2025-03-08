@@ -111,15 +111,18 @@ namespace Prestamo.Data
 
         private string GenerarTarjeta()
         {
-            string tarjeta = "";
-            Random random = new Random();
-            for (int i = 0; i < 16; i++)
+            using (var rng = RandomNumberGenerator.Create())
             {
-                tarjeta += random.Next(0, 9).ToString();
+                var bytes = new byte[8];
+                rng.GetBytes(bytes);
+                var builder = new StringBuilder();
+                foreach (var b in bytes)
+                {
+                    builder.Append(b.ToString("X2"));
+                }
+                return builder.ToString();
             }
-            return tarjeta;
         }
-
 
         public async Task<string> CrearCuenta(Cuenta cuenta)
         {

@@ -15,7 +15,7 @@
                     <div class="col-sm-6">
                         <div class="mb-3">
                             <label for="txtCedula" class="form-label">Nro. Documento:</label>
-                            <input type="text" class="form-control data-prestamo" id="txtCedula" name="Cedula" min="1" autocomplete="off" required>
+                            <input type="text" class="form-control data-prestamo" id="txtCedula" name="Cedula" min="1" autocomplete="off" disabled>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -72,10 +72,9 @@
             </div>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary">Solicitar</button>
+    <button class="btn btn-primary" id="btnEnviar">Solicitar</button>
 </form>
 
 @section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="~/views/solicitudPrestamo.js"></script>
+    <script src="~/views/solicitudPrestamo.js"  nonce="@Context.Items["ScriptNonce"]"></script>
 }

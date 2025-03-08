@@ -5,10 +5,11 @@ using Prestamo.Data;
 using Prestamo.Web.Models;
 using Prestamo.Web.Servives;
 using System.Security.Claims;
+using System.Security.Cryptography;
+using static QuestPDF.Helpers.Colors;
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class AccountController : Controller
     {
@@ -32,6 +33,11 @@ namespace Prestamo.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> SolicitarCodigoVerificacion([FromBody] ChangePasswordViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userId == null)
             {
@@ -50,8 +56,8 @@ namespace Prestamo.Web.Controllers
                 return Json(new { success = false, message = "La contraseña actual es incorrecta" });
             }
 
-            // Generar código de verificación
-            var codigoVerificacion = new Random().Next(100000, 999999).ToString();
+            //Generar código de verificación seguro
+            var codigoVerificacion = GenerarCodigoVerificacion();
             HttpContext.Session.SetString("CodigoVerificacion", codigoVerificacion);
 
             // Enviar código de verificación por correo
@@ -65,6 +71,11 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userId == null)
             {
@@ -87,6 +98,16 @@ namespace Prestamo.Web.Controllers
             await _usuarioData.Actualizar(usuario);
             await _auditoriaService.RegistrarLog(User.Identity.Name, "Cambio", $"Contraseña editada: {usuario.Clave}");
             return Json(new { success = true });
+        }
+
+        private string GenerarCodigoVerificacion()
+        {
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                var bytes = new byte[4];
+                rng.GetBytes(bytes);
+                return BitConverter.ToUInt32(bytes, 0).ToString("D6");
+            }
         }
     }
 }

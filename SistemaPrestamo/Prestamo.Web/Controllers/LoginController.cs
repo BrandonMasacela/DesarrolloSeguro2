@@ -13,11 +13,11 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Prestamo.Web.Servives;
+using System.Security.Cryptography;
 
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     public class LoginController : Controller
     {
         private readonly UsuarioData _usuarioData;
@@ -139,8 +139,8 @@ namespace Prestamo.Web.Controllers
             // Login exitoso - resetear contadores
             await _usuarioData.ResetLockout(usuario.IdUsuario);
 
-            // Generar código de verificación
-            var codigoVerificacion = new Random().Next(100000, 999999).ToString();
+            // Generar código de verificación seguro
+            var codigoVerificacion = GenerarCodigoVerificacion();
             HttpContext.Session.SetString("CodigoVerificacion", codigoVerificacion);
             HttpContext.Session.SetString("CorreoVerificacion", correo);
 
@@ -230,6 +230,16 @@ namespace Prestamo.Web.Controllers
         {
             await HttpContext.SignOutAsync(JwtBearerDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Login");
+        }
+
+        private string GenerarCodigoVerificacion()
+        {
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                var bytes = new byte[4];
+                rng.GetBytes(bytes);
+                return BitConverter.ToUInt32(bytes, 0).ToString("D6");
+            }
         }
     }
 }

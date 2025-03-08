@@ -4,14 +4,14 @@
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
   <ProjectGuid>e52d9aa1-7170-4652-90f3-43a462d84c8c</ProjectGuid>
-  <FullPath>C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Entidades\Prestamo.Entidades.csproj</FullPath>
+  <FullPath>C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Prestamo.Entidades.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\.sonarqube\conf\0\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\.sonarqube\conf\0\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\.sonarqube\out\0\Issues.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\.sonarqube\out\0</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\.sonarqube\out\0\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\.sonarqube\out\0</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

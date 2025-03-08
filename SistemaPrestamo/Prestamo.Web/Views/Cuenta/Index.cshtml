@@ -2,7 +2,7 @@
     ViewData["Title"] = "Mi Cuenta";
 }
 @section Estilos {
-    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" />
+    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
 }
 
 <div class="row mt-4">
@@ -70,5 +70,5 @@
 </div>
 
 @section Scripts {
-    <script src="~/views/Cuenta.js"></script>
+    <script src="~/views/Cuenta.js" nonce="@Context.Items["ScriptNonce"]"></script>
 }

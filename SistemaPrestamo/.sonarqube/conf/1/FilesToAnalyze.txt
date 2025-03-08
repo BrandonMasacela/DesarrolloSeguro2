@@ -1,6 +1,10 @@
-﻿C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ClienteData.cs
-C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ConnectionStrings.cs
-C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\MonedaData.cs
-C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\PrestamoData.cs
-C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\ResumenData.cs
-C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Data\UsuarioData.cs
+﻿C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\AuditoriaData.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ClienteData.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ConnectionStrings.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\CuentaData.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\EmailService.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\MonedaData.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\PrestamoData.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ResumenClienteData .cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ResumenData.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\UsuarioData.cs

@@ -8,11 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Verificar si el token existe
     if (!token) {
         $.LoadingOverlay("hide");
-        Swal.fire({
-            title: "Error!",
-            text: "No se encontró el token de autenticación.",
-            icon: "warning"
-        });
+        mostrarMensajeError("No se encontró el token de autenticación.");
         return;
     }
 
@@ -51,11 +47,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         })
         .catch((error) => {
             console.error("Error:", error); // Para depuración
-            Swal.fire({
-                title: "Error!",
-                text: "No se pudo obtener los datos de la cuenta.",
-                icon: "warning"
-            });
+            mostrarMensajeError("No se pudo obtener los datos de la cuenta.");
         });
 
 
@@ -68,11 +60,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("btnConfirmarDeposito").addEventListener("click", function () {
         const monto = parseFloat(document.getElementById("txtMontoDeposito").value);
         if (isNaN(monto) || monto <= 0) {
-            Swal.fire({
-                title: "Error!",
-                text: "Ingrese un monto válido.",
-                icon: "warning"
-            });
+            mostrarMensajeError("Ingrese un monto válido.");
             return;
         }
 
@@ -92,27 +80,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    Swal.fire({
-                        title: "Éxito!",
-                        text: "Depósito realizado correctamente.",
-                        icon: "success"
-                    }).then(() => {
+                    mostrarMensajeExito("Depósito realizado correctamente.").then(() => {
                         window.location.reload();
                     });
                 } else {
-                    Swal.fire({
-                        title: "Error!",
-                        text: data.error || "Error al realizar el depósito.",
-                        icon: "error"
-                    });
+                    mostrarMensajeError(data.error || "Error al realizar el depósito.");
                 }
             })
             .catch(error => {
-                Swal.fire({
-                    title: "Error!",
-                    text: "Error al realizar el depósito.",
-                    icon: "error"
-                });
+                mostrarMensajeError("Error al realizar el depósito.");
                 console.error("Error al realizar el depósito:", error);
             });
     });

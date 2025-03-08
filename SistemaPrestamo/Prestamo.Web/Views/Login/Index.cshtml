@@ -10,8 +10,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Login - SB Admin</title>
-    <link href="~/css/styles.css" rel="stylesheet" />
-    <script src="~/lib/fontawesome/all.js"></script>
+    <link href="~/css/styles.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
+    <script src="~/lib/fontawesome/all.js" nonce="@Context.Items["ScriptNonce"]"></script>
 </head>
 <body class="bg-primary">
     <div id="layoutAuthentication">
@@ -59,7 +59,6 @@
                                             <script>
                                                 // Guardar directamente en localStorage desde el backend
                                                 localStorage.setItem("TiempoBloqueado", "@ViewData["TiempoBloqueado"]");
-                                                console.log("Tiempo bloqueado guardado en localStorage:", localStorage.getItem("TiempoBloqueado"));
                                             </script>
                                         }
                                         
@@ -68,11 +67,6 @@
                                         </div>
                                        
                                     </form>
-                                </div>
-                                <div class="card-footer text-center py-3">
-                                    <div class="small">
-                                        <a href="@Url.Action("Index", "Register")">¿No tienes una cuenta? Regístrate aquí</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -95,9 +89,10 @@
             </footer>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" nonce="@Context.Items["ScriptNonce"]"
+            integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"></script>
+    <script src="~/lib/sweetAlert2/js/sweetalert-custom.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/js/scripts.js" nonce="@Context.Items["ScriptNonce"]"></script>
 </body>
 </html>

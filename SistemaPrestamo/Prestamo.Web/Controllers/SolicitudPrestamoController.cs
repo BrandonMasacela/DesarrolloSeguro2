@@ -8,7 +8,6 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class SolicitudPrestamoController : Controller
     {
@@ -31,10 +30,34 @@ namespace Prestamo.Web.Controllers
             _auditoriaService = auditoriaService;
         }
 
+        [HttpGet]
+        [Authorize(Roles = "Cliente")]
+        public async Task<IActionResult> ObtenerCedulaCliente()
+        {
+            var correo = User.FindFirst(ClaimTypes.Email)?.Value;
+            if (string.IsNullOrEmpty(correo))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var cliente = await _clienteData.ObtenerPorCorreo(correo);
+            if (cliente == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            Console.WriteLine("cLIENTE EN LA SOLUICITUD: ",cliente.NroDocumento);
+            return Ok(new { cedula = cliente.NroDocumento });
+           
+        }
+
         [HttpPost]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> CrearSolicitud([FromBody] SolicitudPrestamo solicitud)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userId == null)
             {
@@ -74,7 +97,7 @@ namespace Prestamo.Web.Controllers
             {
                 return Json(new { success = false, message = "Solicitud rechazada debido a préstamos pendientes" });
             }
-            // Verificar si el monto del préstamo es mayor a 10 veces el sueldo
+            // Verificar si el monto del préstamo es mayor a 5 veces el sueldo
             if (solicitud.Monto > solicitud.Sueldo * 5)
             {
                 return Json(new { success = false, message = "Solicitud rechazada debido a que el monto del préstamo es demasiado alto." });
@@ -106,6 +129,10 @@ namespace Prestamo.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> ObtenerSolicitud(int id)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             var solicitud = await _prestamoData.ObtenerSolicitudPorId(id);
             if (solicitud == null)
             {
@@ -118,6 +145,10 @@ namespace Prestamo.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> ActualizarEstadoSolicitud([FromBody] SolicitudEstadoUpdateRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             try
             {
                 bool resultado = await _prestamoData.ActualizarEstadoSolicitud(request.Id, request.Estado);

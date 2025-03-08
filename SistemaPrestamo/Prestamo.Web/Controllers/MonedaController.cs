@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Prestamo.Data;
 using Prestamo.Entidades;
@@ -7,8 +8,7 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class MonedaController : Controller
     {
         private readonly MonedaData _monedaData;
@@ -38,6 +38,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Crear([FromBody] Moneda objeto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             string respuesta = await _monedaData.Crear(objeto);
             await _auditoriaService.RegistrarLog(User.Identity.Name, "Crear", $"Moneda creada: {objeto.Nombre}");
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
@@ -47,6 +51,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Editar([FromBody] Moneda objeto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             string respuesta = await _monedaData.Editar(objeto);
             await _auditoriaService.RegistrarLog(User.Identity.Name!, "Editar", $"Moneda editada: {objeto.Nombre}");
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
@@ -56,6 +64,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Eliminar(int Id)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             string respuesta = await _monedaData.Eliminar(Id);
             await _auditoriaService.RegistrarLog(User.Identity.Name, "Eliminar", $"Moneda eliminada con ID: {Id}");
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });

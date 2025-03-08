@@ -151,9 +151,9 @@
 </div>
 
 @section Scripts {
-    <script src="~/lib/moment/moment.min.js"></script>
-    <script src="~/views/nuevoprestamo.js"></script>
-    <script>
+    <script src="~/lib/moment/moment.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/views/nuevoprestamo.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script nonce="@Context.Items["ScriptNonce"]">
         document.addEventListener("DOMContentLoaded", function () {
             const solicitud = JSON.parse(localStorage.getItem('solicitud'));
             const historial = JSON.parse(localStorage.getItem('historial'));

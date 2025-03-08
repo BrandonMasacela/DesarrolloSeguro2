@@ -14,11 +14,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Verificar si el token existe
     if (!token) {
         $.LoadingOverlay("hide");
-        Swal.fire({
-            title: "Error!",
-            text: "No se encontró el token de autenticación.",
-            icon: "warning"
-        });
+        mostrarMensajeError("No se encontró el token de autenticación.");
         return;
     }
 
@@ -40,23 +36,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     }).catch((error) => {
         $.LoadingOverlay("hide");
-        Swal.fire({
-            title: "Error!",
-            text: "No se pudo eliminar.",
-            icon: "warning"
-        });
+        mostrarMensajeError("No se pudo obtener la lista de monedas.");
     })
 });
 
 
 $("#btnBuscar").on("click", function () {
-    
+
     if ($("#txtNroDocumento").val() == "") {
-        Swal.fire({
-            title: "Ups!",
-            text: "Debe ingresar un numero de documento.",
-            icon: "warning"
-        });
+        mostrarMensajeAdvertencia("Debe ingresar un número de documento.");
         return;
     }
 
@@ -81,54 +69,36 @@ $("#btnBuscar").on("click", function () {
             $("#txtCorreo").val(cliente.correo);
             $("#txtTelefono").val(cliente.telefono);
 
-
         } else {
             $("#txtNombre").val('');
             $("#txtApellido").val('');
             $("#txtCorreo").val('');
             $("#txtTelefono").val('');
-            Swal.fire({
-                title: "No se encontro un cliente registrado",
-                text: `Desea registrar manualmente?`,
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Si, continuar",
-                cancelButtonText: "No, volver"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    idCliente = 0;
-                    $("#txtNombre").removeAttr('disabled');
-                    $("#txtApellido").removeAttr('disabled');
-                    $("#txtCorreo").removeAttr('disabled');
-                    $("#txtTelefono").removeAttr('disabled');
-                }
-            });
+            mostrarMensajeAdvertencia("No se encontró un cliente registrado. ¿Desea registrar manualmente?", "Advertencia", true)
+                .then((result) => {
+                    if (result) {
+                        idCliente = 0;
+                        $("#txtNombre").removeAttr('disabled');
+                        $("#txtApellido").removeAttr('disabled');
+                        $("#txtCorreo").removeAttr('disabled');
+                        $("#txtTelefono").removeAttr('disabled');
+                    }
+                });
         }
     }).catch((error) => {
         $("#cardCliente").LoadingOverlay("hide");
-        Swal.fire({
-            title: "Error!",
-            text: "No se pudo eliminar.",
-            icon: "warning"
-        });
+        mostrarMensajeError("No se pudo obtener el cliente.");
     })
-  
+
 })
 
 $("#btnCalcular").on("click", function () {
     const inputsPrestamo = $(".data-prestamo").serializeArray();
     const inputText = inputsPrestamo.find((e) => e.value == "");
-    
-    
+
     if (inputText != undefined) {
-        Swal.fire({
-            title: "Error!",
-            text: `Debe completar el campo: ${inputText.name.replaceAll("_"," ")}`,
-            icon: "warning"
-        });
-        return
+        mostrarMensajeAdvertencia(`Debe completar el campo: ${inputText.name.replaceAll("_", " ")}`);
+        return;
     }
     const montoPrestamo = parseFloat(inputsPrestamo.find((e) => e.name == "Monto_Prestamo").value);
     const interes = parseFloat(inputsPrestamo.find((e) => e.name == "Interes").value);
@@ -150,25 +120,15 @@ $("#btnRegistrar").on("click", function () {
 
     if (idCliente == 0) {
         if (inputText != undefined) {
-            Swal.fire({
-                title: "Error!",
-                text: `Debe completar el campo: ${inputText.name.replaceAll("_", " ")}`,
-                icon: "warning"
-            });
-            return
+            mostrarMensajeAdvertencia(`Debe completar el campo: ${inputText.name.replaceAll("_", " ")}`);
+            return;
         }
     }
-   
 
     if ($("#txtMontoTotal").val() == "") {
-        Swal.fire({
-            title: "Error!",
-            text: `Debe completar el detalle del prestamo`,
-            icon: "warning"
-        });
-        return
+        mostrarMensajeAdvertencia("Debe completar el detalle del préstamo.");
+        return;
     }
-
 
     const objeto = {
         Cliente: {
@@ -177,7 +137,7 @@ $("#btnRegistrar").on("click", function () {
             Nombre: $("#txtNombre").val(),
             Apellido: $("#txtApellido").val(),
             Correo: $("#txtCorreo").val(),
-            Telefono: $("#txtTelefono").val() 
+            Telefono: $("#txtTelefono").val()
         },
         Moneda: {
             IdMoneda: $("#cboTipoMoneda").val()
@@ -195,7 +155,7 @@ $("#btnRegistrar").on("click", function () {
     fetch(`/${controlador}/Crear`, {
         method: "POST",
         headers: {
-            'Authorization': `Bearer ${token}`, 
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json;charset=utf-8'
         },
         body: JSON.stringify(objeto)
@@ -210,27 +170,11 @@ $("#btnRegistrar").on("click", function () {
             $("#cboTipoMoneda").val($("#cboTipoMoneda option:first").val());
             $("#cboFormaPago").val($("#cboFormaPago option:first").val());
 
-            Swal.fire({
-                title: "Listo!",
-                text: confirmaRegistro,
-                icon: "success"
-            });
+            mostrarMensajeExito(confirmaRegistro);
         } else {
-            Swal.fire({
-                title: "Error!",
-                text: responseJson.data,
-                icon: "warning"
-            });
+            mostrarMensajeError(responseJson.data);
         }
     }).catch((error) => {
-        Swal.fire({
-            title: "Error!",
-            text: "No se pudo registrar.",
-            icon: "warning"
-        });
+        mostrarMensajeError("No se pudo registrar el préstamo.");
     })
 })
-
-
-
-

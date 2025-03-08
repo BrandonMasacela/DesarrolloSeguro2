@@ -1,31 +1,28 @@
 ﻿let tablaData;
-let idPrestamo = 0;
+let idEditar = 0;
 const controlador = "Prestamo";
 const modal = "mdData";
-const preguntaEliminar = "Desea eliminar la moneda";
-const confirmaEliminar = "La moneda fue eliminada.";
-const confirmaRegistro = "Moneda registrada!";
+const preguntaEliminar = "¿Desea eliminar el préstamo";
+const confirmaEliminar = "El préstamo fue eliminado.";
+const confirmaRegistro = "Préstamo registrado!";
 // Definir la variable token al inicio del script
 let token;
-document.addEventListener("DOMContentLoaded", function (event) {
 
-    // Obtener el token del almacenamiento local
+document.addEventListener("DOMContentLoaded", function (event) {
     token = localStorage.getItem('token');
 
-    // Verificar si el token existe
     if (!token) {
         $.LoadingOverlay("hide");
-        Swal.fire({
-            title: "Error!",
-            text: "No se encontró el token de autenticación.",
-            icon: "warning"
-        });
+        mostrarMensajeAdvertencia("No se encontró el token de autenticación.");
         return;
     }
 
     tablaData = $('#tbData').DataTable({
         responsive: true,
         scrollX: true,
+        scrollY: '50vh',
+        scrollCollapse: true,
+        autoWidth: false,
         "ajax": {
             "url": `/${controlador}/ObtenerPrestamos?IdPrestamo=0&NroDocumento=`,
             "type": "GET",
@@ -33,37 +30,100 @@ document.addEventListener("DOMContentLoaded", function (event) {
             "datatype": "json"
         },
         "columns": [
-            { title: "Nro. Prestamo", "data": "idPrestamo" },
+            { 
+                title: "Nro. Prestamo", 
+                data: "idPrestamo",
+                className: 'col-prestamo fixed-column',
+                width: "120px"
+            },
             {
-                title: "Cliente", "data": "cliente", render: function (data, type, row) {
+                title: "Cliente", 
+                data: "cliente",
+                className: 'col-cliente',
+                width: "200px",
+                render: function (data, type, row) {
                     return `${data.nombre} ${data.apellido}`
                 }
             },
-            { title: "Monto Prestamo", "data": "montoPrestamo" },
-            { title: "Monto Interes", "data": "valorInteres" },
-            { title: "Monto Total", "data": "valorTotal" },
+            { 
+                title: "Monto Prestamo", 
+                data: "montoPrestamo",
+                className: 'col-monto',
+                width: "120px"
+            },
+            { 
+                title: "Monto Interes", 
+                data: "valorInteres",
+                className: 'col-interes',
+                width: "120px"
+            },
+            { 
+                title: "Monto Total", 
+                data: "valorTotal",
+                className: 'col-total',
+                width: "120px"
+            },
             {
-                title: "Moneda", "data": "moneda", render: function (data, type, row) {
+                title: "Moneda", 
+                data: "moneda",
+                className: 'col-moneda',
+                width: "100px",
+                render: function (data, type, row) {
                     return `${data.nombre}`
                 }
             },
             {
-                title: "Estado", "data": "estado", render: function (data, type, row) {
+                title: "Estado", 
+                data: "estado",
+                className: 'col-estado',
+                width: "100px",
+                render: function (data, type, row) {
                     return data == "Pendiente" ? '<span class="badge bg-danger p-2">Pendiente</span>' : '<span class="badge bg-success p-2">Cancelado</span>'
                 }
             },
             {
-                title: "", "data": "idPrestamo", width: "120px", render: function (data, type, row) {
-                    return `<button class="btn btn-primary me-2 btn-detalle"><i class="fa-solid fa-list-ol"></i> Ver detalle</button>`
+                title: "Acciones", 
+                data: "idPrestamo",
+                className: 'col-acciones',
+                width: "120px",
+                orderable: false,
+                render: function (data, type, row) {
+                    return `<button class="btn btn-primary btn-action btn-detalle" title="Ver detalle">
+                                <i class="fas fa-list-ol"></i>
+                            </button>`
                 }
             }
         ],
-        "order": [0, 'desc'],
-        language: {
-            url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+        "order": [[0, 'desc']],
+        fixedColumns: {
+            left: 1
         },
+        language: {
+            search: "Buscar:",
+            lengthMenu: "Mostrar _MENU_ registros por página",
+            info: "Mostrando _START_ a _END_ de _TOTAL_ registros",
+            infoEmpty: "Mostrando 0 a 0 de 0 registros",
+            infoFiltered: "(filtrado de _MAX_ registros totales)",
+            zeroRecords: "No se encontraron resultados",
+            emptyTable: "Ningún dato disponible en esta tabla",
+            paginate: {
+                first: "Primero",
+                last: "Último",
+                next: "Siguiente",
+                previous: "Anterior"
+            }
+        },
+        dom: '<"row"<"col-sm-12 col-md-6"f><"col-sm-12 col-md-6"l>>' +
+             '<"row"<"col-sm-12"tr>>' +
+             '<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
+        drawCallback: function() {
+            $('.dataTables_scrollBody').css('min-height', '300px');
+        }
     });
+});
 
+$("#btnNuevo").on("click", function () {
+    window.location.href = '/Prestamo/NuevoPrestamo';
 });
 
 
@@ -71,7 +131,7 @@ $("#tbData tbody").on("click", ".btn-detalle", function () {
     const filaSeleccionada = $(this).closest('tr');
     const prestamo = tablaData.row(filaSeleccionada).data();
     const detalle = prestamo.prestamoDetalle;
-    idPrestamo = prestamo.idPrestamo;
+    idEditar = prestamo.idPrestamo;
     $("#txtIdPrestamo").text(`Nro. Prestamo: ${prestamo.idPrestamo}`)
     $("#txtMontoPrestamo").val(prestamo.montoPrestamo)
     $("#txtInteres").val(prestamo.interesPorcentaje)
@@ -97,5 +157,5 @@ $("#tbData tbody").on("click", ".btn-detalle", function () {
 })  
 
 $("#btnImprimir").on("click", function () {
-    window.open(`/Prestamo/ImprimirPrestamo?IdPrestamo=${idPrestamo}`, "_blank");
+    window.open(`/Prestamo/ImprimirPrestamo?IdPrestamo=${idEditar}`, "_blank");
 })

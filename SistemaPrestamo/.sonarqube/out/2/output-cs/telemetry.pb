@@ -1,1 +1,1 @@
-mRWC:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\Prestamo.Web\Prestamo.Web.csproj¢net8.0òCSharp12
+qR[C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Prestamo.Web.csproj¢net8.0òCSharp12

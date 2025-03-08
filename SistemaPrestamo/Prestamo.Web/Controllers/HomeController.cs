@@ -12,7 +12,6 @@ using Prestamo.Web.Servives;
 
 namespace Prestamo.Web.Controllers
 {
-    [ServiceFilter(typeof(ContentSecurityPolicyFilter))]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class HomeController : Controller
     {
@@ -51,6 +50,7 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ObtenerResumen()
         {
+
             var usuario = User.Identity!.Name;
             await _auditoriaService.RegistrarLog(usuario!, "ObtenerResumen", "El usuario solicitó el resumen administrativo.");
 
@@ -68,6 +68,10 @@ namespace Prestamo.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> ObtenerResumenCliente(int idPrestamo)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             var usuario = User.Identity!.Name;
             await _auditoriaService.RegistrarLog(usuario!, "ObtenerResumenCliente", "El usuario solicitó el resumen del cliente.");
 

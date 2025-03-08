@@ -3,14 +3,14 @@
 *@
 @if (!User.IsInRole("Administrador"))
 {
-    <script>
+    <script nonce="@Context.Items["ScriptNonce"]">
         window.location.href = '@Url.Action("Index", "Home")';
     </script>
 }
 else
 {
     @section Estilos {
-        <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" />
+    <link href="~/lib/datatables2/css/datatables.datatables.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
     }
     <div class="row mt-4">
         <div class="col-sm-12">
@@ -68,8 +68,8 @@ else
     </div>
 
     @section Scripts {
-        <script src="~/lib/datatables2/js/moment.min.js"></script>
-        <script src="~/lib/datatables2/js/datatables.js"></script>
-        <script src="~/views/moneda.js"></script>
+    <script src="~/lib/datatables2/js/moment.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/datatables2/js/datatables.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/views/moneda.js" nonce="@Context.Items["ScriptNonce"]"></script>
     }
 }

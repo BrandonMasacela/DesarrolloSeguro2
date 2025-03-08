@@ -8,17 +8,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Clinica - Net8</title>
-    <link href="~/css/styles.css" rel="stylesheet" />
+    <title>PrestamsoEspe - Net8</title>
+    <link href="~/css/styles.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
+    <link href="~/lib/datatables/css/datatables-custom.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
+    <link href="~/css/prestamo-alerts.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
+    <link href="~/css/icon-styles.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
+    <link href="~/css/table-styles.css" rel="stylesheet" nonce="@Context.Items["ScriptNonce"]" />
     @RenderSection("Estilos", required: false)
-    <script src="~/lib/fontawesome/all.js"></script>
+    <script src="~/lib/fontawesome/all.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <style nonce="@Context.Items["ScriptNonce"]">
+        .sb-topnav { background-color: #e3f2fd; }
+        .svg-inline--fa {
+            height: 1em;
+            vertical-align: -0.125em;
+        }
+        .nav-link .svg-inline--fa {
+            margin-right: 0.5rem;
+            width: 1em;
+        }
+        .btn .svg-inline--fa {
+            width: 1em;
+            margin-right: 0.25rem;
+        }
+    </style>
 </head>
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-light" style="background-color: #e3f2fd;">
+    <nav class="sb-topnav navbar navbar-expand navbar-light">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="#">Prestamo</a>
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
+            <i class="fas fa-bars"></i>
+        </button>
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             @*  <div class="input-group">
@@ -30,7 +51,9 @@
         {
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user fa-fw"></i>
+                    </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">@User.Claims.Where(c => c.Type == ClaimTypes.Name).Select(c => c.Value).SingleOrDefault()</a></li>
                         <li><hr class="dropdown-divider" /></li>
@@ -49,46 +72,66 @@
                         @if (User.IsInRole("Administrador"))
                         {
                             <a class="nav-link" asp-controller="Home" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
                                 Resumen
                             </a>
                             <a class="nav-link" asp-controller="Cliente" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-user-group"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
                                 Clientes
                             </a>
                             <a class="nav-link" asp-controller="Moneda" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
                                 Monedas
                             </a>
                             <a class="nav-link" asp-controller="Prestamo" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-money-bill"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-money-bill"></i>
+                                </div>
                                 Prestamos
                             </a>
                             <a class="nav-link" asp-controller="SolicitudPrestamo" asp-action="GestionarSolicitudes">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-file-invoice"></i>
+                                </div>
                                 Solicitudes
                             </a>
                         }
                         else
                         {
                             <a class="nav-link" asp-controller="Home" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
                                 Resumen
                             </a>
                             <a class="nav-link" asp-controller="Account" asp-action="ChangePassword">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-key"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-key"></i>
+                                </div>
                                 Cambiar Contraseña
                             </a>
                             <a class="nav-link" asp-controller="Cobrar" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-hand-holding-dollar"></i>
+                                </div>
                                 Pagar
                             </a>
                             <a class="nav-link" asp-controller="Cuenta" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-credit-card"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
                                 Cuenta
                             </a>
                             <a class="nav-link" asp-controller="SolicitudPrestamo" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-file-invoice"></i>
+                                </div>
                                 Realizar Solicitud
                             </a>
                         }
@@ -120,11 +163,13 @@
             </footer>
         </div>
     </div>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/scripts.js"></script>
-    <script src="~/lib/sweetalert2/js/sweetalert2.js"></script>
-    <script src="~/lib/loadingoverlay/loadingoverlay.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/js/scripts.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/datatables/js/datatables-custom.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/datatables2/js/dataTables.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/js/prestamo-alerts.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="~/lib/loadingoverlay/loadingoverlay.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

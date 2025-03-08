@@ -1,1 +1,1 @@
-C:\Users\pspgo\Desktop\SistemaPrestamo\SistemaPrestamo\.sonarqube\out\2
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\.sonarqube\out\2

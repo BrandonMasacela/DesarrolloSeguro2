@@ -23,7 +23,7 @@ namespace Prestamo.Data
             using (var client = new SmtpClient(_smtpSettings.Host, _smtpSettings.Port)
             {
                 Credentials = new NetworkCredential(_smtpSettings.UserName, _smtpSettings.Password),
-                EnableSsl = _smtpSettings.EnableSsl
+                EnableSsl = true,
             })
             {
                 var mailMessage = new MailMessage

@@ -6,11 +6,7 @@ $(document).ready(function () {
     // Verificar si el token existe
     if (!token) {
         $.LoadingOverlay("hide");
-        Swal.fire({
-            title: "Error!",
-            text: "No se encontró el token de autenticación.",
-            icon: "warning"
-        });
+        mostrarMensajeError("No se encontró el token de autenticación.");
         return;
     }
 
@@ -25,22 +21,17 @@ $(document).ready(function () {
         // Verificar si el token existe
         if (!token) {
             $.LoadingOverlay("hide");
-            Swal.fire({
-                title: "Error!",
-                text: "No se encontró el token de autenticación.",
-                icon: "warning"
-            });
+            mostrarMensajeError("No se encontró el token de autenticación.");
             return;
         }
 
-
         if (!contrasenaActual || !nuevaContrasena || !confirmarContrasena) {
-            Swal.fire('Error', 'Por favor complete todos los campos', 'error');
+            mostrarMensajeError('Por favor complete todos los campos');
             return;
         }
 
         if (nuevaContrasena !== confirmarContrasena) {
-            Swal.fire('Error', 'Las contraseñas no coinciden', 'error');
+            mostrarMensajeError('Las contraseñas no coinciden');
             return;
         }
 
@@ -61,7 +52,7 @@ $(document).ready(function () {
                 if (data.success) {
                     $("#verificationModal").modal('show');
                 } else {
-                    Swal.fire('Error', data.message, 'error');
+                    mostrarMensajeError(data.message);
                 }
             });
     });
@@ -70,7 +61,7 @@ $(document).ready(function () {
         const codigo = $("#verificationCode").val();
 
         if (!codigo) {
-            Swal.fire('Error', 'Por favor ingrese el código de verificación', 'error');
+            mostrarMensajeError('Por favor ingrese el código de verificación');
             return;
         }
 
@@ -89,15 +80,15 @@ $(document).ready(function () {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    Swal.fire('Éxito', 'Contraseña cambiada correctamente', 'success')
-                        .then(() => {
-                            window.location.href = '/Home/Index';
-                        });
+                    mostrarMensajeExito('Contraseña cambiada correctamente').then(() => {
+                        window.location.href = '/Home/Index';
+                    });
                 } else {
-                    Swal.fire('Error', data.message, 'error');
+                    mostrarMensajeError(data.message);
                 }
             });
     });
+
     // Cerrar modal al hacer clic en el botón de cancelar
     $(".modal-footer .btn-secondary").click(function () {
         $('#verificationModal').modal('hide');
