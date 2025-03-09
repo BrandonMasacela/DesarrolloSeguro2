@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prestamo.Entidades")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11cf66d357fa48fea38c8eb94d1095e8f4f5164e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+521160de5f62a5249a22ad7ab51f8dc8f90a8ffb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prestamo.Entidades")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prestamo.Entidades")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

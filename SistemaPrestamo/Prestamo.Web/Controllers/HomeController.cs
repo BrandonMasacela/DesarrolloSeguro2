@@ -52,7 +52,7 @@ namespace Prestamo.Web.Controllers
         {
 
             var usuario = User.Identity!.Name;
-            await _auditoriaService.RegistrarLog(usuario!, "ObtenerResumen", "El usuario solicitó el resumen administrativo.");
+            await _auditoriaService.RegistrarLog(usuario!, "ObtenerResumen", "El usuario solicitï¿½ el resumen administrativo.");
 
             Resumen objeto = await _resumenData.Obtener();
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
@@ -73,7 +73,7 @@ namespace Prestamo.Web.Controllers
                 return BadRequest(ModelState);
             }
             var usuario = User.Identity!.Name;
-            await _auditoriaService.RegistrarLog(usuario!, "ObtenerResumenCliente", "El usuario solicitó el resumen del cliente.");
+            await _auditoriaService.RegistrarLog(usuario!, "ObtenerResumenCliente", "El usuario solicitï¿½ el resumen del cliente.");
 
             var correo = User.FindFirst(ClaimTypes.Email)?.Value;
             Console.WriteLine(correo);
@@ -98,8 +98,8 @@ namespace Prestamo.Web.Controllers
         public async Task<IActionResult> Salir()
         {
             var usuario = User.Identity!.Name;
-            await _auditoriaService.RegistrarLog(usuario!, "Salir", "El usuario cerró sesión.");
-            // Cerrar sesión en el esquema de cookies
+            await _auditoriaService.RegistrarLog(usuario!, "Salir", "El usuario cerrï¿½ sesiï¿½n.");
+            // Cerrar sesiï¿½n en el esquema de cookies
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
             // Eliminar cookies adicionales

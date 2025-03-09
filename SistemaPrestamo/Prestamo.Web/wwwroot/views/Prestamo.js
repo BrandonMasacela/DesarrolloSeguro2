@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         scrollCollapse: true,
         autoWidth: false,
         "ajax": {
-            "url": `/${controlador}/ObtenerPrestamos?IdPrestamo=0&NroDocumento=`,
+            "url": `/${controlador}/ObtenerPrestamos2?IdPrestamo=0&NroDocumento=`,
             "type": "GET",
             'Authorization': `Bearer ${token}`,
             "datatype": "json"

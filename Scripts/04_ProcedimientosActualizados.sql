@@ -392,6 +392,7 @@ BEGIN
 
         DECLARE @IdCliente INT;
         DECLARE @TotalPagar DECIMAL(18, 2);
+        DECLARE @CuotasPendientes INT;
 
         -- Obtener el IdCliente y el total a pagar
         SELECT @IdCliente = p.IdCliente,
@@ -401,6 +402,14 @@ BEGIN
         INNER JOIN dbo.SplitString(@NroCuotasPagadas, ',') ss ON ss.valor = pd.NroCuota
         WHERE p.IdPrestamo = @IdPrestamo
         GROUP BY p.IdCliente;
+
+        -- Verificar si hay cuotas para pagar
+        IF @TotalPagar IS NULL
+        BEGIN
+            SET @msgError = 'No se encontraron cuotas válidas para pagar';
+            ROLLBACK TRANSACTION;
+            RETURN;
+        END
 
         -- Verificar el saldo de la cuenta
         DECLARE @SaldoCuenta DECIMAL(18, 2);
@@ -412,6 +421,14 @@ BEGIN
                @Tarjeta = c.Tarjeta
         FROM Cuenta c
         WHERE c.IdCliente = @IdCliente;
+
+        -- Verificar si se encontró la cuenta
+        IF @SaldoCuenta IS NULL
+        BEGIN
+            SET @msgError = 'No se encontró la cuenta del cliente';
+            ROLLBACK TRANSACTION;
+            RETURN;
+        END
 
         -- Desencriptar la tarjeta antes de compararla
         SET @TarjetaDesencriptada = CONVERT(NVARCHAR(16), DecryptByPassphrase('aB3dE5fG7hI9jK1mN2oP4qR6sT8uV0wX', @Tarjeta));
@@ -427,7 +444,7 @@ BEGIN
         -- Verificar si hay saldo suficiente
         IF @SaldoCuenta < @TotalPagar
         BEGIN
-            SET @msgError = 'Fondos insuficientes' + @TarjetaDesencriptada;
+            SET @msgError = 'Fondos insuficientes';
             ROLLBACK TRANSACTION;
             RETURN;
         END
@@ -439,13 +456,20 @@ BEGIN
 
         -- Actualizar el estado de las cuotas
         UPDATE pd
-        SET pd.Estado = 'Cancelado', FechaPagado = GETDATE()
+        SET pd.Estado = 'Cancelado', 
+            FechaPagado = GETDATE()
         FROM PrestamoDetalle pd
         INNER JOIN dbo.SplitString(@NroCuotasPagadas, ',') ss ON ss.valor = pd.NroCuota
-        WHERE IdPrestamo = @IdPrestamo;
+        WHERE pd.IdPrestamo = @IdPrestamo;
 
-        -- Actualizar el estado del préstamo si todas las cuotas están pagadas
-        IF (SELECT COUNT(IdPrestamoDetalle) FROM PrestamoDetalle WHERE IdPrestamo = @IdPrestamo AND Estado = 'Pendiente') = 0
+        -- Verificar cuotas pendientes después de la actualización
+        SELECT @CuotasPendientes = COUNT(*)
+        FROM PrestamoDetalle
+        WHERE IdPrestamo = @IdPrestamo 
+        AND Estado = 'Pendiente';
+
+        -- Actualizar el estado del préstamo si no quedan cuotas pendientes
+        IF @CuotasPendientes = 0
         BEGIN
             UPDATE Prestamo
             SET Estado = 'Cancelado'
@@ -455,8 +479,12 @@ BEGIN
         COMMIT TRANSACTION;
     END TRY
     BEGIN CATCH
-        ROLLBACK TRANSACTION;
-		SET @msgError = 'Error en sp_pagarCuotas: ' + ERROR_MESSAGE() + ' | IdPrestamo: ' + CAST(@IdPrestamo AS VARCHAR) + ' | NroCuotasPagadas: ' + @NroCuotasPagadas + ' | NumeroTarjeta: ' + @NumeroTarjeta;
+        IF @@TRANCOUNT > 0
+            ROLLBACK TRANSACTION;
+        
+        SET @msgError = 'Error en sp_pagarCuotas: ' + ERROR_MESSAGE() + 
+                       ' | IdPrestamo: ' + CAST(@IdPrestamo AS VARCHAR) + 
+                       ' | NroCuotasPagadas: ' + @NroCuotasPagadas;
     END CATCH;
 END
 GO
@@ -761,4 +789,39 @@ BEGIN
     INSERT INTO Auditoria (Usuario, Accion, Fecha, Detalles)
     VALUES (@Usuario, @Accion, @Fecha, @Detalles)
 END
+GO
+
+Create procedure sp_obtenerPrestamos2(
+@IdPrestamo int = 0,
+@NroDocumento varchar(50) = ''
+)as
+begin
+	select p.IdPrestamo,
+	c.IdCliente,c.NroDocumento,c.Nombre,c.Apellido,c.Correo,c.Telefono,
+	m.IdMoneda,m.Nombre[NombreMoneda],m.Simbolo,
+	CONVERT(char(10),p.FechaInicioPago, 103) [FechaInicioPago],
+	CONVERT(VARCHAR,p.MontoPrestamo)[MontoPrestamo],
+	CONVERT(VARCHAR,p.InteresPorcentaje)[InteresPorcentaje],
+	p.NroCuotas,
+	p.FormaDePago,
+	CONVERT(VARCHAR,p.ValorPorCuota)[ValorPorCuota],
+	CONVERT(VARCHAR,p.ValorInteres)[ValorInteres],
+	CONVERT(VARCHAR,p.ValorTotal)[ValorTotal],
+	p.Estado,
+	CONVERT(char(10),p.FechaCreacion, 103) [FechaCreacion],
+	(
+		select pd.IdPrestamoDetalle,CONVERT(char(10),pd.FechaPago, 103) [FechaPago],
+		CONVERT(VARCHAR,pd.MontoCuota)[MontoCuota],
+		pd.NroCuota,pd.Estado,isnull(CONVERT(varchar(10),pd.FechaPagado, 103),'')[FechaPagado]
+		from PrestamoDetalle pd
+		where pd.IdPrestamo = p.IdPrestamo
+		FOR XML PATH('Detalle'), TYPE, ROOT('PrestamoDetalle')
+	)
+	from Prestamo p
+	inner join Cliente c on c.IdCliente = p.IdCliente
+	inner join Moneda m on m.IdMoneda = p.IdMoneda
+	where p.IdPrestamo = iif(@IdPrestamo = 0,p.idprestamo,@IdPrestamo) and
+	c.NroDocumento = iif(@NroDocumento = '',c.NroDocumento,@NroDocumento)
+	FOR XML PATH('Prestamo'), ROOT('Prestamos'), TYPE;
+end
 GO

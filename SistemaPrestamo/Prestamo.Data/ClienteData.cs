@@ -113,17 +113,19 @@ namespace Prestamo.Data
         {
             using (var rng = RandomNumberGenerator.Create())
             {
-                var bytes = new byte[8];
+                var bytes = new byte[8]; // 8 bytes = 64 bits
                 rng.GetBytes(bytes);
                 var builder = new StringBuilder();
                 foreach (var b in bytes)
                 {
-                    builder.Append(b.ToString("X2"));
+                    // Convertir cada byte a un número de dos dígitos
+                    builder.Append((b % 10).ToString());
+                    builder.Append(((b / 10) % 10).ToString());
                 }
-                return builder.ToString();
+                // Asegurarse de que la longitud sea exactamente 16 dígitos
+                return builder.ToString().Substring(0, 16);
             }
         }
-
         public async Task<string> CrearCuenta(Cuenta cuenta)
         {
             string respuesta = "";

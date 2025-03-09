@@ -74,7 +74,9 @@ document.getElementById('solicitudForm').addEventListener('submit', async functi
 
         if (result.success) {
             await mostrarMensajeExito("La solicitud ha sido enviada correctamente.");
+            document.getElementById('solicitudForm').reset();
         } else {
+            console.error("Error al enviar la solicitud:", result.message);
             await mostrarMensajeError(result.message || "No se pudo enviar la solicitud.");
         }
 

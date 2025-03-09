@@ -11,7 +11,7 @@ namespace Prestamo.Data
         public int IdCuenta { get; set; }
         public int IdCliente { get; set; }
         public string Tarjeta { get; set; } = null!;
-        public DateTime FechaCreacion { get; set; }
+        public DateTime? FechaCreacion { get; set; }
         public decimal Monto { get; set; }
     }
 }

@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     $('#tbSolicitudes tbody').on('click', '.btn-aceptar', function () {
         const id = $(this).data('id');
         aceptarSolicitud(id);
+
     });
 
     $('#tbSolicitudes tbody').on('click', '.btn-rechazar', function () {
@@ -116,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
 
     async function aceptarSolicitud(id) {
+        $.LoadingOverlay("hide");
         const response = await fetch(`/SolicitudPrestamo/ObtenerSolicitud/${id}`);
         const solicitud = await response.json();
         if (solicitud.success) {
@@ -150,6 +152,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     async function actualizarEstado(id, estado) {
+        $.LoadingOverlay("hide");
         // Obtener la solicitud actualizada
         const response = await fetch(`/SolicitudPrestamo/ObtenerSolicitud/${id}`);
         const solicitud = await response.json();

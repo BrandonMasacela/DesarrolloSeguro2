@@ -10,7 +10,7 @@ namespace Prestamo.Entidades
     {
         public int IdPrestamo { get; set; }
         public Cliente Cliente { get; set; } = null!;
-        public Moneda Moneda { get; set; } = null!;
+        public Moneda? Moneda { get; set; } = null!;
         public string FechaInicioPago { get; set; } = null!;
         public string MontoPrestamo { get; set; } = null!;
         public string InteresPorcentaje { get; set; } = null!;
@@ -19,8 +19,8 @@ namespace Prestamo.Entidades
         public string ValorPorCuota { get; set; } = null!;
         public string ValorInteres { get; set; } = null!;
         public string ValorTotal { get; set; } = null!;
-        public string Estado { get; set; } = null!;
-        public string FechaCreacion { get; set; } = null!;
-        public List<PrestamoDetalle> PrestamoDetalle { get; set; } = null!;
+        public string? Estado { get; set; } = null!;
+        public string? FechaCreacion { get; set; } = null!;
+        public List<PrestamoDetalle>? PrestamoDetalle { get; set; } = null!;
     }
 }

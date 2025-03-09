@@ -20,8 +20,7 @@ namespace Prestamo.Web.Models
         [Compare("NewPassword", ErrorMessage = "La nueva contraseña y la confirmación de la contraseña no coinciden.")]
         public string ConfirmPassword { get; set; }
 
-        [Required]
         [Display(Name = "Código de verificación")]
-        public string VerificationCode { get; set; }
+        public string? VerificationCode { get; set; } = null!;
     }
 }

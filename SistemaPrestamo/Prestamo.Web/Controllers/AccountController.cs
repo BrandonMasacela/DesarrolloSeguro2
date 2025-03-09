@@ -6,7 +6,6 @@ using Prestamo.Web.Models;
 using Prestamo.Web.Servives;
 using System.Security.Claims;
 using System.Security.Cryptography;
-using static QuestPDF.Helpers.Colors;
 
 namespace Prestamo.Web.Controllers
 {
@@ -20,7 +19,7 @@ namespace Prestamo.Web.Controllers
         public AccountController(UsuarioData usuarioData, EmailService emailService, AuditoriaService auditoriaService)
         {
             _usuarioData = usuarioData;
-            _emailService = emailService; 
+            _emailService = emailService;
             _auditoriaService = auditoriaService;
         }
 
@@ -31,6 +30,7 @@ namespace Prestamo.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> SolicitarCodigoVerificacion([FromBody] ChangePasswordViewModel model)
         {
             if (!ModelState.IsValid)
@@ -56,7 +56,7 @@ namespace Prestamo.Web.Controllers
                 return Json(new { success = false, message = "La contraseña actual es incorrecta" });
             }
 
-            //Generar código de verificación seguro
+            // Generar código de verificación seguro
             var codigoVerificacion = GenerarCodigoVerificacion();
             HttpContext.Session.SetString("CodigoVerificacion", codigoVerificacion);
 

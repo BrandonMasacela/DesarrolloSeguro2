@@ -45,7 +45,6 @@ namespace Prestamo.Web.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
-            Console.WriteLine("cLIENTE EN LA SOLUICITUD: ",cliente.NroDocumento);
             return Ok(new { cedula = cliente.NroDocumento });
            
         }

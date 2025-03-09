@@ -9,9 +9,6 @@ using System.Security.Cryptography;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Cargar variables de entorno desde el archivo .env
-DotNetEnv.Env.Load();
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.Configure<ConnectionStrings>(builder.Configuration.GetSection("ConnectionStrings"));
@@ -115,7 +112,7 @@ app.Use(async (context, next) =>
 
     // Anti-Clickjacking
     context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
-    
+
     // Content Security Policy más restrictiva y específica
     context.Response.Headers.Add(
         "Content-Security-Policy",
@@ -125,7 +122,7 @@ app.Use(async (context, next) =>
     // Agregar cabeceras de seguridad adicionales
     context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
     context.Response.Headers.Add("Referrer-Policy", "strict-origin-when-cross-origin");
-    context.Response.Headers.Add("Permissions-Policy", 
+    context.Response.Headers.Add("Permissions-Policy",
         "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()");
     context.Response.Headers.Add("Cross-Origin-Embedder-Policy", "require-corp");
     context.Response.Headers.Add("Cross-Origin-Opener-Policy", "same-origin");

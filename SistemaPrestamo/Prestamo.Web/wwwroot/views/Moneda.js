@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         "ajax": {
             "url": `/${controlador}/Lista`,
             "type": "GET",
-            'Authorization': `Bearer ${token}`,
+            "headers": {
+                'Authorization': `Bearer ${token}`
+            },
             "datatype": "json"
         },
         "columns": [
@@ -88,15 +90,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         },
         dom: '<"row"<"col-sm-12 col-md-6"f><"col-sm-12 col-md-6"l>>' +
-             '<"row"<"col-sm-12"tr>>' +
-             '<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
-        drawCallback: function() {
+            '<"row"<"col-sm-12"tr>>' +
+            '<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
+        drawCallback: function () {
             $('.dataTables_scrollBody').css('min-height', '300px');
         }
     });
 });
 
-$("#tbData tbody").on("click", ".btn-editar", function () {
+$("#tbData tbody").on("click", ".btn-edit", function () {
     var filaSeleccionada = $(this).closest('tr');
     var data = tablaData.row(filaSeleccionada).data();
 
@@ -104,6 +106,7 @@ $("#tbData tbody").on("click", ".btn-editar", function () {
     $("#txtNombre").val(data.nombre);
     $("#txtSimbolo").val(data.simbolo);
     $(`#${modal}`).modal('show');
+    console.log("Editar moneda", data);
 });
 
 $("#btnNuevo").on("click", function () {
@@ -113,9 +116,10 @@ $("#btnNuevo").on("click", function () {
     $(`#${modal}`).modal('show');
 });
 
-$("#tbData tbody").on("click", ".btn-eliminar", async function () {
+$("#tbData tbody").on("click", ".btn-delete", async function () {
     var filaSeleccionada = $(this).closest('tr');
     var data = tablaData.row(filaSeleccionada).data();
+    console.log("Eliminar moneda", data);
 
     const confirmado = await confirmarAccion(
         `${preguntaEliminar} ${data.nombre}?`,
@@ -124,7 +128,7 @@ $("#tbData tbody").on("click", ".btn-eliminar", async function () {
 
     if (confirmado) {
         mostrarCargando("Eliminando moneda...");
-        
+
         try {
             const response = await fetch(`/${controlador}/Eliminar?Id=${data.idMoneda}`, {
                 method: "DELETE",

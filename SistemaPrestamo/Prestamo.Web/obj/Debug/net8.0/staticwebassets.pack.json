@@ -361,6 +361,10 @@
       "PackagePath": "staticwebassets\\views\\gestionarSolicitudes.js"
     },
     {
+      "Id": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\login.js",
+      "PackagePath": "staticwebassets\\views\\login.js"
+    },
+    {
       "Id": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\solicitudPrestamo.js",
       "PackagePath": "staticwebassets\\views\\solicitudPrestamo.js"
     },
