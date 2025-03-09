@@ -1048,13 +1048,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\login.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jdwaukykna"},{"Name":"integrity","Value":"sha256-mW/mpa2fXei7Taj95DRs5dOtuSzhsEJZoMQa1e0dCCM="},{"Name":"label","Value":"_content/Prestamo.Web/views/login.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4340"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mW/mpa2fXei7Taj95DRs5dOtuSzhsEJZoMQa1e0dCCM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Mar 2025 18:33:25 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4340"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mW/mpa2fXei7Taj95DRs5dOtuSzhsEJZoMQa1e0dCCM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Mar 2025 20:36:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Prestamo.Web/views/login.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\login.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mW/mpa2fXei7Taj95DRs5dOtuSzhsEJZoMQa1e0dCCM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4340"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mW/mpa2fXei7Taj95DRs5dOtuSzhsEJZoMQa1e0dCCM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Mar 2025 18:33:25 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4340"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mW/mpa2fXei7Taj95DRs5dOtuSzhsEJZoMQa1e0dCCM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Mar 2025 20:36:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Prestamo.Web/views/Moneda.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Moneda.js'))</AssetFile>

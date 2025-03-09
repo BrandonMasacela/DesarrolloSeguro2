@@ -84,6 +84,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Cliente, Administrador")]
         public async Task<IActionResult> ObtenerPrestamos(int IdPrestamo, string NroDocumento)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             List<Prestamo.Entidades.Prestamo> objeto = await _prestamoData.ObtenerPrestamos(IdPrestamo,NroDocumento == null ? "": NroDocumento);
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
@@ -93,6 +97,10 @@ namespace Prestamo.Web.Controllers
         [Authorize(Roles = "Cliente, Administrador")]
         public async Task<IActionResult> ObtenerPrestamos2(int IdPrestamo, string NroDocumento)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             List<Prestamo.Entidades.Prestamo> objeto = await _prestamoData.ObtenerPrestamos2(IdPrestamo, NroDocumento == null ? "" : NroDocumento);
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }

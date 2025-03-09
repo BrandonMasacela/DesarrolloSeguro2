@@ -240,7 +240,241 @@ MetodoPago  
 ;* +
 }, -
 } 
-} º
+} ù
+_C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\ResumenCliente.cs
+	namespace 	
+Prestamo
+ 
+. 
+	Entidades 
+{ 
+public		 
+
+class		 
+ResumenCliente		 
+{
+
+ 
+public 
+string 
+PrestamosCliente &
+{' (
+get) ,
+;, -
+set. 1
+;1 2
+}3 4
+=5 6
+null7 ;
+!; <
+;< =
+public 
+string "
+PagosClientePendientes ,
+{- .
+get/ 2
+;2 3
+set4 7
+;7 8
+}9 :
+=; <
+null= A
+!A B
+;B C
+} 
+} –
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Resumen.cs
+	namespace 	
+Prestamo
+ 
+. 
+	Entidades 
+{ 
+public		 
+
+class		 
+Resumen		 
+{
+
+ 
+public 
+string 
+TotalClientes #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+=2 3
+null4 8
+!8 9
+;9 :
+public 
+string 
+PrestamosPendientes )
+{* +
+get, /
+;/ 0
+set1 4
+;4 5
+}6 7
+=8 9
+null: >
+!> ?
+;? @
+public 
+string 
+PrestamosCancelados )
+{* +
+get, /
+;/ 0
+set1 4
+;4 5
+}6 7
+=8 9
+null: >
+!> ?
+;? @
+public 
+string 
+InteresAcumulado &
+{' (
+get) ,
+;, -
+set. 1
+;1 2
+}3 4
+=5 6
+null7 ;
+!; <
+;< =
+public 
+string !
+SolicitudesPendientes +
+{, -
+get. 1
+;1 2
+set3 6
+;6 7
+}8 9
+=: ;
+null< @
+!@ A
+;A B
+} 
+} Ú
+`C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\PrestamoDetalle.cs
+	namespace 	
+Prestamo
+ 
+. 
+	Entidades 
+{ 
+public 
+
+class 
+PrestamoDetalle  
+{ 
+public 
+int 
+IdPrestamoDetalle $
+{% &
+get' *
+;* +
+set, /
+;/ 0
+}1 2
+public 
+string 
+	FechaPago 
+{  !
+get" %
+;% &
+set' *
+;* +
+}, -
+=. /
+null0 4
+!4 5
+;5 6
+public		 
+int		 
+NroCuota		 
+{		 
+get		 !
+;		! "
+set		# &
+;		& '
+}		( )
+public
+
+ 
+string
+
+ 
+
+MontoCuota
+
+  
+{
+
+! "
+get
+
+# &
+;
+
+& '
+set
+
+( +
+;
+
++ ,
+}
+
+- .
+=
+
+/ 0
+null
+
+1 5
+!
+
+5 6
+;
+
+6 7
+public 
+string 
+Estado 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+=+ ,
+null- 1
+!1 2
+;2 3
+public 
+string 
+FechaPagado !
+{" #
+get$ '
+;' (
+set) ,
+;, -
+}. /
+=0 1
+null2 6
+!6 7
+;7 8
+} 
+} º
 YC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Prestamo.cs
 	namespace 	
 Prestamo
@@ -439,49 +673,7 @@ ValorTotal  
 !J K
 ;K L
 } 
-} ù
-_C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\ResumenCliente.cs
-	namespace 	
-Prestamo
- 
-. 
-	Entidades 
-{ 
-public		 
-
-class		 
-ResumenCliente		 
-{
-
- 
-public 
-string 
-PrestamosCliente &
-{' (
-get) ,
-;, -
-set. 1
-;1 2
-}3 4
-=5 6
-null7 ;
-!; <
-;< =
-public 
-string "
-PagosClientePendientes ,
-{- .
-get/ 2
-;2 3
-set4 7
-;7 8
-}9 :
-=; <
-null= A
-!A B
-;B C
-} 
-} Ð
+} Ð
 gC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\NuevoPrestamoViewModel.cs
 	namespace 	
 Prestamo
@@ -588,88 +780,7 @@ MetodoPago  
 ;) *
 }+ ,
 } 
-} –
-XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Resumen.cs
-	namespace 	
-Prestamo
- 
-. 
-	Entidades 
-{ 
-public		 
-
-class		 
-Resumen		 
-{
-
- 
-public 
-string 
-TotalClientes #
-{$ %
-get& )
-;) *
-set+ .
-;. /
-}0 1
-=2 3
-null4 8
-!8 9
-;9 :
-public 
-string 
-PrestamosPendientes )
-{* +
-get, /
-;/ 0
-set1 4
-;4 5
-}6 7
-=8 9
-null: >
-!> ?
-;? @
-public 
-string 
-PrestamosCancelados )
-{* +
-get, /
-;/ 0
-set1 4
-;4 5
-}6 7
-=8 9
-null: >
-!> ?
-;? @
-public 
-string 
-InteresAcumulado &
-{' (
-get) ,
-;, -
-set. 1
-;1 2
-}3 4
-=5 6
-null7 ;
-!; <
-;< =
-public 
-string !
-SolicitudesPendientes +
-{, -
-get. 1
-;1 2
-set3 6
-;6 7
-}8 9
-=: ;
-null< @
-!@ A
-;A B
-} 
-} ö
+} ö
 WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Moneda.cs
 	namespace 	
 Prestamo
@@ -940,118 +1051,7 @@ XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\C
 !9 :
 ;: ;
 } 
-} Ú
-`C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\PrestamoDetalle.cs
-	namespace 	
-Prestamo
- 
-. 
-	Entidades 
-{ 
-public 
-
-class 
-PrestamoDetalle  
-{ 
-public 
-int 
-IdPrestamoDetalle $
-{% &
-get' *
-;* +
-set, /
-;/ 0
-}1 2
-public 
-string 
-	FechaPago 
-{  !
-get" %
-;% &
-set' *
-;* +
-}, -
-=. /
-null0 4
-!4 5
-;5 6
-public		 
-int		 
-NroCuota		 
-{		 
-get		 !
-;		! "
-set		# &
-;		& '
-}		( )
-public
-
- 
-string
-
- 
-
-MontoCuota
-
-  
-{
-
-! "
-get
-
-# &
-;
-
-& '
-set
-
-( +
-;
-
-+ ,
-}
-
-- .
-=
-
-/ 0
-null
-
-1 5
-!
-
-5 6
-;
-
-6 7
-public 
-string 
-Estado 
-{ 
-get "
-;" #
-set$ '
-;' (
-}) *
-=+ ,
-null- 1
-!1 2
-;2 3
-public 
-string 
-FechaPagado !
-{" #
-get$ '
-;' (
-set) ,
-;, -
-}. /
-=0 1
-null2 6
-!6 7
-;7 8
-} 
-} ±
+} ±
 ZC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Auditoria.cs
 	namespace 	
 Prestamo

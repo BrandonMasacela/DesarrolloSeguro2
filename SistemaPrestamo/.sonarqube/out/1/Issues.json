@@ -602,67 +602,6 @@
         {
           "ruleId": "S1192",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'LockoutEnd' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 45,
-                  "endLine": 58,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 106,
-                  "endLine": 58,
-                  "endColumn": 118
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
-                "region": {
-                  "startLine": 166,
-                  "startColumn": 45,
-                  "endLine": 166,
-                  "endColumn": 57
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
-                "region": {
-                  "startLine": 166,
-                  "startColumn": 106,
-                  "endLine": 166,
-                  "endColumn": 118
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
           "message": "Define a constant instead of using this literal '@msgError' 6 times.",
           "locations": [
             {
@@ -742,6 +681,88 @@
               "2": null,
               "3": null,
               "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S5332",
+          "level": "warning",
+          "message": "EnableSsl should be set to true.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/EmailService.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 33,
+                  "endLine": 27,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'LockoutEnd' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 45,
+                  "endLine": 58,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 106,
+                  "endLine": 58,
+                  "endColumn": 118
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 45,
+                  "endLine": 166,
+                  "endColumn": 57
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 106,
+                  "endLine": 166,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
             }
           }
         },
@@ -1513,6 +1534,69 @@
           }
         },
         {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'GenerarClaveAleatoria' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "El miembro \"GenerarClaveAleatoria\" no tiene acceso a los datos de la instancia y se puede marcar como static.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1116",
+          "level": "warning",
+          "message": "Remove this empty statement.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/CuentaData.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 28,
+                  "endLine": 90,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S1192",
           "level": "warning",
           "message": "Define a constant instead of using this literal '@msgError' 5 times.",
@@ -1854,90 +1938,6 @@
           }
         },
         {
-          "ruleId": "S5332",
-          "level": "warning",
-          "message": "EnableSsl should be set to true.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/EmailService.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 33,
-                  "endLine": 27,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1116",
-          "level": "warning",
-          "message": "Remove this empty statement.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/CuentaData.cs",
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 28,
-                  "endLine": 90,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'GenerarClaveAleatoria' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 23,
-                  "endLine": 18,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "El miembro \"GenerarClaveAleatoria\" no tiene acceso a los datos de la instancia y se puede marcar como static.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/UsuarioData.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 23,
-                  "endLine": 18,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S2325",
           "level": "warning",
           "message": "Make 'GenerarTarjeta' a static method.",
@@ -2070,12 +2070,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/ClienteData.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/PrestamoData.cs",
                 "region": {
-                  "startLine": 214,
-                  "startColumn": 35,
-                  "endLine": 214,
-                  "endColumn": 65
+                  "startLine": 275,
+                  "startColumn": 31,
+                  "endLine": 275,
+                  "endColumn": 58
                 }
               }
             }
@@ -2091,12 +2091,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/PrestamoData.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Data/ClienteData.cs",
                 "region": {
-                  "startLine": 275,
-                  "startColumn": 31,
-                  "endLine": 275,
-                  "endColumn": 58
+                  "startLine": 214,
+                  "startColumn": 35,
+                  "endLine": 214,
+                  "endColumn": 65
                 }
               }
             }

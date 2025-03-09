@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prestamo.Entidades")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c612833c89d2b76b2c3fa1817d8c66ff52d8e8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf7a7066aa917ef630d3e251c526bbe493fd8155")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prestamo.Entidades")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prestamo.Entidades")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

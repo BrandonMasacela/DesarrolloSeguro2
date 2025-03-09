@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zGOs74J8zMZQptLMVe81U1SKCcayOJTMTlynroLySwU=",
+  "Hash": "8iufEVQvwcQdVzD23Nj2ag+9xuUC3AktHbdRXWZrdoM=",
   "Source": "Prestamo.Web",
   "BasePath": "_content/Prestamo.Web",
   "Mode": "Default",
@@ -9210,7 +9210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Mar 2025 18:33:25 GMT"
+          "Value": "Sun, 09 Mar 2025 20:36:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9255,7 +9255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Mar 2025 18:33:25 GMT"
+          "Value": "Sun, 09 Mar 2025 20:36:42 GMT"
         },
         {
           "Name": "Cache-Control",

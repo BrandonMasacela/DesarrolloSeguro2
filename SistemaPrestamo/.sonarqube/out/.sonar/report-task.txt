@@ -1,6 +1,6 @@
-projectKey=prueba-09-08-2025
+projectKey=dsadasd
 serverUrl=http://localhost:9000
 serverVersion=25.3.0.104237
-dashboardUrl=http://localhost:9000/dashboard?id=prueba-09-08-2025
-ceTaskId=1a825c99-a473-4b5b-bb99-4b54e06bf72c
-ceTaskUrl=http://localhost:9000/api/ce/task?id=1a825c99-a473-4b5b-bb99-4b54e06bf72c
+dashboardUrl=http://localhost:9000/dashboard?id=dsadasd
+ceTaskId=8c1748c9-2f8c-4511-86d8-f7e515ebb43b
+ceTaskUrl=http://localhost:9000/api/ce/task?id=8c1748c9-2f8c-4511-86d8-f7e515ebb43b
