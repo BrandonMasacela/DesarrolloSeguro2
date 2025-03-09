@@ -661,7 +661,6 @@ C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\bin\Debu
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\bin\Debug\net8.0\SourceLink.Environment.dll
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\bin\Debug\net8.0\DotNetEnv.dll
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\bin\Debug\net8.0\Sprache.dll
-C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll

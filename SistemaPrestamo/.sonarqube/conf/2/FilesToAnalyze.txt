@@ -10,6 +10,8 @@ C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controll
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\SolicitudPrestamoController.cs
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Models\ChangePasswordViewModel.cs
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Models\ErrorViewModel.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Models\PrestamoViewModel.cs
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Models\SmtpSettings.cs
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Program.cs
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Servives\AuditoriaService.cs
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Servives\SecurityHeadersService.cs
@@ -103,6 +105,7 @@ C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\views\Cuenta.js
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\views\gestionarSolicitudes.js
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\views\Home.js
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\views\login.js
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\views\Moneda.js
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\views\NuevoPrestamo.js
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\views\Prestamo.js
@@ -110,6 +113,7 @@ C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\wwwroot\
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\appsettings.Development.json
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\appsettings.json
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\Account\ChangePassword.cshtml
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\Account\Login.cshtml
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\Cliente\Index.cshtml
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\Cobrar\Index.cshtml
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\Cuenta\Index.cshtml
@@ -130,5 +134,4 @@ C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\So
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\_ViewImports.cshtml
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\_ViewStart.cshtml
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\Shared\_Layout.cshtml.css
-C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\.env
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Properties\launchSettings.json

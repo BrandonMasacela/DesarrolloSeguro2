@@ -14,6 +14,210 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
+          "message": "El elemento propiedad \"Host\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/SmtpSettings.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/SmtpSettings.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"UserName\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/SmtpSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/SmtpSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Password\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/SmtpSettings.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/SmtpSettings.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Nombre\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 23,
+                  "endLine": 27,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 23,
+                  "endLine": 27,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Nombre\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 23,
+                  "endLine": 20,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 23,
+                  "endLine": 20,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Apellido\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 23,
+                  "endLine": 21,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 23,
+                  "endLine": 21,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
           "message": "El elemento propiedad \"CurrentPassword\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
           "locations": [
             {
@@ -116,16 +320,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "El elemento propiedad \"VerificationCode\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "message": "El elemento propiedad \"Cliente\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/ChangePasswordViewModel.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
                 "region": {
-                  "startLine": 25,
-                  "startColumn": 23,
-                  "endLine": 25,
-                  "endColumn": 39
+                  "startLine": 8,
+                  "startColumn": 28,
+                  "endLine": 8,
+                  "endColumn": 35
                 }
               }
             }
@@ -133,12 +337,114 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/ChangePasswordViewModel.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
                 "region": {
-                  "startLine": 25,
+                  "startLine": 8,
+                  "startColumn": 28,
+                  "endLine": 8,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Moneda\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 27,
+                  "endLine": 12,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 27,
+                  "endLine": 12,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Estado\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 13,
                   "startColumn": 23,
-                  "endLine": 25,
-                  "endColumn": 39
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"FechaCreacion\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Models/PrestamoViewModel.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 36
                 }
               }
             }
@@ -156,9 +462,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 35,
+                  "startLine": 36,
                   "startColumn": 50,
-                  "endLine": 35,
+                  "endLine": 36,
                   "endColumn": 63
                 }
               }
@@ -177,9 +483,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 35,
+                  "startLine": 36,
                   "startColumn": 50,
-                  "endLine": 35,
+                  "endLine": 36,
                   "endColumn": 68
                 }
               }
@@ -198,9 +504,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 48,
+                  "startLine": 50,
                   "startColumn": 50,
-                  "endLine": 48,
+                  "endLine": 50,
                   "endColumn": 63
                 }
               }
@@ -219,9 +525,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 48,
+                  "startLine": 50,
                   "startColumn": 50,
-                  "endLine": 48,
+                  "endLine": 50,
                   "endColumn": 68
                 }
               }
@@ -240,9 +546,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 61,
+                  "startLine": 64,
                   "startColumn": 50,
-                  "endLine": 61,
+                  "endLine": 64,
                   "endColumn": 63
                 }
               }
@@ -261,9 +567,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 61,
+                  "startLine": 64,
                   "startColumn": 50,
-                  "endLine": 61,
+                  "endLine": 64,
                   "endColumn": 68
                 }
               }
@@ -330,9 +636,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 74,
+                  "startLine": 78,
                   "startColumn": 50,
-                  "endLine": 74,
+                  "endLine": 78,
                   "endColumn": 63
                 }
               }
@@ -351,9 +657,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 74,
+                  "startLine": 78,
                   "startColumn": 50,
-                  "endLine": 74,
+                  "endLine": 78,
                   "endColumn": 68
                 }
               }
@@ -372,9 +678,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/CobrarController.cs",
                 "region": {
-                  "startLine": 111,
+                  "startLine": 112,
                   "startColumn": 27,
-                  "endLine": 111,
+                  "endLine": 112,
                   "endColumn": 43
                 }
               }
@@ -385,9 +691,9 @@
               "physicalLocation": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/CobrarController.cs",
                 "region": {
-                  "startLine": 111,
+                  "startLine": 112,
                   "startColumn": 27,
-                  "endLine": 111,
+                  "endLine": 112,
                   "endColumn": 43
                 }
               }
@@ -406,9 +712,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/CobrarController.cs",
                 "region": {
-                  "startLine": 112,
+                  "startLine": 113,
                   "startColumn": 27,
-                  "endLine": 112,
+                  "endLine": 113,
                   "endColumn": 40
                 }
               }
@@ -419,9 +725,9 @@
               "physicalLocation": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/CobrarController.cs",
                 "region": {
-                  "startLine": 112,
+                  "startLine": 113,
                   "startColumn": 27,
-                  "endLine": 112,
+                  "endLine": 113,
                   "endColumn": 40
                 }
               }
@@ -438,96 +744,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 50,
-                  "endLine": 33,
-                  "endColumn": 63
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Posible argumento de referencia nulo para el parámetro \"usuario\" en \"Task AuditoriaService.RegistrarLog(string usuario, string accion, string detalles)\".",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 50,
-                  "endLine": 33,
-                  "endColumn": 68
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Desreferencia de una referencia posiblemente NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
-                "region": {
-                  "startLine": 111,
-                  "startColumn": 58,
-                  "endLine": 111,
-                  "endColumn": 71
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Posible argumento de referencia nulo para el parámetro \"usuario\" en \"Task AuditoriaService.RegistrarLog(string usuario, string accion, string detalles)\".",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
-                "region": {
-                  "startLine": 111,
-                  "startColumn": 58,
-                  "endLine": 111,
-                  "endColumn": 76
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Desreferencia de una referencia posiblemente NULL.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/AccountController.cs",
                 "region": {
-                  "startLine": 99,
-                  "startColumn": 50,
-                  "endLine": 99,
-                  "endColumn": 63
+                  "startLine": 103,
+                  "startColumn": 54,
+                  "endLine": 103,
+                  "endColumn": 67
                 }
               }
             }
@@ -545,10 +767,10 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/AccountController.cs",
                 "region": {
-                  "startLine": 99,
-                  "startColumn": 50,
-                  "endLine": 99,
-                  "endColumn": 68
+                  "startLine": 103,
+                  "startColumn": 54,
+                  "endLine": 103,
+                  "endColumn": 72
                 }
               }
             }
@@ -566,9 +788,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
                 "region": {
-                  "startLine": 46,
+                  "startLine": 34,
                   "startColumn": 50,
-                  "endLine": 46,
+                  "endLine": 34,
                   "endColumn": 63
                 }
               }
@@ -587,9 +809,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
                 "region": {
-                  "startLine": 46,
+                  "startLine": 34,
                   "startColumn": 50,
-                  "endLine": 46,
+                  "endLine": 34,
                   "endColumn": 68
                 }
               }
@@ -608,9 +830,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 82,
+                  "startLine": 84,
                   "startColumn": 54,
-                  "endLine": 82,
+                  "endLine": 84,
                   "endColumn": 67
                 }
               }
@@ -629,9 +851,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 82,
+                  "startLine": 84,
                   "startColumn": 54,
-                  "endLine": 82,
+                  "endLine": 84,
                   "endColumn": 72
                 }
               }
@@ -650,9 +872,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 92,
+                  "startLine": 94,
                   "startColumn": 63,
-                  "endLine": 92,
+                  "endLine": 94,
                   "endColumn": 69
                 }
               }
@@ -671,10 +893,10 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 109,
-                  "startColumn": 54,
-                  "endLine": 109,
-                  "endColumn": 67
+                  "startLine": 114,
+                  "startColumn": 58,
+                  "endLine": 114,
+                  "endColumn": 71
                 }
               }
             }
@@ -692,10 +914,52 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 109,
-                  "startColumn": 54,
-                  "endLine": 109,
-                  "endColumn": 72
+                  "startLine": 114,
+                  "startColumn": 58,
+                  "endLine": 114,
+                  "endColumn": 76
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 58,
+                  "endLine": 115,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Posible argumento de referencia nulo para el parámetro \"usuario\" en \"Task AuditoriaService.RegistrarLog(string usuario, string accion, string detalles)\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 58,
+                  "endLine": 115,
+                  "endColumn": 76
                 }
               }
             }
@@ -713,30 +977,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
                 "region": {
-                  "startLine": 59,
+                  "startLine": 48,
                   "startColumn": 50,
-                  "endLine": 59,
-                  "endColumn": 63
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Desreferencia de una referencia posiblemente NULL.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
-                "region": {
-                  "startLine": 72,
-                  "startColumn": 50,
-                  "endLine": 72,
+                  "endLine": 48,
                   "endColumn": 63
                 }
               }
@@ -755,9 +998,120 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
                 "region": {
-                  "startLine": 72,
+                  "startLine": 48,
                   "startColumn": 50,
-                  "endLine": 72,
+                  "endLine": 48,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 240,
+                  "endLine": 120,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 67,
+                  "endLine": 64,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 50,
+                  "endLine": 62,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 50,
+                  "endLine": 78,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Posible argumento de referencia nulo para el parámetro \"usuario\" en \"Task AuditoriaService.RegistrarLog(string usuario, string accion, string detalles)\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 50,
+                  "endLine": 78,
                   "endColumn": 68
                 }
               }
@@ -774,11 +1128,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
                 "region": {
-                  "startLine": 75,
+                  "startLine": 76,
                   "startColumn": 50,
-                  "endLine": 75,
+                  "endLine": 76,
                   "endColumn": 63
                 }
               }
@@ -795,11 +1149,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/MonedaController.cs",
                 "region": {
-                  "startLine": 75,
+                  "startLine": 76,
                   "startColumn": 50,
-                  "endLine": 75,
+                  "endLine": 76,
                   "endColumn": 68
                 }
               }
@@ -842,9 +1196,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 173,
+                  "startLine": 187,
                   "startColumn": 62,
-                  "endLine": 173,
+                  "endLine": 187,
                   "endColumn": 75
                 }
               }
@@ -863,9 +1217,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 173,
+                  "startLine": 187,
                   "startColumn": 62,
-                  "endLine": 173,
+                  "endLine": 187,
                   "endColumn": 80
                 }
               }
@@ -884,9 +1238,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 188,
+                  "startLine": 202,
                   "startColumn": 62,
-                  "endLine": 188,
+                  "endLine": 202,
                   "endColumn": 75
                 }
               }
@@ -905,9 +1259,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 188,
+                  "startLine": 202,
                   "startColumn": 62,
-                  "endLine": 188,
+                  "endLine": 202,
                   "endColumn": 80
                 }
               }
@@ -956,6 +1310,78 @@
                   "startLine": 64,
                   "startColumn": 67,
                   "endLine": 64,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cuenta_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 232,
+                  "endLine": 79,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cuenta_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 189,
+                  "startColumn": 241,
+                  "endLine": 189,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cuenta_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 67,
+                  "endLine": 66,
                   "endColumn": 79
                 }
               }
@@ -1038,24 +1464,6 @@
           }
         },
         {
-          "ruleId": "CS0103",
-          "level": "error",
-          "message": "El nombre 'DotNetEnv' no existe en el contexto actual",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Program.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 1,
-                  "endLine": 13,
-                  "endColumn": 10
-                }
-              }
-            }
-          ]
-        },
-        {
           "ruleId": "CS8618",
           "level": "warning",
           "message": "El elemento propiedad \"Estado\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
@@ -1064,9 +1472,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 206,
+                  "startLine": 220,
                   "startColumn": 27,
-                  "endLine": 206,
+                  "endLine": 220,
                   "endColumn": 33
                 }
               }
@@ -1077,9 +1485,9 @@
               "physicalLocation": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 206,
+                  "startLine": 220,
                   "startColumn": 27,
-                  "endLine": 206,
+                  "endLine": 220,
                   "endColumn": 33
                 }
               }
@@ -1243,78 +1651,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cuenta_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 79,
-                  "startColumn": 232,
-                  "endLine": 79,
-                  "endColumn": 234
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cuenta_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 189,
-                  "startColumn": 241,
-                  "endLine": 189,
-                  "endColumn": 243
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cuenta_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 67,
-                  "endLine": 66,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__DataTablesScriptsPartial_cshtml.g.cs",
                 "region": {
                   "startLine": 42,
@@ -1339,11 +1675,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 95,
+                  "startLine": 115,
                   "startColumn": 232,
-                  "endLine": 95,
+                  "endLine": 115,
                   "endColumn": 234
                 }
               }
@@ -1363,60 +1699,132 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 121,
-                  "startColumn": 240,
-                  "endLine": 121,
-                  "endColumn": 242
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
-                "region": {
-                  "startLine": 170,
-                  "startColumn": 239,
-                  "endLine": 170,
-                  "endColumn": 241
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
-                "region": {
-                  "startLine": 266,
+                  "startLine": 213,
                   "startColumn": 241,
-                  "endLine": 266,
+                  "endLine": 213,
                   "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 238,
+                  "startColumn": 241,
+                  "endLine": 238,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 263,
+                  "startColumn": 241,
+                  "endLine": 263,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 67,
+                  "endLine": 68,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 236,
+                  "endLine": 67,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 236,
+                  "endLine": 92,
+                  "endColumn": 238
                 }
               }
             }
@@ -1555,107 +1963,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewImports_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
                 "region": {
-                  "startLine": 42,
-                  "startColumn": 67,
-                  "endLine": 42,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewStart_cshtml.g.cs",
-                "region": {
-                  "startLine": 42,
-                  "startColumn": 67,
-                  "endLine": 42,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
-                "region": {
-                  "startLine": 67,
-                  "startColumn": 236,
-                  "endLine": 67,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 236,
-                  "endLine": 92,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 115,
+                  "startLine": 95,
                   "startColumn": 232,
-                  "endLine": 115,
+                  "endLine": 95,
                   "endColumn": 234
                 }
               }
@@ -1675,11 +1987,59 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
                 "region": {
-                  "startLine": 201,
+                  "startLine": 121,
+                  "startColumn": 240,
+                  "endLine": 121,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 239,
+                  "endLine": 170,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
+                "region": {
+                  "startLine": 266,
                   "startColumn": 241,
-                  "endLine": 201,
+                  "endLine": 266,
                   "endColumn": 243
                 }
               }
@@ -1699,11 +2059,107 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
                 "region": {
-                  "startLine": 226,
+                  "startLine": 163,
+                  "startColumn": 237,
+                  "endLine": 163,
+                  "endColumn": 239
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
+                "region": {
+                  "startLine": 179,
+                  "startColumn": 237,
+                  "endLine": 179,
+                  "endColumn": 239
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 237,
+                  "endLine": 195,
+                  "endColumn": 239
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 237,
+                  "endLine": 211,
+                  "endColumn": 239
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
+                "region": {
+                  "startLine": 290,
                   "startColumn": 241,
-                  "endLine": 226,
+                  "endLine": 290,
                   "endColumn": 243
                 }
               }
@@ -1723,11 +2179,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
                 "region": {
-                  "startLine": 251,
+                  "startLine": 315,
                   "startColumn": 241,
-                  "endLine": 251,
+                  "endLine": 315,
                   "endColumn": 243
                 }
               }
@@ -1747,11 +2203,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Moneda_Index_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewImports_cshtml.g.cs",
                 "region": {
-                  "startLine": 68,
+                  "startLine": 42,
                   "startColumn": 67,
-                  "endLine": 68,
+                  "endLine": 42,
                   "endColumn": 79
                 }
               }
@@ -1941,9 +2397,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 315,
+                  "startLine": 325,
                   "startColumn": 241,
-                  "endLine": 315,
+                  "endLine": 325,
                   "endColumn": 243
                 }
               }
@@ -1965,9 +2421,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 340,
+                  "startLine": 350,
                   "startColumn": 241,
-                  "endLine": 340,
+                  "endLine": 350,
                   "endColumn": 243
                 }
               }
@@ -1989,10 +2445,34 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 365,
+                  "startLine": 375,
                   "startColumn": 241,
-                  "endLine": 365,
+                  "endLine": 375,
                   "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewStart_cshtml.g.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 67,
+                  "endLine": 42,
+                  "endColumn": 79
                 }
               }
             }
@@ -2113,150 +2593,6 @@
                   "startColumn": 67,
                   "endLine": 68,
                   "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
-                "region": {
-                  "startLine": 163,
-                  "startColumn": 237,
-                  "endLine": 163,
-                  "endColumn": 239
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
-                "region": {
-                  "startLine": 179,
-                  "startColumn": 237,
-                  "endLine": 179,
-                  "endColumn": 239
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
-                "region": {
-                  "startLine": 195,
-                  "startColumn": 237,
-                  "endLine": 195,
-                  "endColumn": 239
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
-                "region": {
-                  "startLine": 211,
-                  "startColumn": 237,
-                  "endLine": 211,
-                  "endColumn": 239
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
-                "region": {
-                  "startLine": 290,
-                  "startColumn": 241,
-                  "endLine": 290,
-                  "endColumn": 243
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
-                "region": {
-                  "startLine": 315,
-                  "startColumn": 241,
-                  "endLine": 315,
-                  "endColumn": 243
                 }
               }
             }
@@ -3034,236 +3370,83 @@
           }
         },
         {
-          "ruleId": "CS0169",
+          "ruleId": "CS8602",
           "level": "warning",
-          "message": "El campo 'Views_Cobrar_Index.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
+          "message": "Desreferencia de una referencia posiblemente NULL.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cobrar_Index_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
                 "region": {
-                  "startLine": 49,
-                  "startColumn": 24,
-                  "endLine": 49,
-                  "endColumn": 52
+                  "startLine": 210,
+                  "startColumn": 50,
+                  "endLine": 210,
+                  "endColumn": 63
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 3
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 269,
+                  "startColumn": 54,
+                  "endLine": 269,
+                  "endColumn": 76
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 280,
+                  "startColumn": 58,
+                  "endLine": 280,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "El campo 'Views_Account_ChangePassword.__tagHelperStringValueBuffer' nunca se usa",
+          "message": "El campo 'Views_SolicitudPrestamo_Index.__tagHelperStringValueBuffer' nunca se usa",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Account_ChangePassword_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_SolicitudPrestamo_Index_cshtml.g.cs",
                 "region": {
                   "startLine": 56,
                   "startColumn": 24,
                   "endLine": 56,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "El campo 'Views_Cliente_Index.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cliente_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 24,
-                  "endLine": 52,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "El campo 'Views_Prestamo_Nuevo.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
-                "region": {
-                  "startLine": 53,
-                  "startColumn": 24,
-                  "endLine": 53,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "El campo 'Views_Prestamo_Index.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 24,
-                  "endLine": 52,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "El campo 'Views_Login_VerificarCodigo.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 24,
-                  "endLine": 55,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "El campo 'Views_SolicitudPrestamo_GestionarSolicitudes.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_SolicitudPrestamo_GestionarSolicitudes_cshtml.g.cs",
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 24,
-                  "endLine": 52,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "El campo 'Views_Shared__ValidationScriptsPartial.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 24,
-                  "endLine": 49,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "El campo 'Views_Register_Index.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Register_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 54,
-                  "startColumn": 24,
-                  "endLine": 54,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "El campo 'Views_Cuenta_Index.__tagHelperStringValueBuffer' nunca se usa",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cuenta_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 24,
-                  "endLine": 50,
                   "endColumn": 52
                 }
               }
@@ -3324,18 +3507,258 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "El campo 'Views_SolicitudPrestamo_Index.__tagHelperStringValueBuffer' nunca se usa",
+          "message": "El campo 'Views_Shared__ValidationScriptsPartial.__tagHelperStringValueBuffer' nunca se usa",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_SolicitudPrestamo_Index_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 24,
+                  "endLine": 49,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Account_Login.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 24,
+                  "endLine": 48,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Login_Index.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 24,
+                  "endLine": 57,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Register_Index.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Register_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 24,
+                  "endLine": 54,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_SolicitudPrestamo_GestionarSolicitudes.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_SolicitudPrestamo_GestionarSolicitudes_cshtml.g.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 24,
+                  "endLine": 52,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Cuenta_Index.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cuenta_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 24,
+                  "endLine": 50,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Account_ChangePassword.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Account_ChangePassword_cshtml.g.cs",
                 "region": {
                   "startLine": 56,
                   "startColumn": 24,
                   "endLine": 56,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Prestamo_Index.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 24,
+                  "endLine": 52,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Cliente_Index.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cliente_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 24,
+                  "endLine": 52,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Login_VerificarCodigo.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_VerificarCodigo_cshtml.g.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 24,
+                  "endLine": 55,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Prestamo_Nuevo.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Prestamo_Nuevo_cshtml.g.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 24,
+                  "endLine": 53,
                   "endColumn": 52
                 }
               }
@@ -3372,18 +3795,18 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "El campo 'Views_Login_Index.__tagHelperStringValueBuffer' nunca se usa",
+          "message": "El campo 'Views_Cobrar_Index.__tagHelperStringValueBuffer' nunca se usa",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Login_Index_cshtml.g.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Cobrar_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 57,
+                  "startLine": 49,
                   "startColumn": 24,
-                  "endLine": 57,
+                  "endLine": 49,
                   "endColumn": 52
                 }
               }
@@ -3391,6 +3814,27 @@
           ],
           "properties": {
             "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/appsettings.json",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 18,
+                  "endLine": 18,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
@@ -3423,9 +3867,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/AccountController.cs",
                 "region": {
-                  "startLine": 28,
+                  "startLine": 27,
                   "startColumn": 30,
-                  "endLine": 28,
+                  "endLine": 27,
                   "endColumn": 44
                 }
               }
@@ -3436,9 +3880,9 @@
               "physicalLocation": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/AccountController.cs",
                 "region": {
-                  "startLine": 72,
+                  "startLine": 74,
                   "startColumn": 42,
-                  "endLine": 72,
+                  "endLine": 74,
                   "endColumn": 56
                 }
               }
@@ -3521,6 +3965,140 @@
               "1": null,
               "2": null,
               "3": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal '#D5D5D5' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 57,
+                  "endLine": 120,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 256,
+                  "startColumn": 62,
+                  "endLine": 256,
+                  "endColumn": 71
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 259,
+                  "startColumn": 62,
+                  "endLine": 259,
+                  "endColumn": 71
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 62,
+                  "endLine": 262,
+                  "endColumn": 71
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 62,
+                  "endLine": 265,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal '#D9D9D9' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 273,
+                  "startColumn": 75,
+                  "endLine": 273,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 276,
+                  "startColumn": 75,
+                  "endLine": 276,
+                  "endColumn": 84
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 279,
+                  "startColumn": 75,
+                  "endLine": 279,
+                  "endColumn": 84
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 282,
+                  "startColumn": 75,
+                  "endLine": 282,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
             }
           }
         },
@@ -3792,140 +4370,6 @@
           }
         },
         {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal '#D5D5D5' 5 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 111,
-                  "startColumn": 57,
-                  "endLine": 111,
-                  "endColumn": 66
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 247,
-                  "startColumn": 62,
-                  "endLine": 247,
-                  "endColumn": 71
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 250,
-                  "startColumn": 62,
-                  "endLine": 250,
-                  "endColumn": 71
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 253,
-                  "startColumn": 62,
-                  "endLine": 253,
-                  "endColumn": 71
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 256,
-                  "startColumn": 62,
-                  "endLine": 256,
-                  "endColumn": 71
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal '#D9D9D9' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 264,
-                  "startColumn": 75,
-                  "endLine": 264,
-                  "endColumn": 84
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 267,
-                  "startColumn": 75,
-                  "endLine": 267,
-                  "endColumn": 84
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 270,
-                  "startColumn": 75,
-                  "endLine": 270,
-                  "endColumn": 84
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
-                "region": {
-                  "startLine": 273,
-                  "startColumn": 75,
-                  "endLine": 273,
-                  "endColumn": 84
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
           "ruleId": "S2325",
           "level": "warning",
           "message": "Make 'ComputeHash' a static method.",
@@ -3987,69 +4431,6 @@
           }
         },
         {
-          "ruleId": "S3457",
-          "level": "warning",
-          "message": "The format string might be wrong, the following arguments are unused: 'cliente.NroDocumento'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 13,
-                  "endLine": 48,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2241",
-          "level": "note",
-          "message": "Proporcionar argumentos correctos para los métodos de formato",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 13,
-                  "endLine": 48,
-                  "endColumn": 81
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6964",
-          "level": "warning",
-          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/CobrarController.cs",
-                "region": {
-                  "startLine": 110,
-                  "startColumn": 24,
-                  "endLine": 110,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S2325",
           "level": "warning",
           "message": "Make 'GenerarCodigoVerificacion' a static method.",
@@ -4058,9 +4439,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/AccountController.cs",
                 "region": {
-                  "startLine": 103,
+                  "startLine": 113,
                   "startColumn": 24,
-                  "endLine": 103,
+                  "endLine": 113,
                   "endColumn": 49
                 }
               }
@@ -4079,9 +4460,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 128,
+                  "startLine": 132,
                   "startColumn": 20,
-                  "endLine": 128,
+                  "endLine": 132,
                   "endColumn": 29
                 }
               }
@@ -4100,10 +4481,94 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/ClienteController.cs",
                 "region": {
-                  "startLine": 129,
+                  "startLine": 133,
                   "startColumn": 24,
-                  "endLine": 129,
+                  "endLine": 133,
                   "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6964",
+          "level": "warning",
+          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/CobrarController.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 24,
+                  "endLine": 111,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "El miembro \"GenerarCodigoVerificacion\" no tiene acceso a los datos de la instancia y se puede marcar como static.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/AccountController.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 24,
+                  "endLine": 113,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 42,
+                  "endLine": 85,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/PrestamoController.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 42,
+                  "endLine": 94,
+                  "endColumn": 59
                 }
               }
             }
@@ -4330,17 +4795,17 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "El miembro \"GenerarCodigoVerificacion\" no tiene acceso a los datos de la instancia y se puede marcar como static.",
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'GenerarCodigoVerificacion' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/AccountController.cs",
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/LoginController.cs",
                 "region": {
-                  "startLine": 103,
+                  "startLine": 235,
                   "startColumn": 24,
-                  "endLine": 103,
+                  "endLine": 235,
                   "endColumn": 49
                 }
               }
@@ -4359,31 +4824,10 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/SolicitudPrestamoController.cs",
                 "region": {
-                  "startLine": 205,
+                  "startLine": 219,
                   "startColumn": 24,
-                  "endLine": 205,
+                  "endLine": 219,
                   "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'GenerarCodigoVerificacion' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Controllers/LoginController.cs",
-                "region": {
-                  "startLine": 235,
-                  "startColumn": 24,
-                  "endLine": 235,
-                  "endColumn": 49
                 }
               }
             }
@@ -4443,9 +4887,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Program.cs",
                 "region": {
-                  "startLine": 117,
+                  "startLine": 118,
                   "startColumn": 5,
-                  "endLine": 117,
+                  "endLine": 118,
                   "endColumn": 66
                 }
               }
@@ -4464,31 +4908,10 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Program.cs",
                 "region": {
-                  "startLine": 120,
+                  "startLine": 121,
                   "startColumn": 5,
-                  "endLine": 123,
+                  "endLine": 124,
                   "endColumn": 6
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "ASP0019",
-          "level": "warning",
-          "message": "Use IHeaderDictionary.Append or the indexer to append or set headers. IDictionary.Add will throw an ArgumentException when attempting to add a duplicate key.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Program.cs",
-                "region": {
-                  "startLine": 126,
-                  "startColumn": 5,
-                  "endLine": 126,
-                  "endColumn": 70
                 }
               }
             }
@@ -4509,7 +4932,7 @@
                   "startLine": 127,
                   "startColumn": 5,
                   "endLine": 127,
-                  "endColumn": 87
+                  "endColumn": 70
                 }
               }
             }
@@ -4529,8 +4952,8 @@
                 "region": {
                   "startLine": 128,
                   "startColumn": 5,
-                  "endLine": 129,
-                  "endColumn": 121
+                  "endLine": 128,
+                  "endColumn": 87
                 }
               }
             }
@@ -4548,10 +4971,10 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Program.cs",
                 "region": {
-                  "startLine": 130,
+                  "startLine": 129,
                   "startColumn": 5,
                   "endLine": 130,
-                  "endColumn": 81
+                  "endColumn": 121
                 }
               }
             }
@@ -4572,7 +4995,7 @@
                   "startLine": 131,
                   "startColumn": 5,
                   "endLine": 131,
-                  "endColumn": 78
+                  "endColumn": 81
                 }
               }
             }
@@ -4593,6 +5016,27 @@
                   "startLine": 132,
                   "startColumn": 5,
                   "endLine": 132,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ASP0019",
+          "level": "warning",
+          "message": "Use IHeaderDictionary.Append or the indexer to append or set headers. IDictionary.Add will throw an ArgumentException when attempting to add a duplicate key.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Program.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 5,
+                  "endLine": 133,
                   "endColumn": 80
                 }
               }
@@ -4611,9 +5055,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/USUARIO/Desktop/DesarrolloSeguro2/SistemaPrestamo/Prestamo.Web/Program.cs",
                 "region": {
-                  "startLine": 153,
+                  "startLine": 154,
                   "startColumn": 1,
-                  "endLine": 153,
+                  "endLine": 154,
                   "endColumn": 10
                 }
               }
@@ -4705,36 +5149,6 @@
             "tags": [
               "Telemetry",
               "EnabledRuleInAggressiveMode"
-            ]
-          }
-        },
-        "CA2241": {
-          "id": "CA2241",
-          "shortDescription": "Proporcionar argumentos correctos para los métodos de formato",
-          "fullDescription": "El argumento de cadena format pasado a System.String.Format no contiene un elemento de formato que corresponda a cada argumento de objeto o viceversa.",
-          "defaultLevel": "note",
-          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2241",
-          "properties": {
-            "category": "Usage",
-            "isEnabledByDefault": true,
-            "tags": [
-              "PortedFromFxCop",
-              "Telemetry",
-              "EnabledRuleInAggressiveMode"
-            ]
-          }
-        },
-        "CS0103": {
-          "id": "CS0103",
-          "defaultLevel": "error",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0103)",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry",
-              "NotConfigurable"
             ]
           }
         },
@@ -4841,6 +5255,22 @@
             ]
           }
         },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
         "S2325": {
           "id": "S2325",
           "shortDescription": "Methods and properties that don't access instance data should be static",
@@ -4849,23 +5279,6 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2325",
           "properties": {
             "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
-        "S3457": {
-          "id": "S3457",
-          "shortDescription": "Composite format strings should be used correctly",
-          "fullDescription": "A composite format string is a string that contains placeholders, represented by indices inside curly braces \"{0}\", \"{1}\", etc. These placeholders are replaced by values when the string is printed or logged.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3457",
-          "properties": {
-            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",
@@ -4950,6 +5363,23 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
           "properties": {
             "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6967": {
+          "id": "S6967",
+          "shortDescription": "ModelState.IsValid should be called in controller actions",
+          "fullDescription": "In the context of ASP.NET Core MVC web applications, both model binding and model validation are processes that take place prior to the execution of a controller action. It is imperative for the application to examine the ModelState.IsValid and respond accordingly.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6967",
+          "properties": {
+            "category": "Critical Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",
