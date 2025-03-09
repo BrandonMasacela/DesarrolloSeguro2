@@ -222,7 +222,7 @@ $("#btnGuardar").on("click", async function () {
     }
 
     // Validar correo
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(correo)) {
         await mostrarMensajeAdvertencia("Por favor ingrese un correo electrónico válido");
         $("#txtCorreo").focus();

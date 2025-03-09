@@ -134,4 +134,5 @@ C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\So
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\_ViewImports.cshtml
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\_ViewStart.cshtml
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Views\Shared\_Layout.cshtml.css
+C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\.env
 C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Properties\launchSettings.json

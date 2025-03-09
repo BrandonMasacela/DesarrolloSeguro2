@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8iufEVQvwcQdVzD23Nj2ag+9xuUC3AktHbdRXWZrdoM=",
+  "Hash": "0PDVELW89nrY/3WsWaVXKpUnQYwAdyCPyx4egIbYfcw=",
   "Source": "Prestamo.Web",
   "BasePath": "_content/Prestamo.Web",
   "Mode": "Default",
@@ -1774,8 +1774,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "i8yet9pton",
-      "Integrity": "0nWrfH2tQKE6MxPalqDJPZEu5oI/+FokRWGTLg/5nqk=",
+      "Fingerprint": "vgbj4i99pm",
+      "Integrity": "z5wM4u/lTPJdPMTzv65eHnq4Jvtd8wgx3w5NFq2xRxc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Cliente.js"
@@ -1942,8 +1942,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9uowi5x40r",
-      "Integrity": "PySQ4niXiMWkncClAD65C0GrdEgt0sA0Fg4WfEScfio=",
+      "Fingerprint": "10igj0wrzw",
+      "Integrity": "343HEOfY7U+M25grq26Xc1NhfZjfOJCUNwQpXmg2IK4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\Prestamo.js"
@@ -8778,51 +8778,6 @@
       ]
     },
     {
-      "Route": "views/Cliente.i8yet9pton.js",
-      "AssetFile": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9281"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0nWrfH2tQKE6MxPalqDJPZEu5oI/+FokRWGTLg/5nqk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Mar 2025 18:52:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "i8yet9pton"
-        },
-        {
-          "Name": "label",
-          "Value": "views/Cliente.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0nWrfH2tQKE6MxPalqDJPZEu5oI/+FokRWGTLg/5nqk="
-        }
-      ]
-    },
-    {
       "Route": "views/Cliente.js",
       "AssetFile": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
       "Selectors": [],
@@ -8833,7 +8788,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9281"
+          "Value": "9303"
         },
         {
           "Name": "Content-Type",
@@ -8841,11 +8796,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0nWrfH2tQKE6MxPalqDJPZEu5oI/+FokRWGTLg/5nqk=\""
+          "Value": "\"z5wM4u/lTPJdPMTzv65eHnq4Jvtd8wgx3w5NFq2xRxc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Mar 2025 18:52:46 GMT"
+          "Value": "Sun, 09 Mar 2025 22:00:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8855,7 +8810,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0nWrfH2tQKE6MxPalqDJPZEu5oI/+FokRWGTLg/5nqk="
+          "Value": "sha256-z5wM4u/lTPJdPMTzv65eHnq4Jvtd8wgx3w5NFq2xRxc="
+        }
+      ]
+    },
+    {
+      "Route": "views/Cliente.vgbj4i99pm.js",
+      "AssetFile": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Cliente.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5wM4u/lTPJdPMTzv65eHnq4Jvtd8wgx3w5NFq2xRxc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 22:00:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgbj4i99pm"
+        },
+        {
+          "Name": "label",
+          "Value": "views/Cliente.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z5wM4u/lTPJdPMTzv65eHnq4Jvtd8wgx3w5NFq2xRxc="
         }
       ]
     },
@@ -9210,7 +9210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Mar 2025 20:36:42 GMT"
+          "Value": "Sun, 09 Mar 2025 20:56:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9255,7 +9255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Mar 2025 20:36:42 GMT"
+          "Value": "Sun, 09 Mar 2025 20:56:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9434,7 +9434,7 @@
       ]
     },
     {
-      "Route": "views/Prestamo.9uowi5x40r.js",
+      "Route": "views/Prestamo.10igj0wrzw.js",
       "AssetFile": "C:\\Users\\USUARIO\\Desktop\\DesarrolloSeguro2\\SistemaPrestamo\\Prestamo.Web\\wwwroot\\views\\Prestamo.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9444,7 +9444,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5680"
+          "Value": "5653"
         },
         {
           "Name": "Content-Type",
@@ -9452,11 +9452,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PySQ4niXiMWkncClAD65C0GrdEgt0sA0Fg4WfEScfio=\""
+          "Value": "\"343HEOfY7U+M25grq26Xc1NhfZjfOJCUNwQpXmg2IK4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Mar 2025 04:02:59 GMT"
+          "Value": "Sun, 09 Mar 2025 21:51:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9466,7 +9466,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9uowi5x40r"
+          "Value": "10igj0wrzw"
         },
         {
           "Name": "label",
@@ -9474,7 +9474,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PySQ4niXiMWkncClAD65C0GrdEgt0sA0Fg4WfEScfio="
+          "Value": "sha256-343HEOfY7U+M25grq26Xc1NhfZjfOJCUNwQpXmg2IK4="
         }
       ]
     },
@@ -9489,7 +9489,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5680"
+          "Value": "5653"
         },
         {
           "Name": "Content-Type",
@@ -9497,11 +9497,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PySQ4niXiMWkncClAD65C0GrdEgt0sA0Fg4WfEScfio=\""
+          "Value": "\"343HEOfY7U+M25grq26Xc1NhfZjfOJCUNwQpXmg2IK4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Mar 2025 04:02:59 GMT"
+          "Value": "Sun, 09 Mar 2025 21:51:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9511,7 +9511,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PySQ4niXiMWkncClAD65C0GrdEgt0sA0Fg4WfEScfio="
+          "Value": "sha256-343HEOfY7U+M25grq26Xc1NhfZjfOJCUNwQpXmg2IK4="
         }
       ]
     },

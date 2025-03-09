@@ -143,7 +143,7 @@ namespace Prestamo.Data
         }
 
 
-        public async Task<List<Prestamo.Entidades.Prestamo>> ObtenerPrestamos2(int Id, string NroDocumento)
+        public async Task<List<Prestamo.Entidades.Prestamo>> ObtenerPrestamos2()
         {
             List<Prestamo.Entidades.Prestamo> lista = new List<Prestamo.Entidades.Prestamo>();
 
@@ -151,8 +151,6 @@ namespace Prestamo.Data
             {
                 await conexion.OpenAsync();
                 SqlCommand cmd = new SqlCommand("sp_obtenerPrestamos2", conexion);
-                cmd.Parameters.AddWithValue("@IdPrestamo", Id);
-                cmd.Parameters.AddWithValue("@NroDocumento", NroDocumento);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 using (var dr = await cmd.ExecuteXmlReaderAsync())

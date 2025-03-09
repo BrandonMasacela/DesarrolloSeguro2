@@ -9,7 +9,7 @@
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
   <SonarQubeVersion>25.3.0.104237</SonarQubeVersion>
-  <SonarProjectKey>dsadasd</SonarProjectKey>
+  <SonarProjectKey>Ultima</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
@@ -139,7 +139,7 @@
     <Property Name="sonar.java.jvmframeworkconfig.activate">true</Property>
     <Property Name="sonar.updatecenter.url">https://downloads.sonarsource.com/sonarqube/update/update-center.properties</Property>
     <Property Name="sonar.core.id">147B411E-AZVzxTfahcLtWMa-uxz7</Property>
-    <Property Name="sonar.core.startTime">9/3/2025 15:33:15</Property>
+    <Property Name="sonar.core.startTime">9/3/2025 16:53:14</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>

@@ -1488,8 +1488,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i8yet9pton</Fingerprint>
-      <Integrity>0nWrfH2tQKE6MxPalqDJPZEu5oI/+FokRWGTLg/5nqk=</Integrity>
+      <Fingerprint>vgbj4i99pm</Fingerprint>
+      <Integrity>z5wM4u/lTPJdPMTzv65eHnq4Jvtd8wgx3w5NFq2xRxc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Cliente.js'))</OriginalItemSpec>
@@ -1632,8 +1632,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9uowi5x40r</Fingerprint>
-      <Integrity>PySQ4niXiMWkncClAD65C0GrdEgt0sA0Fg4WfEScfio=</Integrity>
+      <Fingerprint>10igj0wrzw</Fingerprint>
+      <Integrity>343HEOfY7U+M25grq26Xc1NhfZjfOJCUNwQpXmg2IK4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Prestamo.js'))</OriginalItemSpec>

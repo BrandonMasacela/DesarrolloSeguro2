@@ -6,14 +6,14 @@ WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\Resume
  8r(	
  !"#$%&'(),-x‚ !"#(£
 _C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ResumenClienteData .cs 8r'	
- !"#$%&'(*+x‚!"'ì
-XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\PrestamoData.cs— 8j
-öƒŠrŠ	
- !"#$%&')*,-./0123456789:;<=>?@ACDEFGHIJKLMNPQRTUVWXYZ\]^_`abcdefghijklmnopqrstuvwxyz{|}~€‚ƒ„…†‡‰‹Œ’“”–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉËÍÎÏĞÑÓÔÕÖ×ØÙÚÛÜİŞàáâãäåæçèéêëíîïğñòóô÷øùúûüışÿ€„…†‡ˆ‹‘’“”–—˜™›œŸ ¡¢£¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼¾¿ÁÂÃÄÅÆÇÈÉÊÌÍÎÏĞÑÒÓÔÖ×ØÙÚÛÜİŞàáâãåæçèéêëìíïğñòôõö÷øùúûışÿ€‚ƒ„…†‡ˆ‰ŠŒ‘’“•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬®¯x‚ê "&-/123456789:;<=>?@AEFJMTVXYZ\^`adghijklpqrtuvwxyz{|}~‚ƒ„…†–˜š›œ ¢£¦©ª«¬­®²³´¶·¸¹º»¼½¾¿ÀÃÄÅÆÇÈĞÖØÚÛÜİŞâãçêïñòô÷øùúûüışÿ€„†ˆ‹‘“–Ÿ¡£¥§©«¬­®¯°±²³´µ¶»ÃÅÆÈÉÊÌÍÒØÚÜİŞàáçéëìíïğöøúûıÿƒ„‰’“•—™›œŸ ¡¢£¤¥¦«ı
+ !"#$%&'(*+x‚!"'ä
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\PrestamoData.cs• 8j
+ôˆ‹r†	
+ !"#$%&')*,-./0123456789:;<=>?@ACDEFGHIJKLMNPQRTUVWXYZ\]^_`abcdefghijklmnopqrstuvwxyz{|}~€‚ƒ„…†‡‰‹Œ’“”–—˜™šœŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÉËÌÍÎÏÑÒÓÔÕÖ×ØÙÚÛÜŞßàáâãäåæçèéëìíîïğñòõö÷øùúûüışÿ‚ƒ„…†‰Œ‘’”•–—™š›Ÿ ¡£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º¼½¿ÀÁÂÃÄÅÆÇÈÊËÌÍÎÏĞÑÒÔÕÖ×ØÙÚÛÜŞßàáãäåæçèéêëíîïğòóôõö÷øùûüışÿ€‚ƒ„…†‡ˆŠ‹Œ‘“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª¬­x‚æ "&-/123456789:;<=>?@AEFJMTVXYZ\^`adghijklpqrtuvwxyz{|}~‚ƒ„…†–˜šœ ¡¤§¨©ª«¬°±²´µ¶·¸¹º»¼½¾ÁÂÃÄÅÆÎÔÖØÙÚÛÜàáåèíïğòõö÷øùúûüışÿ‚„†‰Œ‘”Ÿ¡£¥§©ª«¬­®¯°±²³´¹ÁÃÄÆÇÈÊËĞÖØÚÛÜŞßåçéêëíîôöøùûıÿ‚‡Œ‘“•—™š›œŸ ¡¢£¤©ı
 VC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\MonedaData.cs1 8rl	
- !"#$%&'()+,./012345689:;<=>?@ABCEFHIJKLMNOPQSTUVWXYZ[\]^`acdefghijlmnopqrstuvwxyx‚* !"#(/13456:;?BIKMNOPQUVZ]dfhijnosvœ
-XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\EmailService.cs 8r.
- !"#$&'()+,-./0123‚$&€
+ !"#$%&'()+,./012345689:;<=>?@ABCEFHIJKLMNOPQSTUVWXYZ[\]^`acdefghijlmnopqrstuvwxyx‚* !"#(/13456:;?BIKMNOPQUVZ]dfhijnosv
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\EmailService.cs 8jr.
+ !"#$&'()+,-./0123‚$&€
 VC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\CuentaData.cs, 8j"&*,1=UVWXrc	
  !#$'(+,./23456789:;<>?@ABCEFGHIJLMNOPQRSTYZ[\]^_`abcdefghijlmnopqrstuvwxyx‚) $'(+,./23457>EGIJLNPRSTYZ^ceghijnosvs
 ]C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Data\ConnectionStrings.cs 8r	

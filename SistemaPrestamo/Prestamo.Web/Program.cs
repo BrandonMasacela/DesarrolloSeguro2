@@ -9,11 +9,23 @@ using System.Security.Cryptography;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+// Cargar variables de entorno desde el archivo .env
+DotNetEnv.Env.Load();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.Configure<ConnectionStrings>(builder.Configuration.GetSection("ConnectionStrings"));
 builder.Services.AddSingleton<EmailService>();
-builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("Smtp"));
+// Configurar SmtpSettings utilizando variables de entorno
+builder.Services.Configure<SmtpSettings>(options =>
+{
+    options.Host = Environment.GetEnvironmentVariable("SMTP_HOST");
+    options.Port = int.Parse(Environment.GetEnvironmentVariable("SMTP_PORT"));
+    options.EnableSsl = bool.Parse(Environment.GetEnvironmentVariable("SMTP_ENABLESSL"));
+    options.UserName = Environment.GetEnvironmentVariable("SMTP_USERNAME");
+    options.Password = Environment.GetEnvironmentVariable("SMTP_PASSWORD");
+});
 builder.Services.AddSingleton<MonedaData>();
 builder.Services.AddSingleton<ClienteData>();
 builder.Services.AddSingleton<PrestamoData>();

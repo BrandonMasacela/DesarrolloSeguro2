@@ -13,9 +13,9 @@ iC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Models\
 rC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\SolicitudPrestamoController.csutf-8r
 iC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\RegisterController.csutf-8r
 iC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\PrestamoController.csutf-8p
-gC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\MonedaController.csutf-8o
-fC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\LoginController.csutf-8n
-eC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\HomeController.csutf-8p
+gC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\MonedaController.csutf-8n
+eC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\HomeController.csutf-8o
+fC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\LoginController.csutf-8p
 gC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\CuentaController.csutf-8p
 gC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\CobrarController.csutf-8q
 hC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Web\Controllers\ClienteController.csutf-8q

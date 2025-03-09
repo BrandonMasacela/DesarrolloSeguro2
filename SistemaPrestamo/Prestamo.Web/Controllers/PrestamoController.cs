@@ -95,13 +95,13 @@ namespace Prestamo.Web.Controllers
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Cliente, Administrador")]
-        public async Task<IActionResult> ObtenerPrestamos2(int IdPrestamo, string NroDocumento)
+        public async Task<IActionResult> ObtenerPrestamos2()
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            List<Prestamo.Entidades.Prestamo> objeto = await _prestamoData.ObtenerPrestamos2(IdPrestamo, NroDocumento == null ? "" : NroDocumento);
+            List<Prestamo.Entidades.Prestamo> objeto = await _prestamoData.ObtenerPrestamos2();
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
 

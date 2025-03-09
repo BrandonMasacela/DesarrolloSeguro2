@@ -1,85 +1,22 @@
-“
-XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Usuario.cs
+ï
+WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Moneda.cs
 
-		 
+		 
 
- 
+ 
 
- $
+ 
 
- 
+ 
 
- 
-
- 
-
- !
-
- *
-
- #
-
- Ä
-bC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\SolicitudPrestamo.cs
-
-		 "
-
- 
-
- 
-
- 
-
- 
-
- 
-
- '
-
- 
-
- 
-
- 
-
-  
-
- 
-
- Ö
+ $Ö
 _C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\ResumenCliente.cs
 
 		 
 
  &
 
- ,¢
-XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Resumen.cs
-
-		 
-
- #
-
- )
-
- )
-
- &
-
- +°
-WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Cuenta.cs
-
-		 
-
- 
-
- 
-
- 
-
- &
-
- è
+ ,è
 YC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Prestamo.cs
 
 		 
@@ -110,48 +47,88 @@ YC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\P
 
  $
 
-& 5Ì
-gC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\NuevoPrestamoViewModel.cs
-
-		 '
-
- 
-
- 
-
- 
-
-  
-
- 
-
- %
-
- 
-
- 
-
- 
-
- ï
-WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Moneda.cs
-
-		 
-
- 
-
- 
-
- 
-
- $ä
+& 5ä
 dC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\HistorialCrediticio.cs
 
 		 $
 
  
 
- #∂
+ #Ä
+bC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\SolicitudPrestamo.cs
+
+		 "
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ '
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ ¢
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Resumen.cs
+
+		 
+
+ #
+
+ )
+
+ )
+
+ &
+
+ +“
+XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Usuario.cs
+
+		 
+
+ 
+
+ $
+
+ 
+
+ 
+
+ 
+
+ !
+
+ *
+
+ #
+
+ §
+ZC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Auditoria.cs
+
+		 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ∂
 `C:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\PrestamoDetalle.cs
 
   
@@ -168,7 +145,20 @@ dC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\H
 
  
 
- !∫
+ !°
+WC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Cuenta.cs
+
+		 
+
+ 
+
+ 
+
+ 
+
+ &
+
+ ∫
 XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Cliente.cs
 
 		 
@@ -185,17 +175,4 @@ XC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\C
 
  
 
- $§
-ZC:\Users\USUARIO\Desktop\DesarrolloSeguro2\SistemaPrestamo\Prestamo.Entidades\Auditoria.cs
-
-		 
-
- 
-
- 
-
- 
-
- 
-
- 
+ $
