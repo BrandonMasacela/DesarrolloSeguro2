@@ -213,9 +213,6 @@ namespace Prestamo.Data
                         {
                             throw new Exception(respuestaCuenta);
                         }
-
-                        Console.WriteLine("Cuenta creada");
-                        Console.WriteLine(nuevaCuenta.Tarjeta);
                     }
                 }
                 catch (Exception ex)

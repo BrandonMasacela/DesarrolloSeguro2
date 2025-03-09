@@ -108,17 +108,36 @@ namespace Prestamo.Data
             }
         }
 
-        public async Task Actualizar(Usuario usuario)
+        public async Task<bool> Actualizar(Usuario usuario)
         {
             using (var conexion = new SqlConnection(con.CadenaSQL))
             {
                 await conexion.OpenAsync();
-                SqlCommand cmd = new SqlCommand("sp_actualizarUsuario", conexion);
-                cmd.Parameters.AddWithValue("@IdUsuario", usuario.IdUsuario);
-                cmd.Parameters.AddWithValue("@Clave", usuario.Clave);
-                cmd.CommandType = CommandType.StoredProcedure;
+                using (SqlCommand cmd = new SqlCommand("sp_actualizarUsuario", conexion))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@IdUsuario", usuario.IdUsuario);
+                    cmd.Parameters.AddWithValue("@Clave", usuario.Clave);
 
-                await cmd.ExecuteNonQueryAsync();
+                    // Agregar parámetro de salida para capturar el mensaje de error
+                    SqlParameter outputParam = new SqlParameter("@msgError", SqlDbType.NVarChar, 200)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    cmd.Parameters.Add(outputParam);
+
+                    await cmd.ExecuteNonQueryAsync();
+
+                    // Capturar el mensaje de error después de la ejecución
+                    string mensajeError = outputParam.Value.ToString();
+
+                    if (!string.IsNullOrEmpty(mensajeError))
+                    {
+                        throw new Exception(mensajeError); // Lanza una excepción con el mensaje de error
+                    }
+
+                    return true;
+                }
             }
         }
 

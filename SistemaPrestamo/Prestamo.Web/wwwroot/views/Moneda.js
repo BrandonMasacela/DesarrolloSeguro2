@@ -96,6 +96,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
             $('.dataTables_scrollBody').css('min-height', '300px');
         }
     });
+
+    $("#txtNombre").on("input", function () {
+        // Solo permitir letras, espacios y tildes
+        this.value = this.value.replace(/[^a-záéíóúñA-ZÁÉÍÓÚÑ\s]/g, '');
+    });
 });
 
 $("#tbData tbody").on("click", ".btn-edit", function () {

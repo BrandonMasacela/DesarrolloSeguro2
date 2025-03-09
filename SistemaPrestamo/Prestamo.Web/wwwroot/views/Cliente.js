@@ -112,6 +112,22 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.dataTables_scrollBody').css('min-height', '300px');
         }
     });
+
+    // Validaciones de entrada
+    $("#txtNroDocumento").on("input", function() {
+        // Solo permitir números
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+
+    $("#txtNombre, #txtApellido").on("input", function() {
+        // Solo permitir letras, espacios y tildes
+        this.value = this.value.replace(/[^a-záéíóúñA-ZÁÉÍÓÚÑ\s]/g, '');
+    });
+
+    $("#txtTelefono").on("input", function() {
+        // Solo permitir números
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
 });
 
 $("#tbData tbody").on("click", ".btn-edit", function () {
@@ -120,6 +136,7 @@ $("#tbData tbody").on("click", ".btn-edit", function () {
 
     idEditar = data.idCliente;
     $("#txtNroDocumento").val(data.nroDocumento);
+    $("#txtNroDocumento").attr("disabled", true); 
     $("#txtNombre").val(data.nombre);
     $("#txtApellido").val(data.apellido);
     $("#txtCorreo").val(data.correo);
@@ -130,6 +147,7 @@ $("#tbData tbody").on("click", ".btn-edit", function () {
 $("#btnNuevo").on("click", function () {
     idEditar = 0;
     $("#txtNroDocumento").val("");
+    $("#txtNroDocumento").attr("disabled", false);
     $("#txtNombre").val("");
     $("#txtApellido").val("");
     $("#txtCorreo").val("");
@@ -175,21 +193,56 @@ $("#tbData tbody").on("click", ".btn-delete", async function () {
 });
 
 $("#btnGuardar").on("click", async function () {
-    const inputs = $(".data-in").serializeArray();
-    const inputText = inputs.find((e) => e.value == "");
+    // Validaciones adicionales antes de guardar
+    const nroDocumento = $("#txtNroDocumento").val().trim();
+    const nombre = $("#txtNombre").val().trim();
+    const apellido = $("#txtApellido").val().trim();
+    const correo = $("#txtCorreo").val().trim();
+    const telefono = $("#txtTelefono").val().trim();
 
-    if (inputText != undefined) {
-        await mostrarMensajeAdvertencia(`Debe completar el campo: ${inputText.name}`);
+    // Validar documento
+    if (nroDocumento.length < 8) {
+        await mostrarMensajeAdvertencia("El número de documento debe tener al menos 8 dígitos");
+        $("#txtNroDocumento").focus();
+        return;
+    }
+
+    // Validar nombre
+    if (nombre.length < 2) {
+        await mostrarMensajeAdvertencia("El nombre debe tener al menos 2 caracteres");
+        $("#txtNombre").focus();
+        return;
+    }
+
+    // Validar apellido
+    if (apellido.length < 2) {
+        await mostrarMensajeAdvertencia("El apellido debe tener al menos 2 caracteres");
+        $("#txtApellido").focus();
+        return;
+    }
+
+    // Validar correo
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(correo)) {
+        await mostrarMensajeAdvertencia("Por favor ingrese un correo electrónico válido");
+        $("#txtCorreo").focus();
+        return;
+    }
+
+    // Validar teléfono
+    if (telefono.length < 9) {
+        await mostrarMensajeAdvertencia("El teléfono debe tener al menos 9 dígitos");
+        $("#txtTelefono").focus();
         return;
     }
 
     let objeto = {
         idCliente: idEditar,
-        NroDocumento: $("#txtNroDocumento").val().trim(),
-        Nombre: $("#txtNombre").val().trim(),
-        Apellido: $("#txtApellido").val().trim(),
-        Correo: $("#txtCorreo").val().trim(),
-        Telefono: $("#txtTelefono").val().trim()
+        NroDocumento: nroDocumento,
+        Nombre: nombre,
+        Apellido: apellido,
+        Correo: correo,
+        Telefono: telefono
     }
 
     mostrarCargando(idEditar != 0 ? "Guardando cambios..." : "Registrando cliente...");

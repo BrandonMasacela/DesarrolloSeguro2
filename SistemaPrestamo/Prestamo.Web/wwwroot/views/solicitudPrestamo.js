@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         return;
     }
 
+    $("#txtOcupacion").on("input", function () {
+        // Solo permitir letras, espacios y tildes
+        this.value = this.value.replace(/[^a-záéíóúñA-ZÁÉÍÓÚÑ\s]/g, '');
+    });
+
     try {
         // Obtener el número de cédula del cliente autenticado
         const responseCedula = await fetch('/SolicitudPrestamo/ObtenerCedulaCliente', {
@@ -30,6 +35,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Asignar la cédula al input y deshabilitarlo
         document.getElementById("txtCedula").value = nroDocumentoCliente;
         document.getElementById("txtCedula").disabled = true;
+
 
     } catch (error) {
         console.error("Error al obtener la cédula del cliente:", error);

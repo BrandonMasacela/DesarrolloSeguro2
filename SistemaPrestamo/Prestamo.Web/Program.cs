@@ -56,6 +56,10 @@ builder.Services.AddAuthentication(options =>
     options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Tiempo de expiración
     options.Cookie.Name = "MiCookieAuth";
     options.SlidingExpiration = true; // Renovación automática
+    options.Cookie.IsEssential = true;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+    options.Cookie.SameSite = SameSiteMode.Strict;
+    options.Cookie.Expiration = null; // La cookie expira al cerrar el navegador
 })
 // Autenticación JWT para APIs
 .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>

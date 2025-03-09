@@ -12,7 +12,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class PrestamoController : Controller
     {
         private readonly ClienteData _clienteData;
@@ -34,6 +34,7 @@ namespace Prestamo.Web.Controllers
             return View();
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Cliente,Administrador")]
         public async Task<IActionResult> ObtenerCliente(string NroDocumento)
@@ -42,6 +43,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Cliente, Administrador")]
         public async Task<IActionResult> ObtenerCedulaCliente()
@@ -63,6 +65,7 @@ namespace Prestamo.Web.Controllers
 
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Crear([FromBody] Prestamo.Entidades.Prestamo objeto)
@@ -76,7 +79,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
         }
 
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Cliente, Administrador")]
         public async Task<IActionResult> ObtenerPrestamos(int IdPrestamo, string NroDocumento)
@@ -85,7 +88,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
 
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Cliente, Administrador")]
         public async Task<IActionResult> ObtenerPrestamos2(int IdPrestamo, string NroDocumento)
@@ -94,6 +97,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ImprimirPrestamo(int IdPrestamo)

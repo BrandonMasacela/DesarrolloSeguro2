@@ -9,7 +9,7 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class CuentaController : Controller
     {
         private readonly ClienteData _clienteData;
@@ -54,6 +54,7 @@ namespace Prestamo.Web.Controllers
             }
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> ObtenerCuenta(int idCliente)

@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class SolicitudPrestamoController : Controller
     {
         private readonly PrestamoData _prestamoData;
@@ -30,6 +30,7 @@ namespace Prestamo.Web.Controllers
             _auditoriaService = auditoriaService;
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> ObtenerCedulaCliente()
@@ -49,6 +50,7 @@ namespace Prestamo.Web.Controllers
            
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> CrearSolicitud([FromBody] SolicitudPrestamo solicitud)
@@ -57,6 +59,7 @@ namespace Prestamo.Web.Controllers
             {
                 return BadRequest(ModelState);
             }
+
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userId == null)
             {
@@ -86,29 +89,38 @@ namespace Prestamo.Web.Controllers
                 return Json(new { success = false, message = "Solicitud rechazada debido a historial crediticio negativo" });
             }
 
-            //Verificar si el cliente tiene un préstamo pendiente
+            // Verificar préstamos pendientes
             var correo = User.FindFirst(ClaimTypes.Email)?.Value;
             var cliente = await _clienteData.ObtenerPorCorreo(correo);
             var prestamo = await _prestamoData.ObtenerIdPrestamoPorCliente(cliente.IdCliente);
             var resumen = await _resumenClienteData.ObtenerResumen(cliente.IdCliente, prestamo);
-            Console.WriteLine(resumen.PagosClientePendientes);
+
             if (resumen.PagosClientePendientes != "0")
             {
                 return Json(new { success = false, message = "Solicitud rechazada debido a préstamos pendientes" });
             }
-            // Verificar si el monto del préstamo es mayor a 5 veces el sueldo
+
+            // Verificar que el monto no supere 5 veces el sueldo
             if (solicitud.Monto > solicitud.Sueldo * 5)
             {
-                return Json(new { success = false, message = "Solicitud rechazada debido a que el monto del préstamo es demasiado alto." });
+                return Json(new { success = false, message = "Solicitud rechazada: el monto solicitado es demasiado alto." });
             }
 
-            bool resultado = await _prestamoData.CrearSolicitudPrestamo(solicitud);
-            if (resultado)
+            try
             {
-                await _auditoriaService.RegistrarLog(User.Identity.Name, "Crear", $"Solicitud de préstamo creada para usuario con ID: {solicitud.IdUsuario}");
+                bool resultado = await _prestamoData.CrearSolicitudPrestamo(solicitud);
+                if (resultado)
+                {
+                    await _auditoriaService.RegistrarLog(User.Identity.Name, "Crear", $"Solicitud de préstamo creada para usuario con ID: {solicitud.IdUsuario}");
+                }
+                return Json(new { success = resultado });
             }
-            return Json(new { success = resultado });
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
+
 
         [Authorize(Roles = "Administrador")]
         public IActionResult GestionarSolicitudes()
@@ -116,6 +128,7 @@ namespace Prestamo.Web.Controllers
             return View();
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [Authorize(Roles = "Administrador")]
         [HttpGet]
         public async Task<IActionResult> ObtenerSolicitudesPendientes()
@@ -124,6 +137,7 @@ namespace Prestamo.Web.Controllers
             return Json(new { data = solicitudes });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [Authorize(Roles = "Administrador")]
         [HttpGet]
         public async Task<IActionResult> ObtenerSolicitud(int id)
@@ -140,6 +154,7 @@ namespace Prestamo.Web.Controllers
             return Json(new { success = true, data = solicitud });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [Authorize(Roles = "Administrador")]
         [HttpPost]
         public async Task<IActionResult> ActualizarEstadoSolicitud([FromBody] SolicitudEstadoUpdateRequest request)

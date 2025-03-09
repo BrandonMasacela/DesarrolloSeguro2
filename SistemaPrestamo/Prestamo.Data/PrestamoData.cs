@@ -239,22 +239,44 @@ namespace Prestamo.Data
             using (var conexion = new SqlConnection(con.CadenaSQL))
             {
                 await conexion.OpenAsync();
-                SqlCommand cmd = new SqlCommand("sp_crearSolicitudPrestamo", conexion);
-                cmd.Parameters.AddWithValue("@IdUsuario", solicitud.IdUsuario);
-                cmd.Parameters.AddWithValue("@Monto", solicitud.Monto);
-                cmd.Parameters.AddWithValue("@Plazo", solicitud.Plazo);
-                cmd.Parameters.AddWithValue("@Estado", solicitud.Estado);
-                cmd.Parameters.AddWithValue("@FechaSolicitud", solicitud.FechaSolicitud);
-                cmd.Parameters.AddWithValue("@Sueldo", solicitud.Sueldo);
-                cmd.Parameters.AddWithValue("@EsCasado", solicitud.EsCasado);
-                cmd.Parameters.AddWithValue("@NumeroHijos", solicitud.NumeroHijos);
-                cmd.Parameters.AddWithValue("@MetodoPago", solicitud.MetodoPago);
-                cmd.Parameters.AddWithValue("@Cedula", solicitud.Cedula);
-                cmd.Parameters.AddWithValue("@Ocupacion", solicitud.Ocupacion);
-                cmd.CommandType = CommandType.StoredProcedure;
+                using (SqlCommand cmd = new SqlCommand("sp_crearSolicitudPrestamo", conexion))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
 
-                int rowsAffected = await cmd.ExecuteNonQueryAsync();
-                return rowsAffected > 0;
+                    // Parámetros de entrada
+                    cmd.Parameters.AddWithValue("@IdUsuario", solicitud.IdUsuario);
+                    cmd.Parameters.AddWithValue("@Monto", solicitud.Monto);
+                    cmd.Parameters.AddWithValue("@Plazo", solicitud.Plazo);
+                    cmd.Parameters.AddWithValue("@Estado", solicitud.Estado);
+                    cmd.Parameters.AddWithValue("@FechaSolicitud", solicitud.FechaSolicitud);
+                    cmd.Parameters.AddWithValue("@Sueldo", solicitud.Sueldo);
+                    cmd.Parameters.AddWithValue("@EsCasado", solicitud.EsCasado);
+                    cmd.Parameters.AddWithValue("@NumeroHijos", solicitud.NumeroHijos);
+                    cmd.Parameters.AddWithValue("@MetodoPago", solicitud.MetodoPago);
+                    cmd.Parameters.AddWithValue("@Cedula", solicitud.Cedula);
+                    cmd.Parameters.AddWithValue("@Ocupacion", solicitud.Ocupacion);
+
+                    // Agregar parámetro de salida @msgError
+                    SqlParameter outputParam = new SqlParameter("@msgError", SqlDbType.NVarChar, 200)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    cmd.Parameters.Add(outputParam);
+
+                    // Ejecutar el procedimiento almacenado
+                    await cmd.ExecuteNonQueryAsync();
+
+                    // Capturar el mensaje de error
+                    string mensajeError = outputParam.Value.ToString();
+
+                    // Si hay un mensaje de error, lanzar una excepción
+                    if (!string.IsNullOrEmpty(mensajeError))
+                    {
+                        throw new Exception(mensajeError);
+                    }
+
+                    return true;
+                }
             }
         }
 

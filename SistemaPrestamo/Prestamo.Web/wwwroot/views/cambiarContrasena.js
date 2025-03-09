@@ -40,6 +40,15 @@ $(document).ready(function () {
             return;
         }
 
+        // Validación de seguridad de la nueva contraseña
+        const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[^',=. OR]{12,}$/;
+
+        if (!passwordRegex.test(nuevaContrasena)) {
+            await mostrarMensajeError('La contraseña debe tener al menos 12 caracteres, incluir una mayúscula, un número y un carácter especial (@$!%*?&)');
+            $("#txtNuevaContrasena").focus();
+            return;
+        }
+
         // Mostrar indicador de carga
         $.LoadingOverlay("show", {
             text: "Solicitando código de verificación..."

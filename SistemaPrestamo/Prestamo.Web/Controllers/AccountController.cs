@@ -29,6 +29,7 @@ namespace Prestamo.Web.Controllers
             return View();
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> SolicitarCodigoVerificacion([FromBody] ChangePasswordViewModel model)
@@ -67,6 +68,7 @@ namespace Prestamo.Web.Controllers
             return Json(new { success = true });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordViewModel model)
@@ -94,10 +96,18 @@ namespace Prestamo.Web.Controllers
                 return Json(new { success = false, message = "El código de verificación es incorrecto" });
             }
 
-            usuario.Clave = BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
-            await _usuarioData.Actualizar(usuario);
-            await _auditoriaService.RegistrarLog(User.Identity.Name, "Cambio", $"Contraseña editada: {usuario.Clave}");
-            return Json(new { success = true });
+            try
+            {
+                usuario.Clave = BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
+                await _usuarioData.Actualizar(usuario);
+                await _auditoriaService.RegistrarLog(User.Identity.Name, "Cambio", $"Contraseña editada: {usuario.Clave}");
+
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
 
         private string GenerarCodigoVerificacion()

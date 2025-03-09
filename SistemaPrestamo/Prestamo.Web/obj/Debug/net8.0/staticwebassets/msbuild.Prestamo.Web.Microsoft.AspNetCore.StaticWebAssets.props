@@ -1470,8 +1470,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vssn36hu2y</Fingerprint>
-      <Integrity>ccNcu3dl5XSfQCSi3fYuy7xiWYouyuv5ge43UzTqu0k=</Integrity>
+      <Fingerprint>lb9v3dq6k6</Fingerprint>
+      <Integrity>8ZcG68KFE18qgJMHVefIE/fHESlohTHqEVd3o7DgF1E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\cambiarContrasena.js'))</OriginalItemSpec>
@@ -1488,8 +1488,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>s7ofd8b51q</Fingerprint>
-      <Integrity>WGXTW5f39VMp+SFFhY2A5OofBejje5e80NnZpdt5YXc=</Integrity>
+      <Fingerprint>i8yet9pton</Fingerprint>
+      <Integrity>0nWrfH2tQKE6MxPalqDJPZEu5oI/+FokRWGTLg/5nqk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Cliente.js'))</OriginalItemSpec>
@@ -1596,8 +1596,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pmcmhul7pg</Fingerprint>
-      <Integrity>ceI7EkRaxjNImmu98ZkSbAt73xKYfofMu4uDAh4GIQY=</Integrity>
+      <Fingerprint>u4zlisw1is</Fingerprint>
+      <Integrity>HicZDt4EgP9vQXWXU1Xka8TlENrNVU4AyXcoYRE5ufM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\Moneda.js'))</OriginalItemSpec>
@@ -1650,8 +1650,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lw2wf8y34t</Fingerprint>
-      <Integrity>tUX/xe8nW7oAqf+z+O3AdP/S3HCG+F0ty+qjyO3s1HM=</Integrity>
+      <Fingerprint>7njsddw4ai</Fingerprint>
+      <Integrity>jSzXhAIsQkLWPks1A6PtlVlMfXWoy/CzbEocwDD3EC8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\views\solicitudPrestamo.js'))</OriginalItemSpec>

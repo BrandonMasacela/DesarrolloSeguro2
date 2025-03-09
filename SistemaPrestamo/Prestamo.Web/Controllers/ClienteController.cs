@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class ClienteController : Controller
     {
         private readonly ClienteData _clienteData;
@@ -27,6 +27,7 @@ namespace Prestamo.Web.Controllers
             return View();
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Lista()
@@ -36,6 +37,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = lista });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Crear([FromBody] Cliente objeto)
@@ -49,6 +51,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Editar([FromBody] Cliente objeto)
@@ -62,6 +65,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpDelete]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Eliminar(int Id)
@@ -94,7 +98,7 @@ namespace Prestamo.Web.Controllers
             return RedirectToAction("Index", "Cuenta", new { idCliente = cliente.IdCliente });
         }
 
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> Depositar([FromBody] DepositoRequest request)

@@ -12,7 +12,7 @@ using Prestamo.Web.Servives;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -46,6 +46,7 @@ namespace Prestamo.Web.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ObtenerResumen()
@@ -58,6 +59,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = objeto });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         public IActionResult ObtenerRolUsuario()
         {
@@ -65,7 +67,9 @@ namespace Prestamo.Web.Controllers
             return Ok(new { roles });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
+        [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> ObtenerResumenCliente(int idPrestamo)
         {
             if (!ModelState.IsValid)
@@ -98,7 +102,7 @@ namespace Prestamo.Web.Controllers
         public async Task<IActionResult> Salir()
         {
             var usuario = User.Identity!.Name;
-            await _auditoriaService.RegistrarLog(usuario!, "Salir", "El usuario cerr� sesi�n.");
+            await _auditoriaService.RegistrarLog(usuario!, "Salir", "El usuario cerro sesion.");
             // Cerrar sesi�n en el esquema de cookies
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 

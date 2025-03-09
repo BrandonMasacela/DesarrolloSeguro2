@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class CobrarController : Controller
     {
         private readonly PrestamoData _prestamoData;
@@ -55,6 +55,7 @@ namespace Prestamo.Web.Controllers
             }
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Authorize(Roles = "Cliente")]
         public async Task<IActionResult> PagarCuotas([FromBody] PagarCuotasRequest request)

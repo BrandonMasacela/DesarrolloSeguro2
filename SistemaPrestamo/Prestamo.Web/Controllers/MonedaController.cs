@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace Prestamo.Web.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class MonedaController : Controller
     {
         private readonly MonedaData _monedaData;
@@ -25,6 +25,7 @@ namespace Prestamo.Web.Controllers
             return View();
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Lista()
@@ -34,6 +35,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = lista });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Crear([FromBody] Moneda objeto)
@@ -47,6 +49,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Editar([FromBody] Moneda objeto)
@@ -60,6 +63,7 @@ namespace Prestamo.Web.Controllers
             return StatusCode(StatusCodes.Status200OK, new { data = respuesta });
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpDelete]
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Eliminar(int Id)

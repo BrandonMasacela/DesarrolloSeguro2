@@ -50,7 +50,7 @@ namespace Prestamo.Web.Controllers
             var usuario = await _usuarioData.ObtenerPorCorreo(correo);
             if (usuario == null)
             {
-                ViewData["Mensaje"] = "Usuario no encontrado";
+                ViewData["Mensaje"] = "Credenciales Incorrectas";
                 return View();
             }
 
@@ -132,7 +132,7 @@ namespace Prestamo.Web.Controllers
                     return View();
                 }
 
-                ViewData["Mensaje"] = $"Contraseña incorrecta. Intentos restantes: {3 - usuario.FailedAttempts}";
+                ViewData["Mensaje"] = $"Credenciales Incorrectas. Intentos restantes: {3 - usuario.FailedAttempts}";
                 return View();
             }
 
